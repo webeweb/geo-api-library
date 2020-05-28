@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the opendata-library package.
+ * This file is part of the geo-api-library package.
  *
  * (c) 2019 WEBEWEB
  *

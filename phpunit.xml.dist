@@ -21,7 +21,7 @@
         </whitelist>
     </filter>
     <testsuites>
-        <testsuite name="webeweb/opendata-library">
+        <testsuite name="webeweb/geo-api-library">
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>

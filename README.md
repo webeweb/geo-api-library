@@ -1,15 +1,15 @@
-opendata-library
-================
+geo-api-library
+===============
 
-[![Build Status](https://img.shields.io/travis/com/webeweb/opendata-library/master.svg?style=flat-square)](https://travis-ci.com/webeweb/opendata-library)
-[![Coverage Status](https://img.shields.io/coveralls/webeweb/opendata-library/master.svg?style=flat-square)](https://coveralls.io/github/webeweb/opendata-library?branch=master)
-[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/quality/g/webeweb/opendata-library/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/webeweb/opendata-library/?branch=master)
-[![Latest Stable Version](https://img.shields.io/packagist/v/webeweb/opendata-library.svg?style=flat-square)](https://packagist.org/packages/webeweb/opendata-library)
-[![Latest Unstable Version](https://img.shields.io/packagist/vpre/webeweb/opendata-library.svg?style=flat-square)](https://packagist.org/packages/webeweb/opendata-library)
-[![License](https://img.shields.io/packagist/l/webeweb/opendata-library.svg?style=flat-square)](https://packagist.org/packages/webeweb/opendata-library)
-[![composer.lock](https://img.shields.io/badge/.lock-uncommited-important.svg?style=flat-square)](https://packagist.org/packages/webeweb/opendata-library)
+[![Build Status](https://img.shields.io/travis/com/webeweb/geo-api-library/master.svg?style=flat-square)](https://travis-ci.com/webeweb/geo-api-library)
+[![Coverage Status](https://img.shields.io/coveralls/webeweb/geo-api-library/master.svg?style=flat-square)](https://coveralls.io/github/webeweb/geo-api-library?branch=master)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/quality/g/webeweb/geo-api-library/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/webeweb/geo-api-library/?branch=master)
+[![Latest Stable Version](https://img.shields.io/packagist/v/webeweb/geo-api-library.svg?style=flat-square)](https://packagist.org/packages/webeweb/geo-api-library)
+[![Latest Unstable Version](https://img.shields.io/packagist/vpre/webeweb/geo-api-library.svg?style=flat-square)](https://packagist.org/packages/webeweb/geo-api-library)
+[![License](https://img.shields.io/packagist/l/webeweb/geo-api-library.svg?style=flat-square)](https://packagist.org/packages/webeweb/geo-api-library)
+[![composer.lock](https://img.shields.io/badge/.lock-uncommited-important.svg?style=flat-square)](https://packagist.org/packages/webeweb/geo-api-library)
 
-Integrate OpenData API with your projects.
+Integrate Geo API with your projects.
 
 > IMPORTANT NOTICE: This package is still under development. Any changes will be
 > done without prior notice to consumers of this package. Of course this code
@@ -20,7 +20,7 @@ If you like this package, pay me a beer (or a coffee)
 
 ## Compatibility
 
-[![PHP](https://img.shields.io/packagist/php-v/webeweb/opendata-library.svg?style=flat-square)](http://php.net)
+[![PHP](https://img.shields.io/packagist/php-v/webeweb/geo-api-library.svg?style=flat-square)](http://php.net)
 
 ## Installation
 
@@ -28,7 +28,7 @@ Open a command console, enter your project directory and execute the following
 command to download the latest stable version of this package:
 
 ```bash
-$ composer require webeweb/opendata-library
+$ composer require webeweb/geo-api-library
 ```
 
 This command requires you to have Composer installed globally, as explained in
@@ -46,8 +46,8 @@ Open a command console and execute the following commands to download the latest
 stable version of this package:
 
 ```bash
-$ git clone https://github.com/webeweb/opendata-library.git
-$ cd opendata-library
+$ git clone https://github.com/webeweb/geo-api-library.git
+$ cd geo-api-library
 $ composer install
 ```
 
@@ -59,7 +59,7 @@ $ vendor/bin/phpunit
 
 ## License
 
-`opendata-library` is released under the MIT License. See the bundled [LICENSE](LICENSE)
+`geo-api-library` is released under the MIT License. See the bundled [LICENSE](LICENSE)
 file for details.
 
 ## Donate
