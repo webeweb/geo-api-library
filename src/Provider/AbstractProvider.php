@@ -70,10 +70,11 @@ abstract class AbstractProvider extends BaseProvider {
 
             $client = new Client($config);
 
-            $method  = [] === $postData ? "GET" : "POST";
+            $method  = 0 === count($postData) ? "GET" : "POST";
             $uri     = substr($request->getResourcePath(), 1);
             $options = [
-                "query" => $queryData,
+                "query"     => $queryData,
+                "multipart" => $postData,
             ];
 
             $this->logInfo(sprintf("Call API provider %s %s", $method, $uri), ["config" => $config]);
