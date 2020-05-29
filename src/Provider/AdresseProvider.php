@@ -11,7 +11,12 @@
 
 namespace WBW\Library\GeoAPI\Provider;
 
+use WBW\Library\Core\Exception\ApiException;
+use WBW\Library\GeoAPI\Model\Request\Adresse\ReverseRequest;
+use WBW\Library\GeoAPI\Model\Request\Adresse\SearchRequest;
 use WBW\Library\GeoAPI\Serializer\AdresseJsonDeserializer;
+use WBW\Library\GeoAPI\Serializer\AdresseRequestSerializer;
+use WBW\Library\GeoJSON\Model\FeatureCollection;
 
 /**
  * Adresse provider.
@@ -29,34 +34,6 @@ class AdresseProvider extends AbstractProvider {
     const ENDPOINT_PATH = "https://api-adresse.data.gouv.fr";
 
     /**
-     * Resource path "reverse".
-     *
-     * @var string
-     */
-    const RESOURCE_PATH_REVERSE = "/reverse/";
-
-    /**
-     * Resource path "reverse CSV".
-     *
-     * @var string
-     */
-    const RESOURCE_PATH_REVERSE_CSV = "/reverse/csv/";
-
-    /**
-     * Resource path "search".
-     *
-     * @var string
-     */
-    const RESOURCE_PATH_SEARCH = "/search/";
-
-    /**
-     * Resource path "search CSV".
-     *
-     * @var string
-     */
-    const RESOURCE_PATH_SEARCH_CSV = "/search/csv/";
-
-    /**
      * {@inheritDoc}
      */
     public function getEndpointPath() {
@@ -65,9 +42,17 @@ class AdresseProvider extends AbstractProvider {
 
     /**
      * Reverse.
+     *
+     * @param ReverseRequest $request The reverse request.
      */
-    public function reverse() {
+    public function reverse(ReverseRequest $request) {
 
+        $queryData = AdresseRequestSerializer::serializeReverseRequest($request);
+
+        $rawResponse = $this->callApi($request, $queryData);
+        $decodedData = json_decode($rawResponse, true);
+
+        return AdresseJsonDeserializer::deserializeFeatureCollection($decodedData);
     }
 
     /**
@@ -79,10 +64,16 @@ class AdresseProvider extends AbstractProvider {
 
     /**
      * Search.
+     *
+     * @param SearchRequest $request The search request.
+     * @return FeatureCollection Returns the feature collection.
+     * @throws ApiException Throws an API exception if an error occurs.
      */
-    public function search($q) {
+    public function search(SearchRequest $request) {
 
-        $rawResponse = $this->callApi(self::RESOURCE_PATH_SEARCH . "?q={$q}");
+        $queryData = AdresseRequestSerializer::serializeSearchRequest($request);
+
+        $rawResponse = $this->callApi($request, $queryData);
         $decodedData = json_decode($rawResponse, true);
 
         return AdresseJsonDeserializer::deserializeFeatureCollection($decodedData);
