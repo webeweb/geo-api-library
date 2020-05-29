@@ -11,8 +11,12 @@
 
 namespace WBW\Library\GeoAPI\Tests\Provider;
 
+use Exception;
+use WBW\Library\GeoAPI\Model\Request\Adresse\ReverseRequest;
+use WBW\Library\GeoAPI\Model\Request\Adresse\SearchRequest;
 use WBW\Library\GeoAPI\Provider\AdresseProvider;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
+use WBW\Library\GeoJSON\Model\FeatureCollection;
 
 /**
  * Adresse provider test.
@@ -23,6 +27,55 @@ use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 class AdresseProviderTest extends AbstractTestCase {
 
     /**
+     * Tests the reverse() method.
+     *
+     * @return void
+     * @throws Exception Throws an exception if an error occurs.
+     */
+    public function testReverse() {
+
+        // Set a Reverse request mock.
+        $arg = new ReverseRequest(49.897443, 2.290084);
+
+        $obj = new AdresseProvider($this->logger);
+
+        $res = $obj->reverse($arg);
+        $this->assertInstanceOf(FeatureCollection::class, $res);
+
+        $this->assertCount(1, $res->getFeatures());
+
+        $this->assertEquals("draft", $res->getForeignMember("version"));
+        $this->assertEquals("BAN", $res->getForeignMember("attribution"));
+        $this->assertNotNull($res->getForeignMember("licence"));
+        $this->assertEquals(1, $res->getForeignMember("limit"));
+    }
+
+    /**
+     * Tests the search() method.
+     *
+     * @return void
+     * @throws Exception Throws an exception if an error occurs.
+     */
+    public function testSearch() {
+
+        // Set a Search request mock.
+        $arg = new SearchRequest("8 bd du port");
+
+        $obj = new AdresseProvider($this->logger);
+
+        $res = $obj->search($arg);
+        $this->assertInstanceOf(FeatureCollection::class, $res);
+
+        $this->assertCount(5, $res->getFeatures());
+
+        $this->assertEquals("draft", $res->getForeignMember("version"));
+        $this->assertEquals("BAN", $res->getForeignMember("attribution"));
+        $this->assertNotNull($res->getForeignMember("licence"));
+        $this->assertEquals($arg->getQ(), $res->getForeignMember("query"));
+        $this->assertEquals(5, $res->getForeignMember("limit"));
+    }
+
+    /**
      * Tests the __construct() method.
      *
      * @return void
@@ -30,10 +83,6 @@ class AdresseProviderTest extends AbstractTestCase {
     public function test__construct() {
 
         $this->assertEquals("https://api-adresse.data.gouv.fr", AdresseProvider::ENDPOINT_PATH);
-        $this->assertEquals("/search/", AdresseProvider::RESOURCE_PATH_SEARCH);
-        $this->assertEquals("/search/csv/", AdresseProvider::RESOURCE_PATH_SEARCH_CSV);
-        $this->assertEquals("/reverse/csv/", AdresseProvider::RESOURCE_PATH_REVERSE_CSV);
-        $this->assertEquals("/reverse/csv/", AdresseProvider::RESOURCE_PATH_REVERSE_CSV);
 
         $obj = new AdresseProvider($this->logger);
 

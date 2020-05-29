@@ -14,9 +14,9 @@ namespace WBW\Library\GeoAPI\Provider;
 use Exception;
 use GuzzleHttp\Client;
 use Psr\Log\LoggerInterface;
-use RuntimeException;
 use WBW\Library\Core\Exception\ApiException;
 use WBW\Library\Core\Provider\AbstractProvider as BaseProvider;
+use WBW\Library\GeoAPI\Model\AbstractRequest;
 
 /**
  * Abstract provider.
@@ -29,6 +29,8 @@ abstract class AbstractProvider extends BaseProvider {
 
     /**
      * Constructor.
+     *
+     * @param LoggerInterface $logger The logger.
      */
     public function __construct(LoggerInterface $logger) {
         parent::__construct($logger);
@@ -54,11 +56,13 @@ abstract class AbstractProvider extends BaseProvider {
     /**
      * Call the API.
      *
-     * @param string $resourcePath The resource path.
+     * @param AbstractRequest $request The request.
+     * @param array $queryData The query data.
+     * @param array $postData The post data.
      * @return string Returns the raw response.
      * @throws ApiException Throws an API exception if an error occurs.
      */
-    protected function callApi($resourcePath) {
+    protected function callApi(AbstractRequest $request, array $queryData, array $postData = []) {
 
         try {
 
@@ -66,17 +70,20 @@ abstract class AbstractProvider extends BaseProvider {
 
             $client = new Client($config);
 
-            $method = "GET";
-            $uri    = substr($resourcePath, 1);
+            $method  = [] === $postData ? "GET" : "POST";
+            $uri     = substr($request->getResourcePath(), 1);
+            $options = [
+                "query" => $queryData,
+            ];
 
             $this->logInfo(sprintf("Call API provider %s %s", $method, $uri), ["config" => $config]);
 
-            $response = $client->request($method, $uri);
+            $response = $client->request($method, $uri, $options);
 
             return $response->getBody()->getContents();
         } catch (Exception $ex) {
 
-            throw new RuntimeException(sprintf("Call API provider failed"), 500, $ex);
+            throw new ApiException(sprintf("Call API provider failed"), 500, $ex);
         }
     }
 
