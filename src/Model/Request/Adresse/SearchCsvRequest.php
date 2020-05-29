@@ -12,6 +12,7 @@
 namespace WBW\Library\GeoAPI\Model\Request\Adresse;
 
 use WBW\Library\GeoAPI\Model\AbstractRequest;
+use WBW\Library\GeoAPI\Model\Attribute\StringDataTrait;
 
 /**
  * Search CSV request.
@@ -20,6 +21,8 @@ use WBW\Library\GeoAPI\Model\AbstractRequest;
  * @package WBW\Library\GeoAPI\Model\Request\Adresse
  */
 class SearchCsvRequest extends AbstractRequest {
+
+    use StringDataTrait;
 
     /**
      * Resource path.
@@ -30,9 +33,11 @@ class SearchCsvRequest extends AbstractRequest {
 
     /**
      * Constructor.
+     *
+     * @param string $data The data.
      */
-    public function __construct() {
-
+    public function __construct($data = null) {
+        $this->setData($data);
     }
 
     /**

@@ -34,5 +34,7 @@ class SearchCsvRequestTest extends AbstractTestCase {
         $obj = new SearchCsvRequest();
 
         $this->assertEquals(SearchCsvRequest::RESOURCE_PATH, $obj->getResourcePath());
+
+        $this->assertNull($obj->getData());
     }
 }
