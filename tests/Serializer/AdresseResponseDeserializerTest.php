@@ -1,0 +1,204 @@
+<?php
+
+/*
+ * This file is part of the geo-api-library package.
+ *
+ * (c) 2020 WEBEWEB
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace WBW\Library\GeoAPI\Tests\Serializer;
+
+use WBW\Library\GeoAPI\Model\Response\ReverseCsvResponse;
+use WBW\Library\GeoAPI\Model\Response\SearchCsvResponse;
+use WBW\Library\GeoAPI\Serializer\AdresseResponseDeserializer;
+use WBW\Library\GeoAPI\Tests\AbstractTestCase;
+
+/**
+ * Adresse response deserializer test.
+ *
+ * @author webeweb <https://github.com/webeweb/>
+ * @package WBW\Library\GeoAPI\Tests\Serializer
+ */
+class AdresseResponseDeserializerTest extends AbstractTestCase {
+
+    /**
+     * Tests the deserializeReverseCsvResponse() method.
+     *
+     * @return void
+     */
+    public function testDeserializeReverseCsvResponse() {
+
+        // Set a filename mock.
+        $filename = getcwd() . "/tests/Fixtures/Model/Response/ReverseCsvResponse.csv";
+
+        $res = AdresseResponseDeserializer::deserializeReverseCsvResponse(file_get_contents($filename));
+        $this->assertInstanceOf(ReverseCsvResponse::class, $res);
+
+        $this->assertCount(4, $res->getAdresses());
+
+        $this->assertEquals("48.670297", $res->getAdresses()[0]->getLatitude());
+        $this->assertEquals("6.14684", $res->getAdresses()[0]->getLongitude());
+        $this->assertEquals("6 Rue Albert 1er 54600 Villers-lès-Nancy", $res->getAdresses()[0]->getLabel());
+        $this->assertEquals("5", $res->getAdresses()[0]->getDistance());
+        $this->assertEquals("housenumber", $res->getAdresses()[0]->getType());
+        $this->assertEquals("54578_0040_00006", $res->getAdresses()[0]->getId());
+        $this->assertEquals("6", $res->getAdresses()[0]->getHouseNumber());
+        $this->assertEquals("Rue Albert 1er", $res->getAdresses()[0]->getName());
+        $this->assertEquals("", $res->getAdresses()[0]->getStreet());
+        $this->assertEquals("54600", $res->getAdresses()[0]->getPostcode());
+        $this->assertEquals("Villers-lès-Nancy", $res->getAdresses()[0]->getCity());
+        $this->assertEquals("54, Meurthe-et-Moselle, Grand Est", $res->getAdresses()[0]->getContext());
+        $this->assertEquals("54578", $res->getAdresses()[0]->getCityCode());
+        $this->assertEquals("", $res->getAdresses()[0]->getOldCityCode());
+        $this->assertEquals("", $res->getAdresses()[0]->getOldCity());
+        $this->assertEquals("", $res->getAdresses()[0]->getDistrict());
+        $this->assertNull($res->getAdresses()[0]->getScore());
+
+        $this->assertEquals("48.649015", $res->getAdresses()[1]->getLatitude());
+        $this->assertEquals("6.151994", $res->getAdresses()[1]->getLongitude());
+        $this->assertEquals("3 Rue du Morvan 54500 Vandœuvre-lès-Nancy", $res->getAdresses()[1]->getLabel());
+        $this->assertEquals("60", $res->getAdresses()[1]->getDistance());
+        $this->assertEquals("housenumber", $res->getAdresses()[1]->getType());
+        $this->assertEquals("54547_0504_00003", $res->getAdresses()[1]->getId());
+        $this->assertEquals("3", $res->getAdresses()[1]->getHouseNumber());
+        $this->assertEquals("Rue du Morvan", $res->getAdresses()[1]->getName());
+        $this->assertEquals("", $res->getAdresses()[1]->getStreet());
+        $this->assertEquals("54500", $res->getAdresses()[1]->getPostcode());
+        $this->assertEquals("Vandœuvre-lès-Nancy", $res->getAdresses()[1]->getCity());
+        $this->assertEquals("54, Meurthe-et-Moselle, Grand Est", $res->getAdresses()[1]->getContext());
+        $this->assertEquals("54547", $res->getAdresses()[1]->getCityCode());
+        $this->assertEquals("", $res->getAdresses()[1]->getOldCityCode());
+        $this->assertEquals("", $res->getAdresses()[1]->getOldCity());
+        $this->assertEquals("", $res->getAdresses()[1]->getDistrict());
+        $this->assertNull($res->getAdresses()[1]->getScore());
+
+        $this->assertEquals("48.646666", $res->getAdresses()[2]->getLatitude());
+        $this->assertEquals("6.207778", $res->getAdresses()[2]->getLongitude());
+        $this->assertEquals("30 Rue d'Arbois 54180 Heillecourt", $res->getAdresses()[2]->getLabel());
+        $this->assertEquals("41", $res->getAdresses()[2]->getDistance());
+        $this->assertEquals("housenumber", $res->getAdresses()[2]->getType());
+        $this->assertEquals("54257_0008_00030", $res->getAdresses()[2]->getId());
+        $this->assertEquals("30", $res->getAdresses()[2]->getHouseNumber());
+        $this->assertEquals("Rue d'Arbois", $res->getAdresses()[2]->getName());
+        $this->assertEquals("", $res->getAdresses()[2]->getStreet());
+        $this->assertEquals("54180", $res->getAdresses()[2]->getPostcode());
+        $this->assertEquals("Heillecourt", $res->getAdresses()[2]->getCity());
+        $this->assertEquals("54, Meurthe-et-Moselle, Grand Est", $res->getAdresses()[2]->getContext());
+        $this->assertEquals("54257", $res->getAdresses()[2]->getCityCode());
+        $this->assertEquals("", $res->getAdresses()[2]->getOldCityCode());
+        $this->assertEquals("", $res->getAdresses()[2]->getOldCity());
+        $this->assertEquals("", $res->getAdresses()[2]->getDistrict());
+        $this->assertNull($res->getAdresses()[2]->getScore());
+
+        $this->assertEquals("48.727991", $res->getAdresses()[3]->getLatitude());
+        $this->assertEquals("6.157347", $res->getAdresses()[3]->getLongitude());
+        $this->assertEquals("2 Rue de la Papeterie 54250 Champigneulles", $res->getAdresses()[3]->getLabel());
+        $this->assertEquals("50", $res->getAdresses()[3]->getDistance());
+        $this->assertEquals("housenumber", $res->getAdresses()[3]->getType());
+        $this->assertEquals("54115_0109_00002", $res->getAdresses()[3]->getId());
+        $this->assertEquals("2", $res->getAdresses()[3]->getHouseNumber());
+        $this->assertEquals("Rue de la Papeterie", $res->getAdresses()[3]->getName());
+        $this->assertEquals("", $res->getAdresses()[3]->getStreet());
+        $this->assertEquals("54250", $res->getAdresses()[3]->getPostcode());
+        $this->assertEquals("Champigneulles", $res->getAdresses()[3]->getCity());
+        $this->assertEquals("54, Meurthe-et-Moselle, Grand Est", $res->getAdresses()[3]->getContext());
+        $this->assertEquals("54115", $res->getAdresses()[3]->getCityCode());
+        $this->assertEquals("", $res->getAdresses()[3]->getOldCityCode());
+        $this->assertEquals("", $res->getAdresses()[3]->getOldCity());
+        $this->assertEquals("", $res->getAdresses()[3]->getDistrict());
+        $this->assertNull($res->getAdresses()[3]->getScore());
+    }
+
+    /**
+     * Tests the deserializeSearchCsvResponse() method.
+     *
+     * @return void
+     */
+    public function testDeserializeSearchCsvResponse() {
+
+        // Set a filename mock.
+        $filename = getcwd() . "/tests/Fixtures/Model/Response/SearchCsvResponse.csv";
+
+        $res = AdresseResponseDeserializer::deserializeSearchCsvResponse(file_get_contents($filename));
+        $this->assertInstanceOf(SearchCsvResponse::class, $res);
+
+        $this->assertCount(4, $res->getAdresses());
+
+        $this->assertEquals("6 Rue Albert 1er 54600 Villers-lès-Nancy", $res->getAdresses()[0]->getLabel());
+        $this->assertEquals("0.64", $res->getAdresses()[0]->getScore());
+        $this->assertEquals("housenumber", $res->getAdresses()[0]->getType());
+        $this->assertEquals("54578_0040_00006", $res->getAdresses()[0]->getId());
+        $this->assertEquals("6", $res->getAdresses()[0]->getHouseNumber());
+        $this->assertEquals("Rue Albert 1er", $res->getAdresses()[0]->getName());
+        $this->assertEquals("", $res->getAdresses()[0]->getStreet());
+        $this->assertEquals("54600", $res->getAdresses()[0]->getPostcode());
+        $this->assertEquals("Villers-lès-Nancy", $res->getAdresses()[0]->getCity());
+        $this->assertEquals("54, Meurthe-et-Moselle, Grand Est", $res->getAdresses()[0]->getContext());
+        $this->assertEquals("54578", $res->getAdresses()[0]->getCityCode());
+        $this->assertEquals("", $res->getAdresses()[0]->getOldCityCode());
+        $this->assertEquals("", $res->getAdresses()[0]->getOldCity());
+        $this->assertEquals("", $res->getAdresses()[0]->getDistrict());
+        $this->assertNull( $res->getAdresses()[0]->getDistance());
+        $this->assertNull( $res->getAdresses()[0]->getLatitude());
+        $this->assertNull($res->getAdresses()[0]->getLongitude());
+
+        $this->assertEquals("6 Rue d'Aquitaine 54500 Vandœuvre-lès-Nancy", $res->getAdresses()[1]->getLabel());
+        $this->assertEquals("0.66", $res->getAdresses()[1]->getScore());
+        $this->assertEquals("housenumber", $res->getAdresses()[1]->getType());
+        $this->assertEquals("54547_0058_00006", $res->getAdresses()[1]->getId());
+        $this->assertEquals("6", $res->getAdresses()[1]->getHouseNumber());
+        $this->assertEquals("Rue d'Aquitaine", $res->getAdresses()[1]->getName());
+        $this->assertEquals("", $res->getAdresses()[1]->getStreet());
+        $this->assertEquals("54500", $res->getAdresses()[1]->getPostcode());
+        $this->assertEquals("Vandœuvre-lès-Nancy", $res->getAdresses()[1]->getCity());
+        $this->assertEquals("54, Meurthe-et-Moselle, Grand Est", $res->getAdresses()[1]->getContext());
+        $this->assertEquals("54547", $res->getAdresses()[1]->getCityCode());
+        $this->assertEquals("", $res->getAdresses()[1]->getOldCityCode());
+        $this->assertEquals("", $res->getAdresses()[1]->getOldCity());
+        $this->assertEquals("", $res->getAdresses()[1]->getDistrict());
+        $this->assertNull( $res->getAdresses()[1]->getDistance());
+        $this->assertNull( $res->getAdresses()[1]->getLatitude());
+        $this->assertNull($res->getAdresses()[1]->getLongitude());
+
+        $this->assertEquals("31 Rue d'Arbois 54180 Heillecourt", $res->getAdresses()[2]->getLabel());
+        $this->assertEquals("0.51", $res->getAdresses()[2]->getScore());
+        $this->assertEquals("housenumber", $res->getAdresses()[2]->getType());
+        $this->assertEquals("54257_0008_00031", $res->getAdresses()[2]->getId());
+        $this->assertEquals("31", $res->getAdresses()[2]->getHouseNumber());
+        $this->assertEquals("Rue d'Arbois", $res->getAdresses()[2]->getName());
+        $this->assertEquals("", $res->getAdresses()[2]->getStreet());
+        $this->assertEquals("54180", $res->getAdresses()[2]->getPostcode());
+        $this->assertEquals("Heillecourt", $res->getAdresses()[2]->getCity());
+        $this->assertEquals("54, Meurthe-et-Moselle, Grand Est", $res->getAdresses()[2]->getContext());
+        $this->assertEquals("54257", $res->getAdresses()[2]->getCityCode());
+        $this->assertEquals("", $res->getAdresses()[2]->getOldCityCode());
+        $this->assertEquals("", $res->getAdresses()[2]->getOldCity());
+        $this->assertEquals("", $res->getAdresses()[2]->getDistrict());
+
+        $this->assertNull( $res->getAdresses()[2]->getDistance());
+        $this->assertNull( $res->getAdresses()[2]->getLatitude());
+        $this->assertNull($res->getAdresses()[2]->getLongitude());
+
+        $this->assertEquals("1 bis Rue de la Papeterie 54250 Champigneulles", $res->getAdresses()[3]->getLabel());
+        $this->assertEquals("0.63", $res->getAdresses()[3]->getScore());
+        $this->assertEquals("housenumber", $res->getAdresses()[3]->getType());
+        $this->assertEquals("54115_0109_00001_bis", $res->getAdresses()[3]->getId());
+        $this->assertEquals("1 bis", $res->getAdresses()[3]->getHouseNumber());
+        $this->assertEquals("Rue de la Papeterie", $res->getAdresses()[3]->getName());
+        $this->assertEquals("", $res->getAdresses()[3]->getStreet());
+        $this->assertEquals("54250", $res->getAdresses()[3]->getPostcode());
+        $this->assertEquals("Champigneulles", $res->getAdresses()[3]->getCity());
+        $this->assertEquals("54, Meurthe-et-Moselle, Grand Est", $res->getAdresses()[3]->getContext());
+        $this->assertEquals("54115", $res->getAdresses()[3]->getCityCode());
+        $this->assertEquals("", $res->getAdresses()[3]->getOldCityCode());
+        $this->assertEquals("", $res->getAdresses()[3]->getOldCity());
+        $this->assertEquals("", $res->getAdresses()[3]->getDistrict());
+
+        $this->assertNull( $res->getAdresses()[3]->getDistance());
+        $this->assertNull( $res->getAdresses()[3]->getLatitude());
+        $this->assertNull($res->getAdresses()[3]->getLongitude());
+    }
+}
