@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Serializer;
-
-use WBW\Library\GeoJSON\Serializer\JsonDeserializer as BaseJsonDeserializer;
+namespace WBW\Library\GeoAPI\Model\Response;
 
 /**
- * Adresse JSON deserializer.
+ * Reverse CSV response.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Serializer
+ * @package WBW\Library\GeoAPI\Model\Response
  */
-class AdresseJsonDeserializer extends BaseJsonDeserializer {
+class ReverseCsvResponse extends AbstractCsvResponse {
+
+
 
 }
