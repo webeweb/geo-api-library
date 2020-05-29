@@ -12,8 +12,12 @@
 namespace WBW\Library\GeoAPI\Tests\Provider;
 
 use Exception;
+use WBW\Library\GeoAPI\Model\Request\Adresse\ReverseCsvRequest;
 use WBW\Library\GeoAPI\Model\Request\Adresse\ReverseRequest;
+use WBW\Library\GeoAPI\Model\Request\Adresse\SearchCsvRequest;
 use WBW\Library\GeoAPI\Model\Request\Adresse\SearchRequest;
+use WBW\Library\GeoAPI\Model\Response\ReverseCsvResponse;
+use WBW\Library\GeoAPI\Model\Response\SearchCsvResponse;
 use WBW\Library\GeoAPI\Provider\AdresseProvider;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 use WBW\Library\GeoJSON\Model\FeatureCollection;
@@ -51,6 +55,28 @@ class AdresseProviderTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the reverseCsv() method.
+     *
+     * @return void
+     * @throws Exception Throws an exception if an error occurs.
+     */
+    public function testReverseCsv() {
+
+        // Set a data mock.
+        $data = getcwd() . "/tests/Fixtures/Model/Request/Adresse/ReverseCsvRequest.csv";
+
+        // Set a Reverse request mock.
+        $arg = new ReverseCsvRequest($data);
+
+        $obj = new AdresseProvider($this->logger);
+
+        $res = $obj->reverseCsv($arg);
+        $this->assertInstanceOf(ReverseCsvResponse::class, $res);
+
+        $this->assertNotEquals([], $res->getAdresses());
+    }
+
+    /**
      * Tests the search() method.
      *
      * @return void
@@ -73,6 +99,28 @@ class AdresseProviderTest extends AbstractTestCase {
         $this->assertNotNull($res->getForeignMember("licence"));
         $this->assertEquals($arg->getQ(), $res->getForeignMember("query"));
         $this->assertEquals(5, $res->getForeignMember("limit"));
+    }
+
+    /**
+     * Tests the searchCsv() method.
+     *
+     * @return void
+     * @throws Exception Throws an exception if an error occurs.
+     */
+    public function testSearchCsv() {
+
+        // Set a data mock.
+        $data = getcwd() . "/tests/Fixtures/Model/Request/Adresse/SearchCsvRequest.csv";
+
+        // Set a Search request mock.
+        $arg = new SearchCsvRequest($data);
+
+        $obj = new AdresseProvider($this->logger);
+
+        $res = $obj->searchCsv($arg);
+        $this->assertInstanceOf(SearchCsvResponse::class, $res);
+
+        $this->assertNotEquals([], $res->getAdresses());
     }
 
     /**
