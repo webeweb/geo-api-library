@@ -34,7 +34,6 @@ class ReverseRequestTest extends AbstractTestCase {
         $obj = new ReverseRequest();
 
         $this->assertEquals(ReverseRequest::RESOURCE_PATH, $obj->getResourcePath());
-        $this->assertEquals(ReverseRequest::RESOURCE_PATH, $obj->getResourcePath());
 
         $this->assertNull($obj->getLat());
         $this->assertNull($obj->getLon());
