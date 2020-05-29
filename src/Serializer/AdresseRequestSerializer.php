@@ -13,7 +13,9 @@ namespace WBW\Library\GeoAPI\Serializer;
 
 use WBW\Library\Core\Argument\Helper\ArrayHelper;
 use WBW\Library\Core\Argument\Helper\IntegerHelper;
+use WBW\Library\GeoAPI\Model\Request\Adresse\ReverseCsvRequest;
 use WBW\Library\GeoAPI\Model\Request\Adresse\ReverseRequest;
+use WBW\Library\GeoAPI\Model\Request\Adresse\SearchCsvRequest;
 use WBW\Library\GeoAPI\Model\Request\Adresse\SearchRequest;
 
 /**
@@ -25,40 +27,70 @@ use WBW\Library\GeoAPI\Model\Request\Adresse\SearchRequest;
 class AdresseRequestSerializer {
 
     /**
+     * Serialize a reverse CSV request.
+     *
+     * @param ReverseCsvRequest $request The reverse CSV request.
+     * @return array Returns the serialized reverse CSV request.
+     */
+    public static function serializeReverseCsvRequest(ReverseCsvRequest $request) {
+
+        $result = [];
+
+        ArrayHelper::set($result, "data", $request->getData(), [null]);
+
+        return $result;
+    }
+
+    /**
      * Serialize a reverse request.
      *
      * @param ReverseRequest $request The reverse request.
-     * @return array Returns the parameters.
+     * @return array Returns the serialized reverse request.
      */
     public static function serializeReverseRequest(ReverseRequest $request) {
 
-        $parameters = [];
+        $result = [];
 
-        ArrayHelper::set($parameters, "lat", $request->getLat(), [null]);
-        ArrayHelper::set($parameters, "lon", $request->getLon(), [null]);
+        ArrayHelper::set($result, "lat", $request->getLat(), [null]);
+        ArrayHelper::set($result, "lon", $request->getLon(), [null]);
 
-        return $parameters;
+        return $result;
+    }
+
+    /**
+     * Serialize a search CSV request.
+     *
+     * @param SearchCsvRequest $request The search CSV request.
+     * @return array Returns the serialized search CSV request.
+     */
+    public static function serializeSearchCsvRequest(SearchCsvRequest $request) {
+
+        $result = [];
+
+        ArrayHelper::set($result, "data", $request->getData(), [null]);
+
+        return $result;
     }
 
     /**
      * Serialize a search request.
      *
      * @param SearchRequest $request The search request.
-     * @return array Returns the parameters.
+     * @return array Returns the serialized search request.
      */
     public static function serializeSearchRequest(SearchRequest $request) {
 
-        $parameters = [];
+        $result = [];
 
-        ArrayHelper::set($parameters, "q", $request->getQ());
-        ArrayHelper::set($parameters, "limit", $request->getLimit());
-        ArrayHelper::set($parameters, "autocomplete", IntegerHelper::parseBoolean($request->getAutocomplete()), [1]);
-        ArrayHelper::set($parameters, "lat", $request->getLat(), [null]);
-        ArrayHelper::set($parameters, "lon", $request->getLon(), [null]);
-        ArrayHelper::set($parameters, "postcode", $request->getPostcode(), [null]);
-        ArrayHelper::set($parameters, "citycode", $request->getCityCode(), [null]);
-        ArrayHelper::set($parameters, "type", $request->getType(), [null]);
+        ArrayHelper::set($result, "q", $request->getQ());
+        ArrayHelper::set($result, "limit", $request->getLimit());
+        ArrayHelper::set($result, "autocomplete", IntegerHelper::parseBoolean($request->getAutocomplete()), [1]);
+        ArrayHelper::set($result, "lat", $request->getLat(), [null]);
+        ArrayHelper::set($result, "lon", $request->getLon(), [null]);
+        ArrayHelper::set($result, "postcode", $request->getPostcode(), [null]);
+        ArrayHelper::set($result, "citycode", $request->getCityCode(), [null]);
+        ArrayHelper::set($result, "type", $request->getType(), [null]);
 
-        return $parameters;
+        return $result;
     }
 }

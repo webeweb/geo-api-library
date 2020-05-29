@@ -11,7 +11,9 @@
 
 namespace WBW\Library\GeoAPI\Tests\Serializer;
 
+use WBW\Library\GeoAPI\Model\Request\Adresse\ReverseCsvRequest;
 use WBW\Library\GeoAPI\Model\Request\Adresse\ReverseRequest;
+use WBW\Library\GeoAPI\Model\Request\Adresse\SearchCsvRequest;
 use WBW\Library\GeoAPI\Model\Request\Adresse\SearchRequest;
 use WBW\Library\GeoAPI\Serializer\AdresseRequestSerializer;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
@@ -23,6 +25,20 @@ use WBW\Library\GeoAPI\Tests\AbstractTestCase;
  * @package WBW\Library\GeoAPI\Tests\Serializer
  */
 class AdresseRequestSerializerTest extends AbstractTestCase {
+
+    /**
+     * Tests the serializeReverseCsvRequest() method.
+     *
+     * @return void
+     */
+    public function testSerializeReverseCsvRequest() {
+
+        $arg = new ReverseCsvRequest();
+        $arg->setData("data");
+
+        $res = AdresseRequestSerializer::serializeReverseCsvRequest($arg);
+        $this->assertEquals("data", $res["data"]);
+    }
 
     /**
      * Tests the serializeReverseRequest() method.
@@ -38,6 +54,20 @@ class AdresseRequestSerializerTest extends AbstractTestCase {
         $res = AdresseRequestSerializer::serializeReverseRequest($arg);
         $this->assertEquals(48.789, $res["lat"]);
         $this->assertEquals(2.789, $res["lon"]);
+    }
+
+    /**
+     * Tests the serializeSearchCsvRequest() method.
+     *
+     * @return void
+     */
+    public function testSerializeSearchCsvRequest() {
+
+        $arg = new SearchCsvRequest();
+        $arg->setData("data");
+
+        $res = AdresseRequestSerializer::serializeSearchCsvRequest($arg);
+        $this->assertEquals("data", $res["data"]);
     }
 
     /**
