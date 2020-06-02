@@ -39,6 +39,9 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
 
         $this->assertCount(4, $res->getAdresses());
 
+        $this->assertEquals("48.670333", $res->getAdresses()[0]->getColumns()["lat"]);
+        $this->assertEquals("6.1468826", $res->getAdresses()[0]->getColumns()["lon"]);
+        $this->assertEquals("École Claude Déruet", $res->getAdresses()[0]->getColumns()["name"]);
         $this->assertEquals("48.670297", $res->getAdresses()[0]->getLatitude());
         $this->assertEquals("6.14684", $res->getAdresses()[0]->getLongitude());
         $this->assertEquals("6 Rue Albert 1er 54600 Villers-lès-Nancy", $res->getAdresses()[0]->getLabel());
@@ -57,6 +60,9 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
         $this->assertEquals("", $res->getAdresses()[0]->getDistrict());
         $this->assertNull($res->getAdresses()[0]->getScore());
 
+        $this->assertEquals("48.6495464", $res->getAdresses()[1]->getColumns()["lat"]);
+        $this->assertEquals("6.1521676", $res->getAdresses()[1]->getColumns()["lon"]);
+        $this->assertEquals("École Gilberte Monne", $res->getAdresses()[1]->getColumns()["name"]);
         $this->assertEquals("48.649015", $res->getAdresses()[1]->getLatitude());
         $this->assertEquals("6.151994", $res->getAdresses()[1]->getLongitude());
         $this->assertEquals("3 Rue du Morvan 54500 Vandœuvre-lès-Nancy", $res->getAdresses()[1]->getLabel());
@@ -75,6 +81,9 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
         $this->assertEquals("", $res->getAdresses()[1]->getDistrict());
         $this->assertNull($res->getAdresses()[1]->getScore());
 
+        $this->assertEquals("48.6470103", $res->getAdresses()[2]->getColumns()["lat"]);
+        $this->assertEquals("6.2075765", $res->getAdresses()[2]->getColumns()["lon"]);
+        $this->assertEquals("École maternelle Victor Hugo", $res->getAdresses()[2]->getColumns()["name"]);
         $this->assertEquals("48.646666", $res->getAdresses()[2]->getLatitude());
         $this->assertEquals("6.207778", $res->getAdresses()[2]->getLongitude());
         $this->assertEquals("30 Rue d'Arbois 54180 Heillecourt", $res->getAdresses()[2]->getLabel());
@@ -93,6 +102,9 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
         $this->assertEquals("", $res->getAdresses()[2]->getDistrict());
         $this->assertNull($res->getAdresses()[2]->getScore());
 
+        $this->assertEquals("48.7277223", $res->getAdresses()[3]->getColumns()["lat"]);
+        $this->assertEquals("6.1578988", $res->getAdresses()[3]->getColumns()["lon"]);
+        $this->assertEquals("École maternelle Buffon", $res->getAdresses()[3]->getColumns()["name"]);
         $this->assertEquals("48.727991", $res->getAdresses()[3]->getLatitude());
         $this->assertEquals("6.157347", $res->getAdresses()[3]->getLongitude());
         $this->assertEquals("2 Rue de la Papeterie 54250 Champigneulles", $res->getAdresses()[3]->getLabel());
@@ -127,6 +139,12 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
 
         $this->assertCount(4, $res->getAdresses());
 
+        $this->assertEquals("École Claude Déruet", $res->getAdresses()[0]->getColumns()["nom"]);
+        $this->assertEquals("6 Rue Albert 1er", $res->getAdresses()[0]->getColumns()["adresse"]);
+        $this->assertEquals("54600", $res->getAdresses()[0]->getColumns()["postcode"]);
+        $this->assertEquals("Villers-lès-Nancy", $res->getAdresses()[0]->getColumns()["city"]);
+        $this->assertEquals("48.670297", $res->getAdresses()[0]->getColumns()["latitude"]);
+        $this->assertEquals("6.14684", $res->getAdresses()[0]->getColumns()["longitude"]);
         $this->assertEquals("6 Rue Albert 1er 54600 Villers-lès-Nancy", $res->getAdresses()[0]->getLabel());
         $this->assertEquals("0.64", $res->getAdresses()[0]->getScore());
         $this->assertEquals("housenumber", $res->getAdresses()[0]->getType());
@@ -145,6 +163,12 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
         $this->assertNull( $res->getAdresses()[0]->getLatitude());
         $this->assertNull($res->getAdresses()[0]->getLongitude());
 
+        $this->assertEquals("École Gilberte Monne", $res->getAdresses()[1]->getColumns()["nom"]);
+        $this->assertEquals("6 Rue d'Aquitaine", $res->getAdresses()[1]->getColumns()["adresse"]);
+        $this->assertEquals("54500", $res->getAdresses()[1]->getColumns()["postcode"]);
+        $this->assertEquals("Vandœuvre-lès-Nancy", $res->getAdresses()[1]->getColumns()["city"]);
+        $this->assertEquals("48.650077", $res->getAdresses()[1]->getColumns()["latitude"]);
+        $this->assertEquals("6.153462", $res->getAdresses()[1]->getColumns()["longitude"]);
         $this->assertEquals("6 Rue d'Aquitaine 54500 Vandœuvre-lès-Nancy", $res->getAdresses()[1]->getLabel());
         $this->assertEquals("0.66", $res->getAdresses()[1]->getScore());
         $this->assertEquals("housenumber", $res->getAdresses()[1]->getType());
@@ -163,6 +187,12 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
         $this->assertNull( $res->getAdresses()[1]->getLatitude());
         $this->assertNull($res->getAdresses()[1]->getLongitude());
 
+        $this->assertEquals("École maternelle Victor Hugo", $res->getAdresses()[2]->getColumns()["nom"]);
+        $this->assertEquals("31 Rue d'Arbois", $res->getAdresses()[2]->getColumns()["adresse"]);
+        $this->assertEquals("54180", $res->getAdresses()[2]->getColumns()["postcode"]);
+        $this->assertEquals("Heillecourt", $res->getAdresses()[2]->getColumns()["city"]);
+        $this->assertEquals("48.646636", $res->getAdresses()[2]->getColumns()["latitude"]);
+        $this->assertEquals("6.207628", $res->getAdresses()[2]->getColumns()["longitude"]);
         $this->assertEquals("31 Rue d'Arbois 54180 Heillecourt", $res->getAdresses()[2]->getLabel());
         $this->assertEquals("0.51", $res->getAdresses()[2]->getScore());
         $this->assertEquals("housenumber", $res->getAdresses()[2]->getType());
@@ -177,11 +207,16 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
         $this->assertEquals("", $res->getAdresses()[2]->getOldCityCode());
         $this->assertEquals("", $res->getAdresses()[2]->getOldCity());
         $this->assertEquals("", $res->getAdresses()[2]->getDistrict());
-
         $this->assertNull( $res->getAdresses()[2]->getDistance());
         $this->assertNull( $res->getAdresses()[2]->getLatitude());
         $this->assertNull($res->getAdresses()[2]->getLongitude());
 
+        $this->assertEquals("École maternelle Buffon", $res->getAdresses()[3]->getColumns()["nom"]);
+        $this->assertEquals("1 bis Rue de la Papeterie", $res->getAdresses()[3]->getColumns()["adresse"]);
+        $this->assertEquals("54250", $res->getAdresses()[3]->getColumns()["postcode"]);
+        $this->assertEquals("Champigneulles", $res->getAdresses()[3]->getColumns()["city"]);
+        $this->assertEquals("48.727747", $res->getAdresses()[3]->getColumns()["latitude"]);
+        $this->assertEquals("6.156822", $res->getAdresses()[3]->getColumns()["longitude"]);
         $this->assertEquals("1 bis Rue de la Papeterie 54250 Champigneulles", $res->getAdresses()[3]->getLabel());
         $this->assertEquals("0.63", $res->getAdresses()[3]->getScore());
         $this->assertEquals("housenumber", $res->getAdresses()[3]->getType());
@@ -196,7 +231,6 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
         $this->assertEquals("", $res->getAdresses()[3]->getOldCityCode());
         $this->assertEquals("", $res->getAdresses()[3]->getOldCity());
         $this->assertEquals("", $res->getAdresses()[3]->getDistrict());
-
         $this->assertNull( $res->getAdresses()[3]->getDistance());
         $this->assertNull( $res->getAdresses()[3]->getLatitude());
         $this->assertNull($res->getAdresses()[3]->getLongitude());

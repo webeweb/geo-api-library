@@ -23,6 +23,19 @@ use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 class AdresseTest extends AbstractTestCase {
 
     /**
+     * Tests the addColumn() method.
+     *
+     * @return void
+     */
+    public function testAddColumn() {
+
+        $obj = new Adresse();
+
+        $obj->addColumn("k", "v");
+        $this->assertEquals(["k" => "v"], $obj->getColumns());
+    }
+
+    /**
      * Tests the setCity() method.
      *
      * @return void
@@ -213,6 +226,7 @@ class AdresseTest extends AbstractTestCase {
 
         $obj = new Adresse();
 
+        $this->assertEquals([], $obj->getColumns());
         $this->assertNull($obj->getCity());
         $this->assertNull($obj->getCityCode());
         $this->assertNull($obj->getContext());

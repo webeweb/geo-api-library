@@ -42,6 +42,13 @@ class Adresse {
     private $cityCode;
 
     /**
+     * Columns.
+     *
+     * @var array
+     */
+    private $columns;
+
+    /**
      * Context.
      *
      * @var string
@@ -129,7 +136,19 @@ class Adresse {
      * Constructor.
      */
     public function __construct() {
-        // NOTHING TO DO.
+        $this->setColumns([]);
+    }
+
+    /**
+     * Add a column.
+     *
+     * @param string $k The key.
+     * @param string $v The value.
+     * @return Adresse Returns this adresse.
+     */
+    public function addColumn($k, $v) {
+        $this->columns[$k] = $v;
+        return $this;
     }
 
     /**
@@ -148,6 +167,15 @@ class Adresse {
      */
     public function getCityCode() {
         return $this->cityCode;
+    }
+
+    /**
+     * Get the columns.
+     *
+     * @return array Returns the columns.
+     */
+    public function getColumns() {
+        return $this->columns;
     }
 
     /**
@@ -277,6 +305,17 @@ class Adresse {
      */
     public function setCityCode($cityCode) {
         $this->cityCode = $cityCode;
+        return $this;
+    }
+
+    /**
+     * Set the columns.
+     *
+     * @param array $columns The columns.
+     * @return Adresse Returns this adresse.
+     */
+    protected function setColumns(array $columns) {
+        $this->columns = $columns;
         return $this;
     }
 

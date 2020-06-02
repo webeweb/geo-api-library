@@ -42,13 +42,17 @@ class AdresseResponseDeserializer {
 
         for ($i = count($columns) - 1; 0 <= $i; --$i) {
 
-            if (false === array_key_exists($headers[$i], $methods)) {
+            $k = $headers[$i];
+            $v = $columns[$i];
+
+            if (false === array_key_exists($k, $methods)) {
+                $model->addColumn($k, $v);
                 continue;
             }
 
-            $fct = $methods[$headers[$i]];
+            $fct = $methods[$k];
 
-            $model->$fct($columns[$i]);
+            $model->$fct($v);
         }
 
         return $model;
@@ -138,23 +142,23 @@ class AdresseResponseDeserializer {
      */
     protected static function getMethods() {
         return [
-            "result_city"        => "setCity",
-            "result_citycode"    => "setCityCode",
-            "result_context"     => "setContext",
-            "result_distance"    => "setDistance",
-            "result_district"    => "setDistrict",
-            "result_housenumber" => "setHouseNumber",
-            "result_id"          => "setId",
-            "result_label"       => "setLabel",
-            "result_latitude"    => "setLatitude",
-            "result_longitude"   => "setLongitude",
-            "result_name"        => "setName",
-            "result_oldcity"     => "setOldCity",
-            "result_oldcitycode" => "setOldCityCode",
-            "result_postcode"    => "setPostcode",
-            "result_score"      => "setScore",
-            "result_street"      => "setStreet",
-            "result_type"        => "setType",
+            AbstractCsvResponse::RESULT_CITY        => "setCity",
+            AbstractCsvResponse::RESULT_CITYCODE    => "setCityCode",
+            AbstractCsvResponse::RESULT_CONTEXT     => "setContext",
+            AbstractCsvResponse::RESULT_DISTANCE    => "setDistance",
+            AbstractCsvResponse::RESULT_DISTRICT    => "setDistrict",
+            AbstractCsvResponse::RESULT_HOUSENUMBER => "setHouseNumber",
+            AbstractCsvResponse::RESULT_ID          => "setId",
+            AbstractCsvResponse::RESULT_LABEL       => "setLabel",
+            AbstractCsvResponse::RESULT_LATITUDE    => "setLatitude",
+            AbstractCsvResponse::RESULT_LONGITUDE   => "setLongitude",
+            AbstractCsvResponse::RESULT_NAME        => "setName",
+            AbstractCsvResponse::RESULT_OLDCITY     => "setOldCity",
+            AbstractCsvResponse::RESULT_OLDCITYCODE => "setOldCityCode",
+            AbstractCsvResponse::RESULT_POSTCODE    => "setPostcode",
+            AbstractCsvResponse::RESULT_SCORE       => "setScore",
+            AbstractCsvResponse::RESULT_STREET      => "setStreet",
+            AbstractCsvResponse::RESULT_TYPE        => "setType",
         ];
     }
 }

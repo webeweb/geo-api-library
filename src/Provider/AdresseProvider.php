@@ -11,6 +11,7 @@
 
 namespace WBW\Library\GeoAPI\Provider;
 
+use WBW\Library\Core\Argument\Helper\ArrayHelper;
 use WBW\Library\Core\Exception\ApiException;
 use WBW\Library\GeoAPI\Model\Request\Adresse\ReverseCsvRequest;
 use WBW\Library\GeoAPI\Model\Request\Adresse\ReverseRequest;
@@ -36,6 +37,28 @@ class AdresseProvider extends AbstractProvider {
      * @var string
      */
     const ENDPOINT_PATH = "https://api-adresse.data.gouv.fr";
+
+    /**
+     * Add an array.
+     *
+     * @param array $post The POST.
+     * @param string $name The name.
+     * @param array $data The data.
+     * @return void
+     */
+    protected function appendArray(array &$post, $name, array $data) {
+
+        if (0 === count($data)) {
+            return;
+        }
+
+        foreach ($data as $current) {
+            $post[] = [
+                "name"     => $name,
+                "contents" => $current,
+            ];
+        }
+    }
 
     /**
      * {@inheritDoc}
@@ -120,6 +143,8 @@ class AdresseProvider extends AbstractProvider {
                 "filename" => basename($filename),
             ],
         ];
+        $this->appendArray($postData, "columns", ArrayHelper::get($queryData, "columns", []));
+        $this->appendArray($postData, "result_columns", ArrayHelper::get($queryData, "result_columns", []));
 
         $rawResponse = $this->callApi($request, [], $postData);
 

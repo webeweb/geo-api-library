@@ -124,6 +124,32 @@ class AdresseProviderTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the searchCsv() method.
+     *
+     * @return void
+     * @throws Exception Throws an exception if an error occurs.
+     */
+    public function testSearchCsvWith() {
+
+        // Set a data mock.
+        $data = getcwd() . "/tests/Fixtures/Model/Request/Adresse/SearchCsvRequest.csv";
+
+        // Set a Search request mock.
+        $arg = new SearchCsvRequest($data);
+        $arg->addColumn("adresse");
+        $arg->addColumn("postcode");
+        $arg->addResultColumn("result_id");
+        $arg->addResultColumn("result_score");
+
+        $obj = new AdresseProvider($this->logger);
+
+        $res = $obj->searchCsv($arg);
+        $this->assertInstanceOf(SearchCsvResponse::class, $res);
+
+        $this->assertNotEquals([], $res->getAdresses());
+    }
+
+    /**
      * Tests the __construct() method.
      *
      * @return void
