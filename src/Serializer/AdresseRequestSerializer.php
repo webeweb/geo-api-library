@@ -68,6 +68,8 @@ class AdresseRequestSerializer {
         $result = [];
 
         ArrayHelper::set($result, "data", $request->getData(), [null]);
+        ArrayHelper::set($result, "columns", $request->getColumns(), [[]]);
+        ArrayHelper::set($result, "result_columns", $request->getResultColumns(), [[]]);
 
         return $result;
     }

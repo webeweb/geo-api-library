@@ -23,6 +23,32 @@ use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 class SearchCsvRequestTest extends AbstractTestCase {
 
     /**
+     * Tests the addColumn() method.
+     *
+     * @return void
+     */
+    public function testAddColumn() {
+
+        $obj = new SearchCsvRequest();
+
+        $obj->addColumn("column");
+        $this->assertEquals(["column"], $obj->getColumns());
+    }
+
+    /**
+     * Tests the addResultColumn() method.
+     *
+     * @return void
+     */
+    public function testAddResultColumn() {
+
+        $obj = new SearchCsvRequest();
+
+        $obj->addResultColumn("resultColumn");
+        $this->assertEquals(["resultColumn"], $obj->getResultColumns());
+    }
+
+    /**
      * Tests the __construct() method.
      *
      * @return void
@@ -31,10 +57,12 @@ class SearchCsvRequestTest extends AbstractTestCase {
 
         $this->assertEquals("/search/csv/", SearchCsvRequest::RESOURCE_PATH);
 
-        $obj = new SearchCsvRequest();
+        $obj = new SearchCsvRequest("data");
 
         $this->assertEquals(SearchCsvRequest::RESOURCE_PATH, $obj->getResourcePath());
 
-        $this->assertNull($obj->getData());
+        $this->assertEquals("data", $obj->getData());
+        $this->assertEquals([], $obj->getColumns());
+        $this->assertEquals([], $obj->getResultColumns());
     }
 }
