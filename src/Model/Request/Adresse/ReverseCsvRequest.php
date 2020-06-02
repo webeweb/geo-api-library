@@ -11,19 +11,13 @@
 
 namespace WBW\Library\GeoAPI\Model\Request\Adresse;
 
-use WBW\Library\Core\Model\Attribute\StringFilenameTrait;
-use WBW\Library\GeoAPI\Model\AbstractRequest;
-use WBW\Library\GeoAPI\Model\Attribute\StringDataTrait;
-
 /**
  * Reverse CSV request.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GeoAPI\Model\Request\Adresse
  */
-class ReverseCsvRequest extends AbstractRequest {
-
-    use StringDataTrait;
+class ReverseCsvRequest extends AbstractCsvRequest {
 
     /**
      * Resource path.
@@ -33,19 +27,9 @@ class ReverseCsvRequest extends AbstractRequest {
     const RESOURCE_PATH = "/reverse/csv/";
 
     /**
-     * Constructor.
-     *
-     * @param string $data The data.
-     */
-    public function __construct($data = null) {
-        $this->setData($data);
-    }
-
-    /**
      * {@inheritDoc}
      */
     public function getResourcePath() {
         return self::RESOURCE_PATH;
     }
-
 }
