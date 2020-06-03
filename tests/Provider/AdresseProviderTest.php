@@ -16,8 +16,8 @@ use WBW\Library\GeoAPI\Model\Request\Adresse\ReverseCsvRequest;
 use WBW\Library\GeoAPI\Model\Request\Adresse\ReverseRequest;
 use WBW\Library\GeoAPI\Model\Request\Adresse\SearchCsvRequest;
 use WBW\Library\GeoAPI\Model\Request\Adresse\SearchRequest;
-use WBW\Library\GeoAPI\Model\Response\ReverseCsvResponse;
-use WBW\Library\GeoAPI\Model\Response\SearchCsvResponse;
+use WBW\Library\GeoAPI\Model\Response\Adresse\ReverseCsvResponse;
+use WBW\Library\GeoAPI\Model\Response\Adresse\SearchCsvResponse;
 use WBW\Library\GeoAPI\Provider\AdresseProvider;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 use WBW\Library\GeoJSON\Model\FeatureCollection;
@@ -129,7 +129,7 @@ class AdresseProviderTest extends AbstractTestCase {
      * @return void
      * @throws Exception Throws an exception if an error occurs.
      */
-    public function testSearchCsvWith() {
+    public function testSearchCsvWithColumns() {
 
         // Set a data mock.
         $data = getcwd() . "/tests/Fixtures/Model/Request/Adresse/SearchCsvRequest.csv";

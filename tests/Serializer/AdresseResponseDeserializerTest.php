@@ -11,8 +11,8 @@
 
 namespace WBW\Library\GeoAPI\Tests\Serializer;
 
-use WBW\Library\GeoAPI\Model\Response\ReverseCsvResponse;
-use WBW\Library\GeoAPI\Model\Response\SearchCsvResponse;
+use WBW\Library\GeoAPI\Model\Response\Adresse\ReverseCsvResponse;
+use WBW\Library\GeoAPI\Model\Response\Adresse\SearchCsvResponse;
 use WBW\Library\GeoAPI\Serializer\AdresseResponseDeserializer;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 
@@ -32,7 +32,7 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
     public function testDeserializeReverseCsvResponse() {
 
         // Set a filename mock.
-        $filename = getcwd() . "/tests/Fixtures/Model/Response/ReverseCsvResponse.csv";
+        $filename = getcwd() . "/tests/Fixtures/Model/Response/Adresse/ReverseCsvResponse.csv";
 
         $res = AdresseResponseDeserializer::deserializeReverseCsvResponse(file_get_contents($filename));
         $this->assertInstanceOf(ReverseCsvResponse::class, $res);
@@ -132,7 +132,7 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
     public function testDeserializeSearchCsvResponse() {
 
         // Set a filename mock.
-        $filename = getcwd() . "/tests/Fixtures/Model/Response/SearchCsvResponse.csv";
+        $filename = getcwd() . "/tests/Fixtures/Model/Response/Adresse/SearchCsvResponse.csv";
 
         $res = AdresseResponseDeserializer::deserializeSearchCsvResponse(file_get_contents($filename));
         $this->assertInstanceOf(SearchCsvResponse::class, $res);
