@@ -15,6 +15,10 @@ Integrate Geo API with your projects.
 > done without prior notice to consumers of this package. Of course this code
 > will become stable at a certain point, but for now, use at your own risk.
 
+Includes:
+
+- [webeweb/geo-json-library](https://github.com/webeweb/geo-json-library)
+
 If you like this package, pay me a beer (or a coffee)
 [![paypal.me](https://img.shields.io/badge/paypal.me-webeweb-0070ba.svg?style=flat-square&logo=paypal)](https://www.paypal.me/webeweb)
 
