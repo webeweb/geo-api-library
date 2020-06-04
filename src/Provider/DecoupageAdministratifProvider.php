@@ -27,7 +27,6 @@ abstract class DecoupageAdministratifProvider extends AbstractProvider {
      */
     const ENDPOINT_PATH = "https://geo.api.gouv.fr";
 
-
     /**
      * {@inheritDoc}
      */

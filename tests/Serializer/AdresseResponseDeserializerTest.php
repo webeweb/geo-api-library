@@ -159,8 +159,8 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
         $this->assertEquals("", $res->getAdresses()[0]->getOldCityCode());
         $this->assertEquals("", $res->getAdresses()[0]->getOldCity());
         $this->assertEquals("", $res->getAdresses()[0]->getDistrict());
-        $this->assertNull( $res->getAdresses()[0]->getDistance());
-        $this->assertNull( $res->getAdresses()[0]->getLatitude());
+        $this->assertNull($res->getAdresses()[0]->getDistance());
+        $this->assertNull($res->getAdresses()[0]->getLatitude());
         $this->assertNull($res->getAdresses()[0]->getLongitude());
 
         $this->assertEquals("École Gilberte Monne", $res->getAdresses()[1]->getColumns()["nom"]);
@@ -183,8 +183,8 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
         $this->assertEquals("", $res->getAdresses()[1]->getOldCityCode());
         $this->assertEquals("", $res->getAdresses()[1]->getOldCity());
         $this->assertEquals("", $res->getAdresses()[1]->getDistrict());
-        $this->assertNull( $res->getAdresses()[1]->getDistance());
-        $this->assertNull( $res->getAdresses()[1]->getLatitude());
+        $this->assertNull($res->getAdresses()[1]->getDistance());
+        $this->assertNull($res->getAdresses()[1]->getLatitude());
         $this->assertNull($res->getAdresses()[1]->getLongitude());
 
         $this->assertEquals("École maternelle Victor Hugo", $res->getAdresses()[2]->getColumns()["nom"]);
@@ -207,8 +207,8 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
         $this->assertEquals("", $res->getAdresses()[2]->getOldCityCode());
         $this->assertEquals("", $res->getAdresses()[2]->getOldCity());
         $this->assertEquals("", $res->getAdresses()[2]->getDistrict());
-        $this->assertNull( $res->getAdresses()[2]->getDistance());
-        $this->assertNull( $res->getAdresses()[2]->getLatitude());
+        $this->assertNull($res->getAdresses()[2]->getDistance());
+        $this->assertNull($res->getAdresses()[2]->getLatitude());
         $this->assertNull($res->getAdresses()[2]->getLongitude());
 
         $this->assertEquals("École maternelle Buffon", $res->getAdresses()[3]->getColumns()["nom"]);
@@ -231,8 +231,8 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
         $this->assertEquals("", $res->getAdresses()[3]->getOldCityCode());
         $this->assertEquals("", $res->getAdresses()[3]->getOldCity());
         $this->assertEquals("", $res->getAdresses()[3]->getDistrict());
-        $this->assertNull( $res->getAdresses()[3]->getDistance());
-        $this->assertNull( $res->getAdresses()[3]->getLatitude());
+        $this->assertNull($res->getAdresses()[3]->getDistance());
+        $this->assertNull($res->getAdresses()[3]->getLatitude());
         $this->assertNull($res->getAdresses()[3]->getLongitude());
     }
 }
