@@ -73,6 +73,7 @@ class AdresseProviderTest extends AbstractTestCase {
         $res = $obj->reverseCsv($arg);
         $this->assertInstanceOf(ReverseCsvResponse::class, $res);
 
+        $this->assertNotNull($res->getRawResponse());
         $this->assertNotEquals([], $res->getAdresses());
     }
 
@@ -120,6 +121,7 @@ class AdresseProviderTest extends AbstractTestCase {
         $res = $obj->searchCsv($arg);
         $this->assertInstanceOf(SearchCsvResponse::class, $res);
 
+        $this->assertNotNull($res->getRawResponse());
         $this->assertNotEquals([], $res->getAdresses());
     }
 
@@ -146,6 +148,7 @@ class AdresseProviderTest extends AbstractTestCase {
         $res = $obj->searchCsv($arg);
         $this->assertInstanceOf(SearchCsvResponse::class, $res);
 
+        $this->assertNotNull($res->getRawResponse());
         $this->assertNotEquals([], $res->getAdresses());
     }
 
