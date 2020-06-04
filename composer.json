@@ -26,7 +26,7 @@
         "guzzlehttp/guzzle": "^6.0",
         "psr/log": "^1.0",
         "webeweb/core-library": "^6.5",
-        "webeweb/geo-json-library": "dev-master"
+        "webeweb/geo-json-library": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7|^7.0"
