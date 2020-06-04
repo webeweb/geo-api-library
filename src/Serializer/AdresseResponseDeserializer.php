@@ -11,7 +11,7 @@
 
 namespace WBW\Library\GeoAPI\Serializer;
 
-use WBW\Library\GeoAPI\Model\Adresse\Adresse;
+use WBW\Library\GeoAPI\Model\Adresse;
 use WBW\Library\GeoAPI\Model\Response\Adresse\AbstractCsvResponse;
 use WBW\Library\GeoAPI\Model\Response\Adresse\ReverseCsvResponse;
 use WBW\Library\GeoAPI\Model\Response\Adresse\SearchCsvResponse;
@@ -66,6 +66,8 @@ class AdresseResponseDeserializer {
      * @return AbstractCsvResponse Returns the CSV response.
      */
     protected static function deserializeCsvResponse($rawResponse, AbstractCsvResponse $model) {
+
+        $model->setRawResponse($rawResponse);
 
         $lines = explode("\n", $rawResponse);
 

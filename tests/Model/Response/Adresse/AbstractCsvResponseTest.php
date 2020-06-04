@@ -11,7 +11,7 @@
 
 namespace WBW\Library\GeoAPI\Tests\Model\Response\Adresse;
 
-use WBW\Library\GeoAPI\Model\Adresse\Adresse;
+use WBW\Library\GeoAPI\Model\Adresse;
 use WBW\Library\GeoAPI\Model\Response\Adresse\AbstractCsvResponse;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 use WBW\Library\GeoAPI\Tests\Fixtures\Model\Response\Adresse\TestCsvResponse;

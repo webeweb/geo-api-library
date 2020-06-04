@@ -12,7 +12,7 @@
 namespace WBW\Library\GeoAPI\Model\Response\Adresse;
 
 use WBW\Library\GeoAPI\Model\AbstractResponse;
-use WBW\Library\GeoAPI\Model\Adresse\Adresse;
+use WBW\Library\GeoAPI\Model\Adresse;
 
 /**
  * Abstract CVS response.

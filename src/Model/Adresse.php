@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Model\Adresse;
+namespace WBW\Library\GeoAPI\Model;
 
 use WBW\Library\Core\Model\Attribute\StringLabelTrait;
 use WBW\Library\Core\Model\Attribute\StringNameTrait;
@@ -19,7 +19,7 @@ use WBW\Library\Core\Model\Attribute\StringTypeTrait;
  * Adresse.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Model\Adresse
+ * @package WBW\Library\GeoAPI\Model
  */
 class Adresse {
 
