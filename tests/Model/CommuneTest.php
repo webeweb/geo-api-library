@@ -23,6 +23,18 @@ use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 class CommuneTest extends AbstractTestCase {
 
     /**
+     * Tests the setCodeDepartement() method.
+     *
+     * @return void
+     */
+    public function testSetCodeDepartement() {
+
+        $obj = new Commune();
+
+        $obj->setCodeDepartement("codeDepartement");
+        $this->assertEquals("codeDepartement", $obj->getCodeDepartement());
+    }
+    /**
      * Tests the setPopulation() method.
      *
      * @return void

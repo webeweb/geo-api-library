@@ -30,6 +30,13 @@ class Commune {
     use StringNomTrait;
 
     /**
+     * Code département.
+     *
+     * @var string
+     */
+    private $codeDepartement;
+
+    /**
      * Population.
      *
      * @var int
@@ -44,12 +51,32 @@ class Commune {
     }
 
     /**
+     * Get the code département.
+     *
+     * @return string Returns the code département.
+     */
+    public function getCodeDepartement() {
+        return $this->codeDepartement;
+    }
+
+    /**
      * Get the population.
      *
      * @return int Returns the population.
      */
     public function getPopulation() {
         return $this->population;
+    }
+
+    /**
+     * Set the code département.
+     *
+     * @param string $codeDepartement The code département.
+     * @return Commune Returns this commune.
+     */
+    public function setCodeDepartement($codeDepartement) {
+        $this->codeDepartement = $codeDepartement;
+        return $this;
     }
 
     /**
