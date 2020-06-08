@@ -34,6 +34,20 @@ class CommuneTest extends AbstractTestCase {
         $obj->setCodeDepartement("codeDepartement");
         $this->assertEquals("codeDepartement", $obj->getCodeDepartement());
     }
+
+    /**
+     * Tests the setCodesPostaux() method.
+     *
+     * @return void
+     */
+    public function testSetCodesPostaux() {
+
+        $obj = new Commune();
+
+        $obj->setCodesPostaux(["codePostal"]);
+        $this->assertEquals(["codePostal"], $obj->getCodesPostaux());
+    }
+
     /**
      * Tests the setPopulation() method.
      *
@@ -57,7 +71,9 @@ class CommuneTest extends AbstractTestCase {
         $obj = new Commune();
 
         $this->assertNull($obj->getCode());
+        $this->assertNull($obj->getCodeDepartement());
         $this->assertNull($obj->getCodeRegion());
+        $this->assertNull($obj->getCodesPostaux());
         $this->assertNull($obj->getNom());
         $this->assertNull($obj->getPopulation());
         $this->assertNull($obj->getScore());

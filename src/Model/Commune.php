@@ -37,6 +37,13 @@ class Commune {
     private $codeDepartement;
 
     /**
+     * Codes postaux.
+     *
+     * @var string[]
+     */
+    private $codesPostaux;
+
+    /**
      * Population.
      *
      * @var int
@@ -60,6 +67,15 @@ class Commune {
     }
 
     /**
+     * Get the codes postaux.
+     *
+     * @return string[] Returns the codes postaux.
+     */
+    public function getCodesPostaux() {
+        return $this->codesPostaux;
+    }
+
+    /**
      * Get the population.
      *
      * @return int Returns the population.
@@ -76,6 +92,17 @@ class Commune {
      */
     public function setCodeDepartement($codeDepartement) {
         $this->codeDepartement = $codeDepartement;
+        return $this;
+    }
+
+    /**
+     * Set the codes postaux.
+     *
+     * @param string[] $codesPostaux The codes postaux.
+     * @return Commune Returns this commune.
+     */
+    public function setCodesPostaux($codesPostaux) {
+        $this->codesPostaux = $codesPostaux;
         return $this;
     }
 
