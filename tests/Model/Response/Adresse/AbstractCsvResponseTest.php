@@ -25,22 +25,6 @@ use WBW\Library\GeoAPI\Tests\Fixtures\Model\Response\Adresse\TestCsvResponse;
 class AbstractCsvResponseTest extends AbstractTestCase {
 
     /**
-     * Tests the addAdresse() method.
-     *
-     * @return void
-     */
-    public function testAddAdresse() {
-
-        // Set an Adresse mock.
-        $adresse = new Adresse();
-
-        $obj = new TestCsvResponse();
-
-        $obj->addAdresse($adresse);
-        $this->assertSame($adresse, $obj->getAdresses()[0]);
-    }
-
-    /**
      * Tests the enumResultColumns() method.
      *
      * @retun void

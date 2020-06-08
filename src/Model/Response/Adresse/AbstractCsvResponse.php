@@ -11,8 +11,7 @@
 
 namespace WBW\Library\GeoAPI\Model\Response\Adresse;
 
-use WBW\Library\GeoAPI\Model\AbstractResponse;
-use WBW\Library\GeoAPI\Model\Adresse;
+use WBW\Library\GeoAPI\Model\Response\AdressesResponse;
 
 /**
  * Abstract CVS response.
@@ -21,7 +20,7 @@ use WBW\Library\GeoAPI\Model\Adresse;
  * @package WBW\Library\GeoAPI\Model\Response\Adresse
  * @abstract
  */
-abstract class AbstractCsvResponse extends AbstractResponse {
+abstract class AbstractCsvResponse extends AdressesResponse {
 
     /**
      * Result "city".
@@ -143,31 +142,6 @@ abstract class AbstractCsvResponse extends AbstractResponse {
     const RESULT_TYPE = "result_type";
 
     /**
-     * Adresses.
-     *
-     * @var Adresse[]
-     */
-    private $adresses;
-
-    /**
-     * Constructor.
-     */
-    public function __construct() {
-        $this->setAdresses([]);
-    }
-
-    /**
-     * Add an adresse.
-     *
-     * @param Adresse $adresse The adresse.
-     * @return AbstractCsvResponse Returns this CSV response.
-     */
-    public function addAdresse(Adresse $adresse) {
-        $this->adresses[] = $adresse;
-        return $this;
-    }
-
-    /**
      * Enumerates the result columns.
      *
      * @return string[] Returns the result columns.
@@ -193,25 +167,4 @@ abstract class AbstractCsvResponse extends AbstractResponse {
             self::RESULT_TYPE,
         ];
     }
-
-    /**
-     * Get the adresses.
-     *
-     * @return Adresse[] Returns the adresses.
-     */
-    public function getAdresses() {
-        return $this->adresses;
-    }
-
-    /**
-     * Set the adresses.
-     *
-     * @param Adresse[] $adresses The adresses.
-     * @return AbstractCsvResponse Returns this CSV response.
-     */
-    protected function setAdresses(array $adresses) {
-        $this->adresses = $adresses;
-        return $this;
-    }
-
 }
