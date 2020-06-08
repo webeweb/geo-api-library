@@ -14,12 +14,12 @@ namespace WBW\Library\GeoAPI\Model\Request\Region;
 use WBW\Library\GeoAPI\Model\AbstractRequest;
 
 /**
- * Liste régions request.
+ * Régions request.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GeoAPI\Model\Request\Region
  */
-class ListeRegionsRequest extends AbstractRequest {
+class RegionsRequest extends AbstractRequest {
 
     /**
      * Resource path.

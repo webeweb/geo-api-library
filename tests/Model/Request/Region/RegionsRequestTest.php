@@ -11,16 +11,16 @@
 
 namespace WBW\Library\GeoAPI\Tests\Model\Request\Region;
 
-use WBW\Library\GeoAPI\Model\Request\Region\ListeRegionsRequest;
+use WBW\Library\GeoAPI\Model\Request\Region\RegionsRequest;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 
 /**
- * Liste régions request test.
+ * Régions request test.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GeoAPI\Tests\Model\Request\Region
  */
-class ListeRegionsRequestTest extends AbstractTestCase {
+class RegionsRequestTest extends AbstractTestCase {
 
     /**
      * Tests the __construct() method.
@@ -29,10 +29,10 @@ class ListeRegionsRequestTest extends AbstractTestCase {
      */
     public function test__construct() {
 
-        $this->assertEquals("/regions", ListeRegionsRequest::RESOURCE_PATH);
+        $this->assertEquals("/regions", RegionsRequest::RESOURCE_PATH);
 
-        $obj = new ListeRegionsRequest();
+        $obj = new RegionsRequest();
 
-        $this->assertEquals(ListeRegionsRequest::RESOURCE_PATH, $obj->getResourcePath());
+        $this->assertEquals(RegionsRequest::RESOURCE_PATH, $obj->getResourcePath());
     }
 }
