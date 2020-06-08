@@ -11,16 +11,16 @@
 
 namespace WBW\Library\GeoAPI\Tests\Model\Request\Departement;
 
-use WBW\Library\GeoAPI\Model\Request\Departement\ListeDepartementsRequest;
+use WBW\Library\GeoAPI\Model\Request\Departement\DepartementsRequest;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 
 /**
- * Liste départements request test.
+ * Départements request test.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GeoAPI\Tests\Model\Request\Departement
  */
-class ListeDepartementsRequestTest extends AbstractTestCase {
+class DepartementsRequestTest extends AbstractTestCase {
 
     /**
      * Tests the __construct() method.
@@ -29,10 +29,10 @@ class ListeDepartementsRequestTest extends AbstractTestCase {
      */
     public function test__construct() {
 
-        $this->assertEquals("/regions/%d/departements", ListeDepartementsRequest::RESOURCE_PATH);
+        $this->assertEquals("/departements", DepartementsRequest::RESOURCE_PATH);
 
-        $obj = new ListeDepartementsRequest();
+        $obj = new DepartementsRequest();
 
-        $this->assertEquals(ListeDepartementsRequest::RESOURCE_PATH, $obj->getResourcePath());
+        $this->assertEquals(DepartementsRequest::RESOURCE_PATH, $obj->getResourcePath());
     }
 }

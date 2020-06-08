@@ -11,20 +11,22 @@
 
 namespace WBW\Library\GeoAPI\Model\Request\Departement;
 
+use WBW\Library\GeoAPI\Model\AbstractRequest;
+
 /**
- * Liste départements request.
+ * Départements request.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GeoAPI\Model\Request\Departement
  */
-class ListeDepartementsRequest {
+class DepartementsRequest extends AbstractRequest {
 
     /**
      * Resource path.
      *
      * @avr string
      */
-    const RESOURCE_PATH = "/regions/%d/departements";
+    const RESOURCE_PATH = "/departements";
 
     /**
      * {@inheritDoc}
