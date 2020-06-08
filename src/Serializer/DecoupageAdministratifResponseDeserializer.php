@@ -33,14 +33,16 @@ class DecoupageAdministratifResponseDeserializer {
      * @param array $response The response.
      * @return Commune Returns the commune.
      */
-    public static function deserializeCommune(array $response) {
+    protected static function deserializeCommune(array $response) {
 
         $model = new Commune();
         $model->setNom(ArrayHelper::get($response, "nom"));
         $model->setCode(ArrayHelper::get($response, "code"));
         $model->setCodeDepartement(ArrayHelper::get($response, "codeDepartement"));
         $model->setCodeRegion(ArrayHelper::get($response, "codeRegion"));
+        $model->setCodesPostaux(ArrayHelper::get($response, "codesPostaux", []));
         $model->setPopulation(ArrayHelper::get($response, "population"));
+        $model->setScore(ArrayHelper::get($response, "_score"));
 
         return $model;
     }
@@ -74,12 +76,13 @@ class DecoupageAdministratifResponseDeserializer {
      * @param array $response The response.
      * @return Departement Returns the département.
      */
-    public static function deserializeDepartement(array $response) {
+    protected static function deserializeDepartement(array $response) {
 
         $model = new Departement();
         $model->setNom(ArrayHelper::get($response, "nom"));
         $model->setCode(ArrayHelper::get($response, "code"));
         $model->setCodeRegion(ArrayHelper::get($response, "codeRegion"));
+        $model->setScore(ArrayHelper::get($response, "_score"));
 
         return $model;
     }
@@ -113,7 +116,7 @@ class DecoupageAdministratifResponseDeserializer {
      * @param array $response The response.
      * @return Region Returns the région.
      */
-    public static function deserializeRegion(array $response) {
+    protected static function deserializeRegion(array $response) {
 
         $model = new Region();
         $model->setCode(ArrayHelper::get($response, "code"));
