@@ -9,18 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Model\Response\Departement;
+namespace WBW\Library\GeoAPI\Model\Response;
 
 use WBW\Library\GeoAPI\Model\AbstractResponse;
 use WBW\Library\GeoAPI\Model\Departement;
 
 /**
- * Liste départements response.
+ * Départements response.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Model\Response\Departement
+ * @package WBW\Library\GeoAPI\Model\Response
  */
-class ListeDepartementsResponse extends AbstractResponse {
+class DepartementsResponse extends AbstractResponse {
 
     /**
      * Départements.
@@ -40,7 +40,7 @@ class ListeDepartementsResponse extends AbstractResponse {
      * Add a département.
      *
      * @param Departement $departement The département.
-     * @return ListeDepartementsResponse Returns this liste département response.
+     * @return DepartementsResponse Returns this départements response.
      */
     public function addDepartement(Departement $departement) {
         $this->departements[] = $departement;
@@ -60,7 +60,7 @@ class ListeDepartementsResponse extends AbstractResponse {
      * Set the départements.
      *
      * @param Departement[] $departements The départements.
-     * @return ListeDepartementsResponse Returns this liste départements response.
+     * @return DepartementsResponse Returns this départements response.
      */
     protected function setDepartements(array $departements) {
         $this->departements = $departements;

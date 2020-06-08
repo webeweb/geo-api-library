@@ -9,19 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Model\Response\Departement;
+namespace WBW\Library\GeoAPI\Tests\Model\Response;
 
 use WBW\Library\GeoAPI\Model\Departement;
-use WBW\Library\GeoAPI\Model\Response\Departement\ListeDepartementsResponse;
+use WBW\Library\GeoAPI\Model\Response\DepartementsResponse;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 
 /**
- * Liste départements response test.
+ * Départements response test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Model\Response\Departement
+ * @package WBW\Library\GeoAPI\Tests\Model\Response
  */
-class ListeDepartementsResponseTest extends AbstractTestCase {
+class DepartementsResponseTest extends AbstractTestCase {
 
     /**
      * Tests the addDepartement() method.
@@ -30,10 +30,10 @@ class ListeDepartementsResponseTest extends AbstractTestCase {
      */
     public function testAddDepartement() {
 
-        // Set a Département mock.
+        // Set a Departement mock.
         $departement = new Departement();
 
-        $obj = new ListeDepartementsResponse();
+        $obj = new DepartementsResponse();
 
         $obj->addDepartement($departement);
         $this->assertSame($departement, $obj->getDepartements()[0]);
@@ -46,7 +46,7 @@ class ListeDepartementsResponseTest extends AbstractTestCase {
      */
     public function test__construct() {
 
-        $obj = new ListeDepartementsResponse();
+        $obj = new DepartementsResponse();
 
         $this->assertEquals([], $obj->getDepartements());
     }
