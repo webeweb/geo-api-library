@@ -9,19 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Model\Response\Region;
+namespace WBW\Library\GeoAPI\Tests\Model\Response;
 
 use WBW\Library\GeoAPI\Model\Region;
-use WBW\Library\GeoAPI\Model\Response\Region\ListeRegionsResponse;
+use WBW\Library\GeoAPI\Model\Response\RegionsResponse;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 
 /**
- * Liste régions response test.
+ * Régions response test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Model\Response\Region
+ * @package WBW\Library\GeoAPI\Tests\Model\Response
  */
-class ListeRegionsResponseTest extends AbstractTestCase {
+class RegionsResponseTest extends AbstractTestCase {
 
     /**
      * Tests the addRegion() method.
@@ -33,7 +33,7 @@ class ListeRegionsResponseTest extends AbstractTestCase {
         // Set a Région mock.
         $region = new Region();
 
-        $obj = new ListeRegionsResponse();
+        $obj = new RegionsResponse();
 
         $obj->addRegion($region);
         $this->assertSame($region, $obj->getRegions()[0]);
@@ -46,7 +46,7 @@ class ListeRegionsResponseTest extends AbstractTestCase {
      */
     public function test__construct() {
 
-        $obj = new ListeRegionsResponse();
+        $obj = new RegionsResponse();
 
         $this->assertEquals([], $obj->getRegions());
     }

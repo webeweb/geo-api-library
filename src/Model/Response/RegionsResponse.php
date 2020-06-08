@@ -9,18 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Model\Response\Region;
+namespace WBW\Library\GeoAPI\Model\Response;
 
 use WBW\Library\GeoAPI\Model\AbstractResponse;
 use WBW\Library\GeoAPI\Model\Region;
 
 /**
- * Liste régions response.
+ * Régions response.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Model\Response\Region
+ * @package WBW\Library\GeoAPI\Model\Response
  */
-class ListeRegionsResponse extends AbstractResponse {
+class RegionsResponse extends AbstractResponse {
 
     /**
      * Régions.
@@ -40,7 +40,7 @@ class ListeRegionsResponse extends AbstractResponse {
      * Add a région.
      *
      * @param Region $region The région.
-     * @return ListeRegionsResponse Returns this liste région response.
+     * @return RegionsResponse Returns this liste région response.
      */
     public function addRegion(Region $region) {
         $this->regions[] = $region;
@@ -60,7 +60,7 @@ class ListeRegionsResponse extends AbstractResponse {
      * Set the régions.
      *
      * @param Region[] $regions The régions.
-     * @return ListeRegionsResponse Returns this liste régions response.
+     * @return RegionsResponse Returns this liste régions response.
      */
     protected function setRegions(array $regions) {
         $this->regions = $regions;
