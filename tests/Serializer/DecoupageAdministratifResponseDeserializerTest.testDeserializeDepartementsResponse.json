@@ -1,0 +1,27 @@
+[
+    {
+        "nom": "Calvados",
+        "code": "14",
+        "codeRegion": "28"
+    },
+    {
+        "nom": "Eure",
+        "code": "27",
+        "codeRegion": "28"
+    },
+    {
+        "nom": "Manche",
+        "code": "50",
+        "codeRegion": "28"
+    },
+    {
+        "nom": "Orne",
+        "code": "61",
+        "codeRegion": "28"
+    },
+    {
+        "nom": "Seine-Maritime",
+        "code": "76",
+        "codeRegion": "28"
+    }
+]

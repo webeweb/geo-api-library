@@ -1,0 +1,3940 @@
+[
+    {
+        "nom": "L'Abergement-Clémenciat",
+        "code": "01001",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01400"
+        ],
+        "population": 767
+    },
+    {
+        "nom": "L'Abergement-de-Varey",
+        "code": "01002",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01640"
+        ],
+        "population": 243
+    },
+    {
+        "nom": "Ambérieu-en-Bugey",
+        "code": "01004",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01500"
+        ],
+        "population": 14081
+    },
+    {
+        "nom": "Ambérieux-en-Dombes",
+        "code": "01005",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01330"
+        ],
+        "population": 1671
+    },
+    {
+        "nom": "Ambléon",
+        "code": "01006",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 110
+    },
+    {
+        "nom": "Ambronay",
+        "code": "01007",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01500"
+        ],
+        "population": 2684
+    },
+    {
+        "nom": "Ambutrix",
+        "code": "01008",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01500"
+        ],
+        "population": 750
+    },
+    {
+        "nom": "Andert-et-Condon",
+        "code": "01009",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 336
+    },
+    {
+        "nom": "Anglefort",
+        "code": "01010",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01350"
+        ],
+        "population": 1124
+    },
+    {
+        "nom": "Apremont",
+        "code": "01011",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01100"
+        ],
+        "population": 383
+    },
+    {
+        "nom": "Aranc",
+        "code": "01012",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01110"
+        ],
+        "population": 326
+    },
+    {
+        "nom": "Arandas",
+        "code": "01013",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01230"
+        ],
+        "population": 148
+    },
+    {
+        "nom": "Arbent",
+        "code": "01014",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01100"
+        ],
+        "population": 3379
+    },
+    {
+        "nom": "Arboys en Bugey",
+        "code": "01015",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 640
+    },
+    {
+        "nom": "Arbigny",
+        "code": "01016",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01190"
+        ],
+        "population": 462
+    },
+    {
+        "nom": "Argis",
+        "code": "01017",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01230"
+        ],
+        "population": 438
+    },
+    {
+        "nom": "Armix",
+        "code": "01019",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01510"
+        ],
+        "population": 26
+    },
+    {
+        "nom": "Ars-sur-Formans",
+        "code": "01021",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01480"
+        ],
+        "population": 1389
+    },
+    {
+        "nom": "Artemare",
+        "code": "01022",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01510"
+        ],
+        "population": 1227
+    },
+    {
+        "nom": "Asnières-sur-Saône",
+        "code": "01023",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01570"
+        ],
+        "population": 63
+    },
+    {
+        "nom": "Attignat",
+        "code": "01024",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01340"
+        ],
+        "population": 3270
+    },
+    {
+        "nom": "Bâgé-Dommartin",
+        "code": "01025",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01380"
+        ],
+        "population": 4088
+    },
+    {
+        "nom": "Bâgé-le-Châtel",
+        "code": "01026",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01380"
+        ],
+        "population": 915
+    },
+    {
+        "nom": "Balan",
+        "code": "01027",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01360"
+        ],
+        "population": 2856
+    },
+    {
+        "nom": "Baneins",
+        "code": "01028",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01990"
+        ],
+        "population": 596
+    },
+    {
+        "nom": "Beaupont",
+        "code": "01029",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01270"
+        ],
+        "population": 685
+    },
+    {
+        "nom": "Beauregard",
+        "code": "01030",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01480"
+        ],
+        "population": 885
+    },
+    {
+        "nom": "Bellignat",
+        "code": "01031",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01100"
+        ],
+        "population": 3618
+    },
+    {
+        "nom": "Béligneux",
+        "code": "01032",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01360"
+        ],
+        "population": 3314
+    },
+    {
+        "nom": "Valserhône",
+        "code": "01033",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01200"
+        ],
+        "population": 16302
+    },
+    {
+        "nom": "Belley",
+        "code": "01034",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 9133
+    },
+    {
+        "nom": "Belleydoux",
+        "code": "01035",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01130"
+        ],
+        "population": 317
+    },
+    {
+        "nom": "Valromey-sur-Séran",
+        "code": "01036",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01260"
+        ],
+        "population": 1299
+    },
+    {
+        "nom": "Bénonces",
+        "code": "01037",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01470"
+        ],
+        "population": 294
+    },
+    {
+        "nom": "Bény",
+        "code": "01038",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01370"
+        ],
+        "population": 762
+    },
+    {
+        "nom": "Béon",
+        "code": "01039",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01350"
+        ],
+        "population": 464
+    },
+    {
+        "nom": "Béréziat",
+        "code": "01040",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01340"
+        ],
+        "population": 494
+    },
+    {
+        "nom": "Bettant",
+        "code": "01041",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01500"
+        ],
+        "population": 750
+    },
+    {
+        "nom": "Bey",
+        "code": "01042",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01290"
+        ],
+        "population": 276
+    },
+    {
+        "nom": "Beynost",
+        "code": "01043",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01700"
+        ],
+        "population": 4557
+    },
+    {
+        "nom": "Billiat",
+        "code": "01044",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01200"
+        ],
+        "population": 611
+    },
+    {
+        "nom": "Birieux",
+        "code": "01045",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01330"
+        ],
+        "population": 285
+    },
+    {
+        "nom": "Biziat",
+        "code": "01046",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01290"
+        ],
+        "population": 857
+    },
+    {
+        "nom": "Blyes",
+        "code": "01047",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01150"
+        ],
+        "population": 993
+    },
+    {
+        "nom": "La Boisse",
+        "code": "01049",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01120"
+        ],
+        "population": 3021
+    },
+    {
+        "nom": "Boissey",
+        "code": "01050",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01190",
+            "01380"
+        ],
+        "population": 338
+    },
+    {
+        "nom": "Bolozon",
+        "code": "01051",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01450"
+        ],
+        "population": 89
+    },
+    {
+        "nom": "Bouligneux",
+        "code": "01052",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01330"
+        ],
+        "population": 319
+    },
+    {
+        "nom": "Bourg-en-Bresse",
+        "code": "01053",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01000"
+        ],
+        "population": 41365
+    },
+    {
+        "nom": "Bourg-Saint-Christophe",
+        "code": "01054",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01800"
+        ],
+        "population": 1325
+    },
+    {
+        "nom": "Boyeux-Saint-Jérôme",
+        "code": "01056",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01640"
+        ],
+        "population": 354
+    },
+    {
+        "nom": "Boz",
+        "code": "01057",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01190"
+        ],
+        "population": 515
+    },
+    {
+        "nom": "Brégnier-Cordon",
+        "code": "01058",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 849
+    },
+    {
+        "nom": "Brénod",
+        "code": "01060",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01110"
+        ],
+        "population": 522
+    },
+    {
+        "nom": "Brens",
+        "code": "01061",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 1169
+    },
+    {
+        "nom": "Bressolles",
+        "code": "01062",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01360"
+        ],
+        "population": 891
+    },
+    {
+        "nom": "Brion",
+        "code": "01063",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01460"
+        ],
+        "population": 515
+    },
+    {
+        "nom": "Briord",
+        "code": "01064",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01470"
+        ],
+        "population": 991
+    },
+    {
+        "nom": "Buellas",
+        "code": "01065",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01310"
+        ],
+        "population": 1767
+    },
+    {
+        "nom": "La Burbanche",
+        "code": "01066",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01510"
+        ],
+        "population": 71
+    },
+    {
+        "nom": "Ceignes",
+        "code": "01067",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01430"
+        ],
+        "population": 253
+    },
+    {
+        "nom": "Cerdon",
+        "code": "01068",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01450"
+        ],
+        "population": 785
+    },
+    {
+        "nom": "Certines",
+        "code": "01069",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01240"
+        ],
+        "population": 1532
+    },
+    {
+        "nom": "Cessy",
+        "code": "01071",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01170"
+        ],
+        "population": 4836
+    },
+    {
+        "nom": "Ceyzériat",
+        "code": "01072",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01250"
+        ],
+        "population": 3138
+    },
+    {
+        "nom": "Ceyzérieu",
+        "code": "01073",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01350"
+        ],
+        "population": 1012
+    },
+    {
+        "nom": "Chalamont",
+        "code": "01074",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01320"
+        ],
+        "population": 2406
+    },
+    {
+        "nom": "Chaleins",
+        "code": "01075",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01480"
+        ],
+        "population": 1296
+    },
+    {
+        "nom": "Chaley",
+        "code": "01076",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01230"
+        ],
+        "population": 137
+    },
+    {
+        "nom": "Challes-la-Montagne",
+        "code": "01077",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01450"
+        ],
+        "population": 193
+    },
+    {
+        "nom": "Challex",
+        "code": "01078",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01630"
+        ],
+        "population": 1450
+    },
+    {
+        "nom": "Champagne-en-Valromey",
+        "code": "01079",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01260"
+        ],
+        "population": 825
+    },
+    {
+        "nom": "Champdor-Corcelles",
+        "code": "01080",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01110"
+        ],
+        "population": 657
+    },
+    {
+        "nom": "Champfromier",
+        "code": "01081",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01410"
+        ],
+        "population": 729
+    },
+    {
+        "nom": "Chanay",
+        "code": "01082",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01420"
+        ],
+        "population": 633
+    },
+    {
+        "nom": "Chaneins",
+        "code": "01083",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01990"
+        ],
+        "population": 898
+    },
+    {
+        "nom": "Chanoz-Châtenay",
+        "code": "01084",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01400"
+        ],
+        "population": 833
+    },
+    {
+        "nom": "La Chapelle-du-Châtelard",
+        "code": "01085",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01240"
+        ],
+        "population": 387
+    },
+    {
+        "nom": "Charix",
+        "code": "01087",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01130"
+        ],
+        "population": 285
+    },
+    {
+        "nom": "Charnoz-sur-Ain",
+        "code": "01088",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01800"
+        ],
+        "population": 923
+    },
+    {
+        "nom": "Château-Gaillard",
+        "code": "01089",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01500"
+        ],
+        "population": 2080
+    },
+    {
+        "nom": "Châtenay",
+        "code": "01090",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01320"
+        ],
+        "population": 333
+    },
+    {
+        "nom": "Châtillon-la-Palud",
+        "code": "01092",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01320"
+        ],
+        "population": 1574
+    },
+    {
+        "nom": "Châtillon-sur-Chalaronne",
+        "code": "01093",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01400"
+        ],
+        "population": 4886
+    },
+    {
+        "nom": "Chavannes-sur-Reyssouze",
+        "code": "01094",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01190"
+        ],
+        "population": 750
+    },
+    {
+        "nom": "Nivigne et Suran",
+        "code": "01095",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01250"
+        ],
+        "population": 805
+    },
+    {
+        "nom": "Chaveyriat",
+        "code": "01096",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01660"
+        ],
+        "population": 1006
+    },
+    {
+        "nom": "Chazey-Bons",
+        "code": "01098",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300",
+            "01510"
+        ],
+        "population": 1079
+    },
+    {
+        "nom": "Chazey-sur-Ain",
+        "code": "01099",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01150"
+        ],
+        "population": 1513
+    },
+    {
+        "nom": "Cheignieu-la-Balme",
+        "code": "01100",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01510"
+        ],
+        "population": 136
+    },
+    {
+        "nom": "Chevillard",
+        "code": "01101",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01430"
+        ],
+        "population": 153
+    },
+    {
+        "nom": "Chevroux",
+        "code": "01102",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01190"
+        ],
+        "population": 957
+    },
+    {
+        "nom": "Chevry",
+        "code": "01103",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01170"
+        ],
+        "population": 1643
+    },
+    {
+        "nom": "Chézery-Forens",
+        "code": "01104",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01410",
+            "01200"
+        ],
+        "population": 460
+    },
+    {
+        "nom": "Civrieux",
+        "code": "01105",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01390"
+        ],
+        "population": 1606
+    },
+    {
+        "nom": "Cize",
+        "code": "01106",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01250"
+        ],
+        "population": 170
+    },
+    {
+        "nom": "Cleyzieu",
+        "code": "01107",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01230"
+        ],
+        "population": 135
+    },
+    {
+        "nom": "Coligny",
+        "code": "01108",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01270"
+        ],
+        "population": 1187
+    },
+    {
+        "nom": "Collonges",
+        "code": "01109",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01550"
+        ],
+        "population": 2223
+    },
+    {
+        "nom": "Colomieu",
+        "code": "01110",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 131
+    },
+    {
+        "nom": "Conand",
+        "code": "01111",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01230"
+        ],
+        "population": 120
+    },
+    {
+        "nom": "Condamine",
+        "code": "01112",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01430"
+        ],
+        "population": 414
+    },
+    {
+        "nom": "Condeissiat",
+        "code": "01113",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01400"
+        ],
+        "population": 825
+    },
+    {
+        "nom": "Confort",
+        "code": "01114",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01200"
+        ],
+        "population": 620
+    },
+    {
+        "nom": "Confrançon",
+        "code": "01115",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01310"
+        ],
+        "population": 1331
+    },
+    {
+        "nom": "Contrevoz",
+        "code": "01116",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 500
+    },
+    {
+        "nom": "Conzieu",
+        "code": "01117",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 146
+    },
+    {
+        "nom": "Corbonod",
+        "code": "01118",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01420"
+        ],
+        "population": 1255
+    },
+    {
+        "nom": "Corlier",
+        "code": "01121",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01110"
+        ],
+        "population": 113
+    },
+    {
+        "nom": "Cormoranche-sur-Saône",
+        "code": "01123",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01290"
+        ],
+        "population": 1118
+    },
+    {
+        "nom": "Cormoz",
+        "code": "01124",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01560"
+        ],
+        "population": 662
+    },
+    {
+        "nom": "Corveissiat",
+        "code": "01125",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01250"
+        ],
+        "population": 625
+    },
+    {
+        "nom": "Courmangoux",
+        "code": "01127",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01370"
+        ],
+        "population": 505
+    },
+    {
+        "nom": "Courtes",
+        "code": "01128",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01560"
+        ],
+        "population": 310
+    },
+    {
+        "nom": "Crans",
+        "code": "01129",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01320"
+        ],
+        "population": 263
+    },
+    {
+        "nom": "Bresse Vallons",
+        "code": "01130",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01340"
+        ],
+        "population": 2263
+    },
+    {
+        "nom": "Cressin-Rochefort",
+        "code": "01133",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01350"
+        ],
+        "population": 393
+    },
+    {
+        "nom": "Crottet",
+        "code": "01134",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01290",
+            "01750"
+        ],
+        "population": 1734
+    },
+    {
+        "nom": "Crozet",
+        "code": "01135",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01170"
+        ],
+        "population": 2126
+    },
+    {
+        "nom": "Cruzilles-lès-Mépillat",
+        "code": "01136",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01290"
+        ],
+        "population": 855
+    },
+    {
+        "nom": "Culoz",
+        "code": "01138",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01350"
+        ],
+        "population": 3053
+    },
+    {
+        "nom": "Curciat-Dongalon",
+        "code": "01139",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01560"
+        ],
+        "population": 443
+    },
+    {
+        "nom": "Curtafond",
+        "code": "01140",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01310"
+        ],
+        "population": 770
+    },
+    {
+        "nom": "Cuzieu",
+        "code": "01141",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 436
+    },
+    {
+        "nom": "Dagneux",
+        "code": "01142",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01120"
+        ],
+        "population": 4706
+    },
+    {
+        "nom": "Divonne-les-Bains",
+        "code": "01143",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01220"
+        ],
+        "population": 9465
+    },
+    {
+        "nom": "Dompierre-sur-Veyle",
+        "code": "01145",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01240"
+        ],
+        "population": 1164
+    },
+    {
+        "nom": "Dompierre-sur-Chalaronne",
+        "code": "01146",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01400"
+        ],
+        "population": 431
+    },
+    {
+        "nom": "Domsure",
+        "code": "01147",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01270"
+        ],
+        "population": 483
+    },
+    {
+        "nom": "Dortan",
+        "code": "01148",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01590"
+        ],
+        "population": 1846
+    },
+    {
+        "nom": "Douvres",
+        "code": "01149",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01500"
+        ],
+        "population": 1053
+    },
+    {
+        "nom": "Drom",
+        "code": "01150",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01250"
+        ],
+        "population": 217
+    },
+    {
+        "nom": "Druillat",
+        "code": "01151",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01160"
+        ],
+        "population": 1157
+    },
+    {
+        "nom": "Échallon",
+        "code": "01152",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01130"
+        ],
+        "population": 760
+    },
+    {
+        "nom": "Échenevex",
+        "code": "01153",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01170"
+        ],
+        "population": 2172
+    },
+    {
+        "nom": "Évosges",
+        "code": "01155",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01230"
+        ],
+        "population": 145
+    },
+    {
+        "nom": "Faramans",
+        "code": "01156",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01800"
+        ],
+        "population": 801
+    },
+    {
+        "nom": "Fareins",
+        "code": "01157",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01480"
+        ],
+        "population": 2203
+    },
+    {
+        "nom": "Farges",
+        "code": "01158",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01550"
+        ],
+        "population": 1013
+    },
+    {
+        "nom": "Feillens",
+        "code": "01159",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01570"
+        ],
+        "population": 3254
+    },
+    {
+        "nom": "Ferney-Voltaire",
+        "code": "01160",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01210"
+        ],
+        "population": 9637
+    },
+    {
+        "nom": "Flaxieu",
+        "code": "01162",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01350"
+        ],
+        "population": 69
+    },
+    {
+        "nom": "Foissiat",
+        "code": "01163",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01340"
+        ],
+        "population": 2062
+    },
+    {
+        "nom": "Francheleins",
+        "code": "01165",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01090"
+        ],
+        "population": 1574
+    },
+    {
+        "nom": "Frans",
+        "code": "01166",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01480"
+        ],
+        "population": 2334
+    },
+    {
+        "nom": "Garnerans",
+        "code": "01167",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01140"
+        ],
+        "population": 654
+    },
+    {
+        "nom": "Genouilleux",
+        "code": "01169",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01090"
+        ],
+        "population": 600
+    },
+    {
+        "nom": "Béard-Géovreissiat",
+        "code": "01170",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01460"
+        ],
+        "population": 1039
+    },
+    {
+        "nom": "Géovreisset",
+        "code": "01171",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01100"
+        ],
+        "population": 891
+    },
+    {
+        "nom": "Gex",
+        "code": "01173",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01170"
+        ],
+        "population": 12652
+    },
+    {
+        "nom": "Giron",
+        "code": "01174",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01130"
+        ],
+        "population": 180
+    },
+    {
+        "nom": "Gorrevod",
+        "code": "01175",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01190"
+        ],
+        "population": 861
+    },
+    {
+        "nom": "Grand-Corent",
+        "code": "01177",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01250"
+        ],
+        "population": 174
+    },
+    {
+        "nom": "Grièges",
+        "code": "01179",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01290"
+        ],
+        "population": 1881
+    },
+    {
+        "nom": "Grilly",
+        "code": "01180",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01220"
+        ],
+        "population": 808
+    },
+    {
+        "nom": "Groissiat",
+        "code": "01181",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01100"
+        ],
+        "population": 1223
+    },
+    {
+        "nom": "Guéreins",
+        "code": "01183",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01090"
+        ],
+        "population": 1435
+    },
+    {
+        "nom": "Hautecourt-Romanèche",
+        "code": "01184",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01250"
+        ],
+        "population": 784
+    },
+    {
+        "nom": "Plateau d’Hauteville",
+        "code": "01185",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01110"
+        ],
+        "population": 4845
+    },
+    {
+        "nom": "Haut Valromey",
+        "code": "01187",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01260"
+        ],
+        "population": 695
+    },
+    {
+        "nom": "Illiat",
+        "code": "01188",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01140"
+        ],
+        "population": 615
+    },
+    {
+        "nom": "Injoux-Génissiat",
+        "code": "01189",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01200"
+        ],
+        "population": 1147
+    },
+    {
+        "nom": "Innimond",
+        "code": "01190",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01680"
+        ],
+        "population": 98
+    },
+    {
+        "nom": "Izenave",
+        "code": "01191",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01430"
+        ],
+        "population": 162
+    },
+    {
+        "nom": "Izernore",
+        "code": "01192",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01580"
+        ],
+        "population": 2257
+    },
+    {
+        "nom": "Izieu",
+        "code": "01193",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 242
+    },
+    {
+        "nom": "Jassans-Riottier",
+        "code": "01194",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01480"
+        ],
+        "population": 6391
+    },
+    {
+        "nom": "Jasseron",
+        "code": "01195",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01250"
+        ],
+        "population": 1762
+    },
+    {
+        "nom": "Jayat",
+        "code": "01196",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01340"
+        ],
+        "population": 1166
+    },
+    {
+        "nom": "Journans",
+        "code": "01197",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01250"
+        ],
+        "population": 355
+    },
+    {
+        "nom": "Joyeux",
+        "code": "01198",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01800"
+        ],
+        "population": 274
+    },
+    {
+        "nom": "Jujurieux",
+        "code": "01199",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01640"
+        ],
+        "population": 2181
+    },
+    {
+        "nom": "Labalme",
+        "code": "01200",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01450"
+        ],
+        "population": 212
+    },
+    {
+        "nom": "Lagnieu",
+        "code": "01202",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01150"
+        ],
+        "population": 7090
+    },
+    {
+        "nom": "Laiz",
+        "code": "01203",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01290"
+        ],
+        "population": 1213
+    },
+    {
+        "nom": "Le Poizat-Lalleyriat",
+        "code": "01204",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01130"
+        ],
+        "population": 712
+    },
+    {
+        "nom": "Lantenay",
+        "code": "01206",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01430"
+        ],
+        "population": 272
+    },
+    {
+        "nom": "Lapeyrouse",
+        "code": "01207",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01330"
+        ],
+        "population": 324
+    },
+    {
+        "nom": "Lavours",
+        "code": "01208",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01350"
+        ],
+        "population": 127
+    },
+    {
+        "nom": "Léaz",
+        "code": "01209",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01200"
+        ],
+        "population": 719
+    },
+    {
+        "nom": "Lélex",
+        "code": "01210",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01410"
+        ],
+        "population": 225
+    },
+    {
+        "nom": "Lent",
+        "code": "01211",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01240"
+        ],
+        "population": 1416
+    },
+    {
+        "nom": "Lescheroux",
+        "code": "01212",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01560"
+        ],
+        "population": 727
+    },
+    {
+        "nom": "Leyment",
+        "code": "01213",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01150"
+        ],
+        "population": 1285
+    },
+    {
+        "nom": "Leyssard",
+        "code": "01214",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01450"
+        ],
+        "population": 153
+    },
+    {
+        "nom": "Surjoux-Lhopital",
+        "code": "01215",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01420"
+        ],
+        "population": 126
+    },
+    {
+        "nom": "Lhuis",
+        "code": "01216",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01680"
+        ],
+        "population": 890
+    },
+    {
+        "nom": "Lompnas",
+        "code": "01219",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01680"
+        ],
+        "population": 169
+    },
+    {
+        "nom": "Loyettes",
+        "code": "01224",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01360"
+        ],
+        "population": 3145
+    },
+    {
+        "nom": "Lurcy",
+        "code": "01225",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01090"
+        ],
+        "population": 379
+    },
+    {
+        "nom": "Magnieu",
+        "code": "01227",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 640
+    },
+    {
+        "nom": "Maillat",
+        "code": "01228",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01430"
+        ],
+        "population": 623
+    },
+    {
+        "nom": "Malafretaz",
+        "code": "01229",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01340"
+        ],
+        "population": 1188
+    },
+    {
+        "nom": "Mantenay-Montlin",
+        "code": "01230",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01560"
+        ],
+        "population": 310
+    },
+    {
+        "nom": "Manziat",
+        "code": "01231",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01570"
+        ],
+        "population": 1977
+    },
+    {
+        "nom": "Marboz",
+        "code": "01232",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01851"
+        ],
+        "population": 2226
+    },
+    {
+        "nom": "Marchamp",
+        "code": "01233",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01680"
+        ],
+        "population": 131
+    },
+    {
+        "nom": "Marignieu",
+        "code": "01234",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 173
+    },
+    {
+        "nom": "Marlieux",
+        "code": "01235",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01240"
+        ],
+        "population": 1068
+    },
+    {
+        "nom": "Marsonnas",
+        "code": "01236",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01340"
+        ],
+        "population": 981
+    },
+    {
+        "nom": "Martignat",
+        "code": "01237",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01100"
+        ],
+        "population": 1627
+    },
+    {
+        "nom": "Massieux",
+        "code": "01238",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01600"
+        ],
+        "population": 2519
+    },
+    {
+        "nom": "Massignieu-de-Rives",
+        "code": "01239",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 613
+    },
+    {
+        "nom": "Matafelon-Granges",
+        "code": "01240",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01580"
+        ],
+        "population": 645
+    },
+    {
+        "nom": "Meillonnas",
+        "code": "01241",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01370"
+        ],
+        "population": 1332
+    },
+    {
+        "nom": "Mérignat",
+        "code": "01242",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01450"
+        ],
+        "population": 126
+    },
+    {
+        "nom": "Messimy-sur-Saône",
+        "code": "01243",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01480"
+        ],
+        "population": 1210
+    },
+    {
+        "nom": "Meximieux",
+        "code": "01244",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01800"
+        ],
+        "population": 7669
+    },
+    {
+        "nom": "Bohas-Meyriat-Rignat",
+        "code": "01245",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01250"
+        ],
+        "population": 895
+    },
+    {
+        "nom": "Mézériat",
+        "code": "01246",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01660"
+        ],
+        "population": 2134
+    },
+    {
+        "nom": "Mijoux",
+        "code": "01247",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01410",
+            "01170"
+        ],
+        "population": 340
+    },
+    {
+        "nom": "Mionnay",
+        "code": "01248",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01390"
+        ],
+        "population": 2132
+    },
+    {
+        "nom": "Miribel",
+        "code": "01249",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01700"
+        ],
+        "population": 9742
+    },
+    {
+        "nom": "Misérieux",
+        "code": "01250",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01600"
+        ],
+        "population": 1938
+    },
+    {
+        "nom": "Mogneneins",
+        "code": "01252",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01140"
+        ],
+        "population": 774
+    },
+    {
+        "nom": "Montagnat",
+        "code": "01254",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01250"
+        ],
+        "population": 1960
+    },
+    {
+        "nom": "Montagnieu",
+        "code": "01255",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01470"
+        ],
+        "population": 609
+    },
+    {
+        "nom": "Montanges",
+        "code": "01257",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01200"
+        ],
+        "population": 341
+    },
+    {
+        "nom": "Montceaux",
+        "code": "01258",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01090"
+        ],
+        "population": 1182
+    },
+    {
+        "nom": "Montcet",
+        "code": "01259",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01310"
+        ],
+        "population": 675
+    },
+    {
+        "nom": "Le Montellier",
+        "code": "01260",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01800"
+        ],
+        "population": 293
+    },
+    {
+        "nom": "Monthieux",
+        "code": "01261",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01390"
+        ],
+        "population": 648
+    },
+    {
+        "nom": "Montluel",
+        "code": "01262",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01120"
+        ],
+        "population": 7005
+    },
+    {
+        "nom": "Montmerle-sur-Saône",
+        "code": "01263",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01090"
+        ],
+        "population": 3811
+    },
+    {
+        "nom": "Montracol",
+        "code": "01264",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01310"
+        ],
+        "population": 1052
+    },
+    {
+        "nom": "Montréal-la-Cluse",
+        "code": "01265",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01460"
+        ],
+        "population": 3409
+    },
+    {
+        "nom": "Montrevel-en-Bresse",
+        "code": "01266",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01340"
+        ],
+        "population": 2463
+    },
+    {
+        "nom": "Nurieux-Volognat",
+        "code": "01267",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01460"
+        ],
+        "population": 1030
+    },
+    {
+        "nom": "Murs-et-Gélignieux",
+        "code": "01268",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 255
+    },
+    {
+        "nom": "Nantua",
+        "code": "01269",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01130",
+            "01460"
+        ],
+        "population": 3482
+    },
+    {
+        "nom": "Neuville-les-Dames",
+        "code": "01272",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01400"
+        ],
+        "population": 1505
+    },
+    {
+        "nom": "Neuville-sur-Ain",
+        "code": "01273",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01160"
+        ],
+        "population": 1741
+    },
+    {
+        "nom": "Les Neyrolles",
+        "code": "01274",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01130"
+        ],
+        "population": 636
+    },
+    {
+        "nom": "Neyron",
+        "code": "01275",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01700"
+        ],
+        "population": 2507
+    },
+    {
+        "nom": "Niévroz",
+        "code": "01276",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01120"
+        ],
+        "population": 1577
+    },
+    {
+        "nom": "Nivollet-Montgriffon",
+        "code": "01277",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01230"
+        ],
+        "population": 118
+    },
+    {
+        "nom": "Oncieu",
+        "code": "01279",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01230"
+        ],
+        "population": 94
+    },
+    {
+        "nom": "Ordonnaz",
+        "code": "01280",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01510"
+        ],
+        "population": 146
+    },
+    {
+        "nom": "Ornex",
+        "code": "01281",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01210"
+        ],
+        "population": 4400
+    },
+    {
+        "nom": "Outriaz",
+        "code": "01282",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01430"
+        ],
+        "population": 261
+    },
+    {
+        "nom": "Oyonnax",
+        "code": "01283",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01100"
+        ],
+        "population": 22559
+    },
+    {
+        "nom": "Ozan",
+        "code": "01284",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01190"
+        ],
+        "population": 674
+    },
+    {
+        "nom": "Parcieux",
+        "code": "01285",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01600"
+        ],
+        "population": 1188
+    },
+    {
+        "nom": "Parves et Nattages",
+        "code": "01286",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 937
+    },
+    {
+        "nom": "Péron",
+        "code": "01288",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01630"
+        ],
+        "population": 2584
+    },
+    {
+        "nom": "Péronnas",
+        "code": "01289",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01960"
+        ],
+        "population": 6287
+    },
+    {
+        "nom": "Pérouges",
+        "code": "01290",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01800"
+        ],
+        "population": 1205
+    },
+    {
+        "nom": "Perrex",
+        "code": "01291",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01540"
+        ],
+        "population": 824
+    },
+    {
+        "nom": "Peyriat",
+        "code": "01293",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01430"
+        ],
+        "population": 164
+    },
+    {
+        "nom": "Peyrieu",
+        "code": "01294",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 862
+    },
+    {
+        "nom": "Peyzieux-sur-Saône",
+        "code": "01295",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01140"
+        ],
+        "population": 663
+    },
+    {
+        "nom": "Pirajoux",
+        "code": "01296",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01270"
+        ],
+        "population": 389
+    },
+    {
+        "nom": "Pizay",
+        "code": "01297",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01120"
+        ],
+        "population": 796
+    },
+    {
+        "nom": "Plagne",
+        "code": "01298",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01130"
+        ],
+        "population": 123
+    },
+    {
+        "nom": "Le Plantay",
+        "code": "01299",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01330"
+        ],
+        "population": 553
+    },
+    {
+        "nom": "Polliat",
+        "code": "01301",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01310"
+        ],
+        "population": 2504
+    },
+    {
+        "nom": "Pollieu",
+        "code": "01302",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01350"
+        ],
+        "population": 161
+    },
+    {
+        "nom": "Poncin",
+        "code": "01303",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01450"
+        ],
+        "population": 1696
+    },
+    {
+        "nom": "Pont-d'Ain",
+        "code": "01304",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01160"
+        ],
+        "population": 2914
+    },
+    {
+        "nom": "Pont-de-Vaux",
+        "code": "01305",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01190"
+        ],
+        "population": 2290
+    },
+    {
+        "nom": "Pont-de-Veyle",
+        "code": "01306",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01290"
+        ],
+        "population": 1618
+    },
+    {
+        "nom": "Port",
+        "code": "01307",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01460"
+        ],
+        "population": 855
+    },
+    {
+        "nom": "Pougny",
+        "code": "01308",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01550"
+        ],
+        "population": 815
+    },
+    {
+        "nom": "Pouillat",
+        "code": "01309",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01250"
+        ],
+        "population": 90
+    },
+    {
+        "nom": "Prémeyzel",
+        "code": "01310",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 247
+    },
+    {
+        "nom": "Prémillieu",
+        "code": "01311",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01110"
+        ],
+        "population": 46
+    },
+    {
+        "nom": "Prévessin-Moëns",
+        "code": "01313",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01280"
+        ],
+        "population": 7991
+    },
+    {
+        "nom": "Priay",
+        "code": "01314",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01160"
+        ],
+        "population": 1707
+    },
+    {
+        "nom": "Ramasse",
+        "code": "01317",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01250"
+        ],
+        "population": 321
+    },
+    {
+        "nom": "Rancé",
+        "code": "01318",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01390"
+        ],
+        "population": 727
+    },
+    {
+        "nom": "Relevant",
+        "code": "01319",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01990"
+        ],
+        "population": 463
+    },
+    {
+        "nom": "Replonges",
+        "code": "01320",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01750"
+        ],
+        "population": 3702
+    },
+    {
+        "nom": "Revonnas",
+        "code": "01321",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01250"
+        ],
+        "population": 921
+    },
+    {
+        "nom": "Reyrieux",
+        "code": "01322",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01600"
+        ],
+        "population": 4670
+    },
+    {
+        "nom": "Reyssouze",
+        "code": "01323",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01190"
+        ],
+        "population": 975
+    },
+    {
+        "nom": "Rignieux-le-Franc",
+        "code": "01325",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01800"
+        ],
+        "population": 976
+    },
+    {
+        "nom": "Romans",
+        "code": "01328",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01400"
+        ],
+        "population": 594
+    },
+    {
+        "nom": "Rossillon",
+        "code": "01329",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01510"
+        ],
+        "population": 153
+    },
+    {
+        "nom": "Ruffieu",
+        "code": "01330",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01260"
+        ],
+        "population": 184
+    },
+    {
+        "nom": "Saint-Alban",
+        "code": "01331",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01450"
+        ],
+        "population": 179
+    },
+    {
+        "nom": "Saint-André-de-Bâgé",
+        "code": "01332",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01380"
+        ],
+        "population": 742
+    },
+    {
+        "nom": "Saint-André-de-Corcy",
+        "code": "01333",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01390"
+        ],
+        "population": 3241
+    },
+    {
+        "nom": "Saint-André-d'Huiriat",
+        "code": "01334",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01290"
+        ],
+        "population": 602
+    },
+    {
+        "nom": "Saint-André-le-Bouchoux",
+        "code": "01335",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01240"
+        ],
+        "population": 384
+    },
+    {
+        "nom": "Saint-André-sur-Vieux-Jonc",
+        "code": "01336",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01960"
+        ],
+        "population": 1126
+    },
+    {
+        "nom": "Saint-Bénigne",
+        "code": "01337",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01190"
+        ],
+        "population": 1254
+    },
+    {
+        "nom": "Groslée-Saint-Benoit",
+        "code": "01338",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01680",
+            "01300"
+        ],
+        "population": 1193
+    },
+    {
+        "nom": "Saint-Bernard",
+        "code": "01339",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01600"
+        ],
+        "population": 1434
+    },
+    {
+        "nom": "Sainte-Croix",
+        "code": "01342",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01120"
+        ],
+        "population": 566
+    },
+    {
+        "nom": "Saint-Cyr-sur-Menthon",
+        "code": "01343",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01380"
+        ],
+        "population": 1761
+    },
+    {
+        "nom": "Saint-Denis-lès-Bourg",
+        "code": "01344",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01000"
+        ],
+        "population": 5667
+    },
+    {
+        "nom": "Saint-Denis-en-Bugey",
+        "code": "01345",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01500"
+        ],
+        "population": 2293
+    },
+    {
+        "nom": "Saint-Didier-d'Aussiat",
+        "code": "01346",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01340"
+        ],
+        "population": 879
+    },
+    {
+        "nom": "Saint-Didier-de-Formans",
+        "code": "01347",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01600"
+        ],
+        "population": 1944
+    },
+    {
+        "nom": "Saint-Didier-sur-Chalaronne",
+        "code": "01348",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01140"
+        ],
+        "population": 2832
+    },
+    {
+        "nom": "Saint-Éloi",
+        "code": "01349",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01800"
+        ],
+        "population": 453
+    },
+    {
+        "nom": "Saint-Étienne-du-Bois",
+        "code": "01350",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01370"
+        ],
+        "population": 2490
+    },
+    {
+        "nom": "Saint-Étienne-sur-Chalaronne",
+        "code": "01351",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01140"
+        ],
+        "population": 1546
+    },
+    {
+        "nom": "Saint-Étienne-sur-Reyssouze",
+        "code": "01352",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01190"
+        ],
+        "population": 568
+    },
+    {
+        "nom": "Sainte-Euphémie",
+        "code": "01353",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01600"
+        ],
+        "population": 1657
+    },
+    {
+        "nom": "Saint-Genis-Pouilly",
+        "code": "01354",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01630"
+        ],
+        "population": 11892
+    },
+    {
+        "nom": "Saint-Genis-sur-Menthon",
+        "code": "01355",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01380"
+        ],
+        "population": 472
+    },
+    {
+        "nom": "Saint-Georges-sur-Renon",
+        "code": "01356",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01400"
+        ],
+        "population": 219
+    },
+    {
+        "nom": "Saint-Germain-de-Joux",
+        "code": "01357",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01130"
+        ],
+        "population": 507
+    },
+    {
+        "nom": "Saint-Germain-les-Paroisses",
+        "code": "01358",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 434
+    },
+    {
+        "nom": "Saint-Germain-sur-Renon",
+        "code": "01359",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01240"
+        ],
+        "population": 235
+    },
+    {
+        "nom": "Saint-Jean-de-Gonville",
+        "code": "01360",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01630"
+        ],
+        "population": 1720
+    },
+    {
+        "nom": "Saint-Jean-de-Niost",
+        "code": "01361",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01800"
+        ],
+        "population": 1427
+    },
+    {
+        "nom": "Saint-Jean-de-Thurigneux",
+        "code": "01362",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01390"
+        ],
+        "population": 773
+    },
+    {
+        "nom": "Saint-Jean-le-Vieux",
+        "code": "01363",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01640"
+        ],
+        "population": 1699
+    },
+    {
+        "nom": "Saint-Jean-sur-Reyssouze",
+        "code": "01364",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01560"
+        ],
+        "population": 737
+    },
+    {
+        "nom": "Saint-Jean-sur-Veyle",
+        "code": "01365",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01290"
+        ],
+        "population": 1122
+    },
+    {
+        "nom": "Sainte-Julie",
+        "code": "01366",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01150"
+        ],
+        "population": 999
+    },
+    {
+        "nom": "Saint-Julien-sur-Reyssouze",
+        "code": "01367",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01560"
+        ],
+        "population": 698
+    },
+    {
+        "nom": "Saint-Julien-sur-Veyle",
+        "code": "01368",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01540"
+        ],
+        "population": 798
+    },
+    {
+        "nom": "Saint-Just",
+        "code": "01369",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01250"
+        ],
+        "population": 917
+    },
+    {
+        "nom": "Saint-Laurent-sur-Saône",
+        "code": "01370",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01750"
+        ],
+        "population": 1754
+    },
+    {
+        "nom": "Saint-Marcel",
+        "code": "01371",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01390"
+        ],
+        "population": 1303
+    },
+    {
+        "nom": "Saint-Martin-de-Bavel",
+        "code": "01372",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01510"
+        ],
+        "population": 438
+    },
+    {
+        "nom": "Saint-Martin-du-Frêne",
+        "code": "01373",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01430"
+        ],
+        "population": 1063
+    },
+    {
+        "nom": "Saint-Martin-du-Mont",
+        "code": "01374",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01160"
+        ],
+        "population": 1807
+    },
+    {
+        "nom": "Saint-Martin-le-Châtel",
+        "code": "01375",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01310"
+        ],
+        "population": 790
+    },
+    {
+        "nom": "Saint-Maurice-de-Beynost",
+        "code": "01376",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01700"
+        ],
+        "population": 3965
+    },
+    {
+        "nom": "Saint-Maurice-de-Gourdans",
+        "code": "01378",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01800"
+        ],
+        "population": 2537
+    },
+    {
+        "nom": "Saint-Maurice-de-Rémens",
+        "code": "01379",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01500"
+        ],
+        "population": 752
+    },
+    {
+        "nom": "Saint-Nizier-le-Bouchoux",
+        "code": "01380",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01560"
+        ],
+        "population": 683
+    },
+    {
+        "nom": "Saint-Nizier-le-Désert",
+        "code": "01381",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01320"
+        ],
+        "population": 914
+    },
+    {
+        "nom": "Sainte-Olive",
+        "code": "01382",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01330"
+        ],
+        "population": 284
+    },
+    {
+        "nom": "Saint-Paul-de-Varax",
+        "code": "01383",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01240"
+        ],
+        "population": 1502
+    },
+    {
+        "nom": "Saint-Rambert-en-Bugey",
+        "code": "01384",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01230"
+        ],
+        "population": 2310
+    },
+    {
+        "nom": "Saint-Rémy",
+        "code": "01385",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01310"
+        ],
+        "population": 999
+    },
+    {
+        "nom": "Saint-Sorlin-en-Bugey",
+        "code": "01386",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01150"
+        ],
+        "population": 1150
+    },
+    {
+        "nom": "Saint-Sulpice",
+        "code": "01387",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01340"
+        ],
+        "population": 247
+    },
+    {
+        "nom": "Saint-Trivier-de-Courtes",
+        "code": "01388",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01560"
+        ],
+        "population": 1095
+    },
+    {
+        "nom": "Saint-Trivier-sur-Moignans",
+        "code": "01389",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01990"
+        ],
+        "population": 1822
+    },
+    {
+        "nom": "Saint-Vulbas",
+        "code": "01390",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01150"
+        ],
+        "population": 1306
+    },
+    {
+        "nom": "Salavre",
+        "code": "01391",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01270"
+        ],
+        "population": 279
+    },
+    {
+        "nom": "Samognat",
+        "code": "01392",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01580"
+        ],
+        "population": 657
+    },
+    {
+        "nom": "Sandrans",
+        "code": "01393",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01400"
+        ],
+        "population": 526
+    },
+    {
+        "nom": "Sault-Brénaz",
+        "code": "01396",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01150"
+        ],
+        "population": 960
+    },
+    {
+        "nom": "Sauverny",
+        "code": "01397",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01220"
+        ],
+        "population": 1025
+    },
+    {
+        "nom": "Savigneux",
+        "code": "01398",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01480"
+        ],
+        "population": 1333
+    },
+    {
+        "nom": "Ségny",
+        "code": "01399",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01170"
+        ],
+        "population": 2016
+    },
+    {
+        "nom": "Seillonnaz",
+        "code": "01400",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01470"
+        ],
+        "population": 138
+    },
+    {
+        "nom": "Sergy",
+        "code": "01401",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01630"
+        ],
+        "population": 2045
+    },
+    {
+        "nom": "Sermoyer",
+        "code": "01402",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01190"
+        ],
+        "population": 678
+    },
+    {
+        "nom": "Serrières-de-Briord",
+        "code": "01403",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01470"
+        ],
+        "population": 1262
+    },
+    {
+        "nom": "Serrières-sur-Ain",
+        "code": "01404",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01450"
+        ],
+        "population": 131
+    },
+    {
+        "nom": "Servas",
+        "code": "01405",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01960"
+        ],
+        "population": 1241
+    },
+    {
+        "nom": "Servignat",
+        "code": "01406",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01560"
+        ],
+        "population": 175
+    },
+    {
+        "nom": "Seyssel",
+        "code": "01407",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01420"
+        ],
+        "population": 997
+    },
+    {
+        "nom": "Simandre-sur-Suran",
+        "code": "01408",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01250"
+        ],
+        "population": 677
+    },
+    {
+        "nom": "Sonthonnax-la-Montagne",
+        "code": "01410",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01580"
+        ],
+        "population": 318
+    },
+    {
+        "nom": "Souclin",
+        "code": "01411",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01150"
+        ],
+        "population": 268
+    },
+    {
+        "nom": "Sulignat",
+        "code": "01412",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01400"
+        ],
+        "population": 577
+    },
+    {
+        "nom": "Talissieu",
+        "code": "01415",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01510"
+        ],
+        "population": 448
+    },
+    {
+        "nom": "Tenay",
+        "code": "01416",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01230"
+        ],
+        "population": 1044
+    },
+    {
+        "nom": "Thil",
+        "code": "01418",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01120"
+        ],
+        "population": 1072
+    },
+    {
+        "nom": "Thoiry",
+        "code": "01419",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01710"
+        ],
+        "population": 6094
+    },
+    {
+        "nom": "Thoissey",
+        "code": "01420",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01140"
+        ],
+        "population": 1725
+    },
+    {
+        "nom": "Torcieu",
+        "code": "01421",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01230"
+        ],
+        "population": 725
+    },
+    {
+        "nom": "Tossiat",
+        "code": "01422",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01250"
+        ],
+        "population": 1366
+    },
+    {
+        "nom": "Toussieux",
+        "code": "01423",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01600"
+        ],
+        "population": 1002
+    },
+    {
+        "nom": "Tramoyes",
+        "code": "01424",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01390"
+        ],
+        "population": 1664
+    },
+    {
+        "nom": "La Tranclière",
+        "code": "01425",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01160"
+        ],
+        "population": 289
+    },
+    {
+        "nom": "Val-Revermont",
+        "code": "01426",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01370"
+        ],
+        "population": 2581
+    },
+    {
+        "nom": "Trévoux",
+        "code": "01427",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01600"
+        ],
+        "population": 6849
+    },
+    {
+        "nom": "Valeins",
+        "code": "01428",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01140"
+        ],
+        "population": 131
+    },
+    {
+        "nom": "Vandeins",
+        "code": "01429",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01660"
+        ],
+        "population": 685
+    },
+    {
+        "nom": "Varambon",
+        "code": "01430",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01160"
+        ],
+        "population": 531
+    },
+    {
+        "nom": "Vaux-en-Bugey",
+        "code": "01431",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01150"
+        ],
+        "population": 1228
+    },
+    {
+        "nom": "Verjon",
+        "code": "01432",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01270"
+        ],
+        "population": 278
+    },
+    {
+        "nom": "Vernoux",
+        "code": "01433",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01560"
+        ],
+        "population": 324
+    },
+    {
+        "nom": "Versailleux",
+        "code": "01434",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01330"
+        ],
+        "population": 421
+    },
+    {
+        "nom": "Versonnex",
+        "code": "01435",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01210"
+        ],
+        "population": 2186
+    },
+    {
+        "nom": "Vesancy",
+        "code": "01436",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01170"
+        ],
+        "population": 490
+    },
+    {
+        "nom": "Vescours",
+        "code": "01437",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01560"
+        ],
+        "population": 250
+    },
+    {
+        "nom": "Vésines",
+        "code": "01439",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01570"
+        ],
+        "population": 99
+    },
+    {
+        "nom": "Vieu-d'Izenave",
+        "code": "01441",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01430"
+        ],
+        "population": 699
+    },
+    {
+        "nom": "Villars-les-Dombes",
+        "code": "01443",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01330"
+        ],
+        "population": 4628
+    },
+    {
+        "nom": "Villebois",
+        "code": "01444",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01150"
+        ],
+        "population": 1160
+    },
+    {
+        "nom": "Villemotier",
+        "code": "01445",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01270"
+        ],
+        "population": 677
+    },
+    {
+        "nom": "Villeneuve",
+        "code": "01446",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01480"
+        ],
+        "population": 1481
+    },
+    {
+        "nom": "Villereversure",
+        "code": "01447",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01250"
+        ],
+        "population": 1275
+    },
+    {
+        "nom": "Villes",
+        "code": "01448",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01200"
+        ],
+        "population": 365
+    },
+    {
+        "nom": "Villette-sur-Ain",
+        "code": "01449",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01320"
+        ],
+        "population": 751
+    },
+    {
+        "nom": "Villieu-Loyes-Mollon",
+        "code": "01450",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01800"
+        ],
+        "population": 3586
+    },
+    {
+        "nom": "Viriat",
+        "code": "01451",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01440"
+        ],
+        "population": 6350
+    },
+    {
+        "nom": "Virieu-le-Grand",
+        "code": "01452",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01510"
+        ],
+        "population": 1056
+    },
+    {
+        "nom": "Arvière-en-Valromey",
+        "code": "01453",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01260",
+            "01510"
+        ],
+        "population": 716
+    },
+    {
+        "nom": "Virignin",
+        "code": "01454",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01300"
+        ],
+        "population": 1089
+    },
+    {
+        "nom": "Vongnes",
+        "code": "01456",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01350"
+        ],
+        "population": 70
+    },
+    {
+        "nom": "Vonnas",
+        "code": "01457",
+        "codeDepartement": "01",
+        "codeRegion": "84",
+        "codesPostaux": [
+            "01540"
+        ],
+        "population": 2929
+    }
+]
