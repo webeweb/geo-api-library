@@ -48,6 +48,5 @@ class DepartementsRequestTest extends AbstractTestCase {
         $obj = new DepartementsRequest();
 
         $this->assertEquals(DepartementsRequest::RESOURCE_PATH, $obj->getResourcePath());
-        $this->assertNull($obj->getCode());
     }
 }

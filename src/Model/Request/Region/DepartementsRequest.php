@@ -12,7 +12,6 @@
 namespace WBW\Library\GeoAPI\Model\Request\Region;
 
 use WBW\Library\GeoAPI\Model\AbstractRequest;
-use WBW\Library\GeoAPI\Model\Attribute\StringCodeTrait;
 
 /**
  * Départements request.
@@ -21,8 +20,6 @@ use WBW\Library\GeoAPI\Model\Attribute\StringCodeTrait;
  * @package WBW\Library\GeoAPI\Model\Request\Region
  */
 class DepartementsRequest extends AbstractRequest {
-
-    use StringCodeTrait;
 
     /**
      * Resource path.
