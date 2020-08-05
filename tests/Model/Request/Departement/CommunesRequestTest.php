@@ -48,6 +48,8 @@ class CommunesRequestTest extends AbstractTestCase {
         $obj = new CommunesRequest();
 
         $this->assertEquals(CommunesRequest::RESOURCE_PATH, $obj->getResourcePath());
-        $this->assertNull($obj->getCode());
+
+        $this->assertNull($obj->getFormat());
+        $this->assertNull($obj->getGeometry());
     }
 }
