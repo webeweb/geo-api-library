@@ -12,6 +12,8 @@
 namespace WBW\Library\GeoAPI\Model\Request\Commune;
 
 use WBW\Library\GeoAPI\Model\AbstractRequest;
+use WBW\Library\GeoAPI\Model\Attribute\StringFormatTrait;
+use WBW\Library\GeoAPI\Model\Attribute\StringGeometryTrait;
 
 /**
  * Communes request.
@@ -20,6 +22,9 @@ use WBW\Library\GeoAPI\Model\AbstractRequest;
  * @package WBW\Library\GeoAPI\Model\Request\Commune
  */
 class CommunesRequest extends AbstractRequest {
+
+    use StringFormatTrait;
+    use StringGeometryTrait;
 
     /**
      * Resource path.
