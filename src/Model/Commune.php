@@ -12,6 +12,7 @@
 namespace WBW\Library\GeoAPI\Model;
 
 use WBW\Library\GeoAPI\Model\Attribute\FloatScoreTrait;
+use WBW\Library\GeoAPI\Model\Attribute\StringCodeDepartementTrait;
 use WBW\Library\GeoAPI\Model\Attribute\StringCodeRegionTrait;
 use WBW\Library\GeoAPI\Model\Attribute\StringCodeTrait;
 use WBW\Library\GeoAPI\Model\Attribute\StringNomTrait;
@@ -25,16 +26,11 @@ use WBW\Library\GeoAPI\Model\Attribute\StringNomTrait;
 class Commune {
 
     use FloatScoreTrait;
+    use StringCodeDepartementTrait;
     use StringCodeRegionTrait;
     use StringCodeTrait;
     use StringNomTrait;
 
-    /**
-     * Code département.
-     *
-     * @var string
-     */
-    private $codeDepartement;
 
     /**
      * Codes postaux.
@@ -57,14 +53,6 @@ class Commune {
         // NOTHING TO TO.
     }
 
-    /**
-     * Get the code département.
-     *
-     * @return string Returns the code département.
-     */
-    public function getCodeDepartement() {
-        return $this->codeDepartement;
-    }
 
     /**
      * Get the codes postaux.
@@ -82,17 +70,6 @@ class Commune {
      */
     public function getPopulation() {
         return $this->population;
-    }
-
-    /**
-     * Set the code département.
-     *
-     * @param string $codeDepartement The code département.
-     * @return Commune Returns this commune.
-     */
-    public function setCodeDepartement($codeDepartement) {
-        $this->codeDepartement = $codeDepartement;
-        return $this;
     }
 
     /**
