@@ -12,6 +12,7 @@
 namespace WBW\Library\GeoAPI\Model\Request\Region;
 
 use WBW\Library\GeoAPI\Model\AbstractRequest;
+use WBW\Library\GeoAPI\Model\Attribute\StringNomTrait;
 
 /**
  * Régions request.
@@ -20,6 +21,8 @@ use WBW\Library\GeoAPI\Model\AbstractRequest;
  * @package WBW\Library\GeoAPI\Model\Request\Region
  */
 class RegionsRequest extends AbstractRequest {
+
+    use StringNomTrait;
 
     /**
      * Resource path.

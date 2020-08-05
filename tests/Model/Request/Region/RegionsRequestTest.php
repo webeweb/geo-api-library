@@ -34,5 +34,7 @@ class RegionsRequestTest extends AbstractTestCase {
         $obj = new RegionsRequest();
 
         $this->assertEquals(RegionsRequest::RESOURCE_PATH, $obj->getResourcePath());
+
+        $this->assertNull($obj->getNom());
     }
 }
