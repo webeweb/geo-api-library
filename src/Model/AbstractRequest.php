@@ -11,6 +11,9 @@
 
 namespace WBW\Library\GeoAPI\Model;
 
+use WBW\Library\GeoAPI\Model\Attribute\ArrayFieldsTrait;
+use WBW\Library\GeoAPI\Model\Attribute\StringCodeTrait;
+
 /**
  * Abstract request.
  *
@@ -19,6 +22,16 @@ namespace WBW\Library\GeoAPI\Model;
  * @abstract
  */
 abstract class AbstractRequest {
+
+    use ArrayFieldsTrait;
+    use StringCodeTrait;
+
+    /**
+     * Constructor.
+     */
+    public function __construct() {
+        $this->setFields([]);
+    }
 
     /**
      * Get the resource path.
