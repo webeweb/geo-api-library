@@ -27,7 +27,7 @@ class FloatScoreTraitTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetScore() {
+    public function testSetScore(): void {
 
         $obj = new TestFloatScoreTrait();
 
@@ -40,7 +40,7 @@ class FloatScoreTraitTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function test__construct() {
+    public function test__construct(): void {
 
         $obj = new TestFloatScoreTrait();
 

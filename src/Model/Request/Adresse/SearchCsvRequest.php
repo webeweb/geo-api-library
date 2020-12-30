@@ -43,9 +43,9 @@ class SearchCsvRequest extends AbstractCsvRequest {
     /**
      * Constructor.
      *
-     * @param string $data The data.
+     * @param string|null $data The data.
      */
-    public function __construct($data = null) {
+    public function __construct(string $data = null) {
         parent::__construct($data);
         $this->setColumns([]);
         $this->setResultColumns([]);
@@ -57,7 +57,7 @@ class SearchCsvRequest extends AbstractCsvRequest {
      * @param string $column The column.
      * @return SearchCsvRequest Returns this search CSV request.
      */
-    public function addColumn($column) {
+    public function addColumn(string $column): SearchCsvRequest {
         $this->columns[] = $column;
         return $this;
     }
@@ -68,7 +68,7 @@ class SearchCsvRequest extends AbstractCsvRequest {
      * @param string $resultColumn The result column.
      * @return SearchCsvRequest Returns this search CSV request.
      */
-    public function addResultColumn($resultColumn) {
+    public function addResultColumn(string $resultColumn): SearchCsvRequest {
         $this->resultColumns[] = $resultColumn;
         return $this;
     }
@@ -78,14 +78,14 @@ class SearchCsvRequest extends AbstractCsvRequest {
      *
      * @return string[] Returns the columns.
      */
-    public function getColumns() {
+    public function getColumns(): array {
         return $this->columns;
     }
 
     /**
      * {@inheritDoc}
      */
-    public function getResourcePath() {
+    public function getResourcePath(): string {
         return self::RESOURCE_PATH;
     }
 
@@ -94,7 +94,7 @@ class SearchCsvRequest extends AbstractCsvRequest {
      *
      * @return string[] Returns the result columns.
      */
-    public function getResultColumns() {
+    public function getResultColumns(): array {
         return $this->resultColumns;
     }
 
@@ -104,7 +104,7 @@ class SearchCsvRequest extends AbstractCsvRequest {
      * @param string[] $columns The columns.
      * @return SearchCsvRequest Returns this search CSV request.
      */
-    public function setColumns($columns) {
+    public function setColumns(array $columns): SearchCsvRequest {
         $this->columns = $columns;
         return $this;
     }
@@ -115,7 +115,7 @@ class SearchCsvRequest extends AbstractCsvRequest {
      * @param string[] $resultColumns The result columns.
      * @return SearchCsvRequest Returns this search CSV request.
      */
-    protected function setResultColumns(array $resultColumns) {
+    protected function setResultColumns(array $resultColumns): SearchCsvRequest {
         $this->resultColumns = $resultColumns;
         return $this;
     }

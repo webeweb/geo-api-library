@@ -31,7 +31,7 @@ class CommuneProviderTest extends AbstractTestCase {
      * @return void
      * @throws Exception Throws an exception if an error occurs.
      */
-    public function testCommunes() {
+    public function testCommunes(): void {
 
         // Set a Communes request mock.
         $request = new CommunesRequest();

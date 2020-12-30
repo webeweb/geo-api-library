@@ -27,7 +27,7 @@ class DepartementsRequestTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testGetResourcePath() {
+    public function testGetResourcePath(): void {
 
         $obj = new DepartementsRequest();
         $this->assertEquals(DepartementsRequest::RESOURCE_PATH, $obj->getResourcePath());
@@ -41,7 +41,7 @@ class DepartementsRequestTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function test__construct() {
+    public function test__construct(): void {
 
         $this->assertEquals("/regions/%s/departements", DepartementsRequest::RESOURCE_PATH);
 

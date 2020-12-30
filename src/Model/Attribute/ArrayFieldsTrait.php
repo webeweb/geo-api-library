@@ -31,7 +31,7 @@ trait ArrayFieldsTrait {
      *
      * @param string $field The field.
      */
-    public function addField($field) {
+    public function addField(string $field): self {
         $this->fields[] = $field;
         return $this;
     }
@@ -41,7 +41,7 @@ trait ArrayFieldsTrait {
      *
      * @return string[] Returns the fields.
      */
-    public function getFields() {
+    public function getFields(): array {
         return $this->fields;
     }
 
@@ -50,7 +50,7 @@ trait ArrayFieldsTrait {
      *
      * @param string[] $fields The fields.
      */
-    protected function setFields(array $fields) {
+    protected function setFields(array $fields): self {
         $this->fields = $fields;
         return $this;
     }

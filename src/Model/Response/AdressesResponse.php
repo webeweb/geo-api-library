@@ -42,7 +42,7 @@ class AdressesResponse extends AbstractResponse {
      * @param Adresse $adresse The adresse.
      * @return AdressesResponse Returns this adresses response.
      */
-    public function addAdresse(Adresse $adresse) {
+    public function addAdresse(Adresse $adresse): AdressesResponse {
         $this->adresses[] = $adresse;
         return $this;
     }
@@ -52,7 +52,7 @@ class AdressesResponse extends AbstractResponse {
      *
      * @return Adresse[] Returns the adresses.
      */
-    public function getAdresses() {
+    public function getAdresses(): array {
         return $this->adresses;
     }
 
@@ -62,7 +62,7 @@ class AdressesResponse extends AbstractResponse {
      * @param Adresse[] $adresses The adresses.
      * @return AdressesResponse Returns this adresses response.
      */
-    protected function setAdresses(array $adresses) {
+    protected function setAdresses(array $adresses): AdressesResponse {
         $this->adresses = $adresses;
         return $this;
     }

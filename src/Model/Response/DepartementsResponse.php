@@ -42,7 +42,7 @@ class DepartementsResponse extends AbstractResponse {
      * @param Departement $departement The département.
      * @return DepartementsResponse Returns this départements response.
      */
-    public function addDepartement(Departement $departement) {
+    public function addDepartement(Departement $departement): DepartementsResponse {
         $this->departements[] = $departement;
         return $this;
     }
@@ -52,7 +52,7 @@ class DepartementsResponse extends AbstractResponse {
      *
      * @return Departement[] Returns the départements.
      */
-    public function getDepartements() {
+    public function getDepartements(): array {
         return $this->departements;
     }
 
@@ -62,7 +62,7 @@ class DepartementsResponse extends AbstractResponse {
      * @param Departement[] $departements The départements.
      * @return DepartementsResponse Returns this départements response.
      */
-    protected function setDepartements(array $departements) {
+    protected function setDepartements(array $departements): DepartementsResponse {
         $this->departements = $departements;
         return $this;
     }

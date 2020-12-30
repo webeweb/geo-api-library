@@ -31,7 +31,7 @@ class CommuneProvider extends DecoupageAdministratifProvider {
      * @return CommunesResponse Returns the communes response.
      * @throws ApiException Throws an API exception if an error occurs.
      */
-    public function communes(CommunesRequest $request) {
+    public function communes(CommunesRequest $request): CommunesResponse {
 
         $rawResponse = $this->callApi($request, []);
 

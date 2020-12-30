@@ -32,7 +32,7 @@ class AdresseRequestSerializer {
      * @param ReverseCsvRequest $request The reverse CSV request.
      * @return array Returns the serialized reverse CSV request.
      */
-    public static function serializeReverseCsvRequest(ReverseCsvRequest $request) {
+    public static function serializeReverseCsvRequest(ReverseCsvRequest $request): array {
 
         $result = [];
 
@@ -47,7 +47,7 @@ class AdresseRequestSerializer {
      * @param ReverseRequest $request The reverse request.
      * @return array Returns the serialized reverse request.
      */
-    public static function serializeReverseRequest(ReverseRequest $request) {
+    public static function serializeReverseRequest(ReverseRequest $request): array {
 
         $result = [];
 
@@ -63,7 +63,7 @@ class AdresseRequestSerializer {
      * @param SearchCsvRequest $request The search CSV request.
      * @return array Returns the serialized search CSV request.
      */
-    public static function serializeSearchCsvRequest(SearchCsvRequest $request) {
+    public static function serializeSearchCsvRequest(SearchCsvRequest $request): array {
 
         $result = [];
 
@@ -80,7 +80,7 @@ class AdresseRequestSerializer {
      * @param SearchRequest $request The search request.
      * @return array Returns the serialized search request.
      */
-    public static function serializeSearchRequest(SearchRequest $request) {
+    public static function serializeSearchRequest(SearchRequest $request): array {
 
         $result = [];
 

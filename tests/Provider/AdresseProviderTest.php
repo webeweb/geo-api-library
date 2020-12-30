@@ -36,7 +36,7 @@ class AdresseProviderTest extends AbstractTestCase {
      * @return void
      * @throws Exception Throws an exception if an error occurs.
      */
-    public function testReverse() {
+    public function testReverse(): void {
 
         // Set a Reverse request mock.
         $arg = new ReverseRequest(49.897443, 2.290084);
@@ -60,7 +60,7 @@ class AdresseProviderTest extends AbstractTestCase {
      * @return void
      * @throws Exception Throws an exception if an error occurs.
      */
-    public function testReverseCsv() {
+    public function testReverseCsv(): void {
 
         // Set a data mock.
         $data = getcwd() . "/tests/Fixtures/Model/Request/Adresse/ReverseCsvRequest.csv";
@@ -83,7 +83,7 @@ class AdresseProviderTest extends AbstractTestCase {
      * @return void
      * @throws Exception Throws an exception if an error occurs.
      */
-    public function testSearch() {
+    public function testSearch(): void {
 
         // Set a Search request mock.
         $arg = new SearchRequest("8 bd du port");
@@ -108,7 +108,7 @@ class AdresseProviderTest extends AbstractTestCase {
      * @return void
      * @throws Exception Throws an exception if an error occurs.
      */
-    public function testSearchCsv() {
+    public function testSearchCsv(): void {
 
         // Set a data mock.
         $data = getcwd() . "/tests/Fixtures/Model/Request/Adresse/SearchCsvRequest.csv";
@@ -131,7 +131,7 @@ class AdresseProviderTest extends AbstractTestCase {
      * @return void
      * @throws Exception Throws an exception if an error occurs.
      */
-    public function testSearchCsvWithColumns() {
+    public function testSearchCsvWithColumns(): void {
 
         // Set a data mock.
         $data = getcwd() . "/tests/Fixtures/Model/Request/Adresse/SearchCsvRequest.csv";
@@ -157,7 +157,7 @@ class AdresseProviderTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function test__construct() {
+    public function test__construct(): void {
 
         $this->assertEquals("https://api-adresse.data.gouv.fr", AdresseProvider::ENDPOINT_PATH);
 

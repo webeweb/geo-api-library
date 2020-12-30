@@ -33,7 +33,7 @@ class AdresseResponseDeserializer {
      * @param string[] $headers The headers.
      * @retun Adresse Returns the adresse.
      */
-    protected static function deserializeAdresse($response, array $headers) {
+    protected static function deserializeAdresse(string $response, array $headers): Adresse {
 
         $model = new Adresse();
 
@@ -65,7 +65,7 @@ class AdresseResponseDeserializer {
      * @param AbstractCsvResponse $model The CSV response.
      * @return AbstractCsvResponse Returns the CSV response.
      */
-    protected static function deserializeCsvResponse($rawResponse, AbstractCsvResponse $model) {
+    protected static function deserializeCsvResponse(string $rawResponse, AbstractCsvResponse $model): AbstractCsvResponse {
 
         $model->setRawResponse($rawResponse);
 
@@ -97,7 +97,7 @@ class AdresseResponseDeserializer {
      * @param string $rawResponse The raw response.
      * @return ReverseCsvResponse Returns the reverse CSV response.
      */
-    public static function deserializeReverseCsvResponse($rawResponse) {
+    public static function deserializeReverseCsvResponse(string $rawResponse): ReverseCsvResponse {
         return static::deserializeCsvResponse($rawResponse, new ReverseCsvResponse());
     }
 
@@ -107,7 +107,7 @@ class AdresseResponseDeserializer {
      * @param string $rawResponse The raw response.
      * @return FeatureCollection|null Returns the reverse response in case of success, null otherwise.
      */
-    public static function deserializeReverseResponse($rawResponse) {
+    public static function deserializeReverseResponse(string $rawResponse): ?FeatureCollection {
         return static::deserializeSearchResponse($rawResponse);
     }
 
@@ -127,7 +127,7 @@ class AdresseResponseDeserializer {
      * @param string $rawResponse The raw response.
      * @return FeatureCollection|null Returns the search response in case of success, null otherwise.
      */
-    public static function deserializeSearchResponse($rawResponse) {
+    public static function deserializeSearchResponse(string $rawResponse): ?FeatureCollection {
 
         $response = json_decode($rawResponse, true);
         if (null === $response) {
@@ -142,7 +142,7 @@ class AdresseResponseDeserializer {
      *
      * @return string[] Returns the methods.
      */
-    protected static function getMethods() {
+    protected static function getMethods(): array {
         return [
             AbstractCsvResponse::RESULT_CITY        => "setCity",
             AbstractCsvResponse::RESULT_CITYCODE    => "setCityCode",

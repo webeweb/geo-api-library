@@ -22,25 +22,25 @@ trait FloatScoreTrait {
     /**
      * Score.
      *
-     * @var string
+     * @var string|null
      */
     private $score;
 
     /**
      * Get the score.
      *
-     * @return string Returns the score.
+     * @return string|null Returns the score.
      */
-    public function getScore() {
+    public function getScore(): ?string {
         return $this->score;
     }
 
     /**
      * Set the score.
      *
-     * @param string $score The score.
+     * @param string|null $score The score.
      */
-    public function setScore($score) {
+    public function setScore(?string $score): self {
         $this->score = $score;
         return $this;
     }

@@ -22,25 +22,25 @@ trait FloatLonTrait {
     /**
      * Longitude.
      *
-     * @var float
+     * @var float|null
      */
     private $lon;
 
     /**
      * Get the longitude.
      *
-     * @return float Returns the longitude.
+     * @return float|null Returns the longitude.
      */
-    public function getLon() {
+    public function getLon(): ?float {
         return $this->lon;
     }
 
     /**
      * Set the longitude.
      *
-     * @param float $lon The longitude.
+     * @param float|null $lon The longitude.
      */
-    public function setLon($lon) {
+    public function setLon(?float $lon): self {
         $this->lon = $lon;
         return $this;
     }

@@ -33,7 +33,7 @@ class RegionProviderTest extends AbstractTestCase {
      * @return void
      * @throws Exception Throws an exception if an error occurs.
      */
-    public function testDepartements() {
+    public function testDepartements(): void {
 
         // Set a Départements request mock.
         $request = new DepartementsRequest();
@@ -51,7 +51,7 @@ class RegionProviderTest extends AbstractTestCase {
      * @return void
      * @throws Exception Throws an exception if an error occurs.
      */
-    public function testRegions() {
+    public function testRegions(): void {
 
         // Set a Régions request mock.
         $request = new RegionsRequest();

@@ -27,7 +27,7 @@ class CommunesRequestTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function test__construct() {
+    public function test__construct(): void {
 
         $this->assertEquals("/communes", CommunesRequest::RESOURCE_PATH);
 

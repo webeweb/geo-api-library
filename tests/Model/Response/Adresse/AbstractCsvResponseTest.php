@@ -11,7 +11,6 @@
 
 namespace WBW\Library\GeoAPI\Tests\Model\Response\Adresse;
 
-use WBW\Library\GeoAPI\Model\Adresse;
 use WBW\Library\GeoAPI\Model\Response\Adresse\AbstractCsvResponse;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 use WBW\Library\GeoAPI\Tests\Fixtures\Model\Response\Adresse\TestCsvResponse;
@@ -29,7 +28,7 @@ class AbstractCsvResponseTest extends AbstractTestCase {
      *
      * @retun void
      */
-    public function testEnumResultColumns() {
+    public function testEnumResultColumns(): void {
 
         $res = [
             AbstractCsvResponse::RESULT_CITY,
@@ -58,7 +57,7 @@ class AbstractCsvResponseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function test__construct() {
+    public function test__construct(): void {
 
         $this->assertEquals("result_city", AbstractCsvResponse::RESULT_CITY);
         $this->assertEquals("result_citycode", AbstractCsvResponse::RESULT_CITYCODE);

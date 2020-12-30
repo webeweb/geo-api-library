@@ -33,7 +33,7 @@ class DepartementProvider extends DecoupageAdministratifProvider {
      * @return CommunesResponse Returns the communes response.
      * @throws ApiException Throws an API exception if an error occurs.
      */
-    public function communes(CommunesRequest $request) {
+    public function communes(CommunesRequest $request): CommunesResponse {
 
         $rawResponse = $this->callApi($request, []);
 
@@ -47,7 +47,7 @@ class DepartementProvider extends DecoupageAdministratifProvider {
      * @return DepartementsResponse Returns the départements response.
      * @throws ApiException Throws an API exception if an error occurs.
      */
-    public function departements(DepartementsRequest $request) {
+    public function departements(DepartementsRequest $request): DepartementsResponse {
 
         $rawResponse = $this->callApi($request, []);
 

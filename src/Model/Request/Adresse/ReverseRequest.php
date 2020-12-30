@@ -39,7 +39,7 @@ class ReverseRequest extends AbstractRequest {
      * @param float|null $lat The latitude.
      * @param float|null $lon The longitude.
      */
-    public function __construct($lat = null, $lon = null) {
+    public function __construct(float $lat = null, float $lon = null) {
         $this->setLat($lat);
         $this->setLon($lon);
     }
@@ -47,7 +47,7 @@ class ReverseRequest extends AbstractRequest {
     /**
      * {@inheritDoc}
      */
-    public function getResourcePath() {
+    public function getResourcePath(): string {
         return self::RESOURCE_PATH;
     }
 }

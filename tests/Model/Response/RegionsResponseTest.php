@@ -28,7 +28,7 @@ class RegionsResponseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testAddRegion() {
+    public function testAddRegion(): void {
 
         // Set a Région mock.
         $region = new Region();
@@ -44,7 +44,7 @@ class RegionsResponseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function test__construct() {
+    public function test__construct(): void {
 
         $obj = new RegionsResponse();
 

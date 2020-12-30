@@ -27,7 +27,7 @@ class SearchRequestTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testEnumTypes() {
+    public function testEnumTypes(): void {
 
         $res = [
             SearchRequest::TYPE_HOUSE_NUMBER,
@@ -43,7 +43,7 @@ class SearchRequestTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetAutocomplete() {
+    public function testSetAutocomplete(): void {
 
         $obj = new SearchRequest();
 
@@ -56,7 +56,7 @@ class SearchRequestTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetLimit() {
+    public function testSetLimit(): void {
 
         $obj = new SearchRequest();
 
@@ -69,7 +69,7 @@ class SearchRequestTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetQ() {
+    public function testSetQ(): void {
 
         $obj = new SearchRequest();
 
@@ -82,7 +82,7 @@ class SearchRequestTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function test__construct() {
+    public function test__construct(): void {
 
         $this->assertEquals("/search/", SearchRequest::RESOURCE_PATH);
 

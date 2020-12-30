@@ -24,7 +24,7 @@ class TestProvider extends AbstractProvider {
     /**
      * {@inheritDoc}
      */
-    public function getEndpointPath() {
-        return null;
+    public function getEndpointPath(): string {
+        return "";
     }
 }

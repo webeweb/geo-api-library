@@ -28,7 +28,7 @@ class AdressesResponseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testAddAdresse() {
+    public function testAddAdresse(): void {
 
         // Set an Adresse mock.
         $adresse = new Adresse();
@@ -44,7 +44,7 @@ class AdressesResponseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function test__construct() {
+    public function test__construct(): void {
 
         $obj = new AdressesResponse();
 

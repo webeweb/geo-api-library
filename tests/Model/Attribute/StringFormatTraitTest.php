@@ -27,7 +27,7 @@ class StringFormatTraitTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetFormat() {
+    public function testSetFormat(): void {
 
         $obj = new TestStringFormatTrait();
 
@@ -40,7 +40,7 @@ class StringFormatTraitTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function test__construct() {
+    public function test__construct(): void {
 
         $obj = new TestStringFormatTrait();
 

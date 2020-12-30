@@ -31,7 +31,6 @@ class Commune {
     use StringCodeTrait;
     use StringNomTrait;
 
-
     /**
      * Codes postaux.
      *
@@ -42,7 +41,7 @@ class Commune {
     /**
      * Population.
      *
-     * @var int
+     * @var int|null
      */
     private $population;
 
@@ -50,25 +49,24 @@ class Commune {
      * Constructor.
      */
     public function __construct() {
-        // NOTHING TO TO.
+        // NOTHING TO TO
     }
-
 
     /**
      * Get the codes postaux.
      *
      * @return string[] Returns the codes postaux.
      */
-    public function getCodesPostaux() {
+    public function getCodesPostaux(): ?array {
         return $this->codesPostaux;
     }
 
     /**
      * Get the population.
      *
-     * @return int Returns the population.
+     * @return int|null Returns the population.
      */
-    public function getPopulation() {
+    public function getPopulation(): ?int {
         return $this->population;
     }
 
@@ -78,7 +76,7 @@ class Commune {
      * @param string[] $codesPostaux The codes postaux.
      * @return Commune Returns this commune.
      */
-    public function setCodesPostaux($codesPostaux) {
+    public function setCodesPostaux(array $codesPostaux): Commune {
         $this->codesPostaux = $codesPostaux;
         return $this;
     }
@@ -86,10 +84,10 @@ class Commune {
     /**
      * Set the population.
      *
-     * @param int $population The population.
+     * @param int|null $population The population.
      * @return Commune Returns this commune.
      */
-    public function setPopulation($population) {
+    public function setPopulation(?int $population): Commune {
         $this->population = $population;
         return $this;
     }

@@ -30,7 +30,7 @@ abstract class DecoupageAdministratifProvider extends AbstractProvider {
     /**
      * {@inheritDoc}
      */
-    public function getEndpointPath() {
+    public function getEndpointPath(): string {
         return self::ENDPOINT_PATH;
     }
 }

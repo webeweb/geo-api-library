@@ -11,6 +11,7 @@
 
 namespace WBW\Library\GeoAPI\Model;
 
+use WBW\Library\Core\Model\Attribute\StringIdTrait;
 use WBW\Library\Core\Model\Attribute\StringLabelTrait;
 use WBW\Library\Core\Model\Attribute\StringNameTrait;
 use WBW\Library\Core\Model\Attribute\StringTypeTrait;
@@ -23,6 +24,7 @@ use WBW\Library\Core\Model\Attribute\StringTypeTrait;
  */
 class Adresse {
 
+    use StringIdTrait;
     use StringLabelTrait;
     use StringNameTrait;
     use StringTypeTrait;
@@ -30,14 +32,14 @@ class Adresse {
     /**
      * City.
      *
-     * @var string
+     * @var string|null
      */
     private $city;
 
     /**
      * City code.
      *
-     * @var string
+     * @var string|null
      */
     private $cityCode;
 
@@ -51,84 +53,77 @@ class Adresse {
     /**
      * Context.
      *
-     * @var string
+     * @var string|null
      */
     private $context;
 
     /**
      * Distance.
      *
-     * @var string
+     * @var string|null
      */
     private $distance;
 
     /**
      * District.
      *
-     * @var string
+     * @var string|null
      */
     private $district;
 
     /**
      * House number.
      *
-     * @var string
+     * @var string|null
      */
     private $houseNumber;
 
     /**
-     * Id.
-     *
-     * @var string.
-     */
-    private $id;
-
-    /**
      * Latitude.
      *
-     * @var string
+     * @var string|null
      */
     private $latitude;
 
     /**
      * Longitude.
      *
-     * @var string
+     * @var string|null
      */
     private $longitude;
 
     /**
      * Old city.
      *
-     * @var string
+     * @var string|null
      */
     private $oldCity;
 
     /**
      * Old city code.
      *
-     * @var string
+     * @var string|null
      */
     private $oldCityCode;
 
     /**
      * Postcode.
      *
-     * @var string
+     * @var string|null
      */
     private $postcode;
 
     /**
      * Score.
      *
-     * @var string
+     * @var string|null
      */
     private $score;
 
     /**
      * Street.
      *
-     * @var string
+     * @var string|null
      */
     private $street;
 
@@ -146,7 +141,7 @@ class Adresse {
      * @param string $v The value.
      * @return Adresse Returns this adresse.
      */
-    public function addColumn($k, $v) {
+    public function addColumn(string $k, string $v): Adresse {
         $this->columns[$k] = $v;
         return $this;
     }
@@ -154,18 +149,18 @@ class Adresse {
     /**
      * Get the city.
      *
-     * @return string Returns the city.
+     * @return string|null Returns the city.
      */
-    public function getCity() {
+    public function getCity(): ?string {
         return $this->city;
     }
 
     /**
      * Get the city code.
      *
-     * @return string Returns the city.
+     * @return string|null Returns the city.
      */
-    public function getCityCode() {
+    public function getCityCode(): ?string {
         return $this->cityCode;
     }
 
@@ -174,125 +169,116 @@ class Adresse {
      *
      * @return array Returns the columns.
      */
-    public function getColumns() {
+    public function getColumns(): array {
         return $this->columns;
     }
 
     /**
      * Get the context.
      *
-     * @return string Returns the context.
+     * @return string|null Returns the context.
      */
-    public function getContext() {
+    public function getContext(): ?string {
         return $this->context;
     }
 
     /**
      * Get the distance.
      *
-     * @return string Returns the distance.
+     * @return string|null Returns the distance.
      */
-    public function getDistance() {
+    public function getDistance(): ?string {
         return $this->distance;
     }
 
     /**
      * Get the district.
      *
-     * @return string Returns the district.
+     * @return string|null Returns the district.
      */
-    public function getDistrict() {
+    public function getDistrict(): ?string {
         return $this->district;
     }
 
     /**
      * Get the house number.
      *
-     * @return string Returns the house number.
+     * @return string|null Returns the house number.
      */
-    public function getHouseNumber() {
+    public function getHouseNumber(): ?string {
         return $this->houseNumber;
-    }
-
-    /**
-     * Get the id.
-     *
-     * @return string Returns the id.
-     */
-    public function getId() {
-        return $this->id;
     }
 
     /**
      * Set the latitude.
      *
-     * @return string Returns the latitude.
+     * @return string|null Returns the latitude.
      */
-    public function getLatitude() {
+    public function getLatitude(): ?string {
         return $this->latitude;
     }
 
     /**
      * Get the longitude.
      *
-     * @return string Returns the longitude.
+     * @return string|null Returns the longitude.
      */
-    public function getLongitude() {
+    public function getLongitude(): ?string {
         return $this->longitude;
     }
 
     /**
      * Get the old city.
      *
-     * @return string Returns the old city.
+     * @return string|null Returns the old city.
      */
-    public function getOldCity() {
+    public function getOldCity(): ?string {
         return $this->oldCity;
     }
 
     /**
      * Get the old city code.
      *
-     * @return string Returns the old city code.
+     * @return string|null Returns the old city code.
      */
-    public function getOldCityCode() {
+    public function getOldCityCode(): ?string {
         return $this->oldCityCode;
     }
 
     /**
      * Get the postcode.
      *
-     * @return string Returns the postcode.
+     * @return string|null Returns the postcode.
      */
-    public function getPostcode() {
+    public function getPostcode(): ?string {
         return $this->postcode;
     }
 
     /**
      * Get the score.
      *
-     * @return string Returns the score.
+     * @return string|null Returns the score.
      */
-    public function getScore() {
+    public function getScore(): ?string {
         return $this->score;
     }
 
     /**
      * Get the street.
      *
-     * @return string Returns the street.
+     * @return string|null Returns the street.
      */
-    public function getStreet() {
+    public function getStreet(): ?string {
         return $this->street;
     }
 
     /**
      * Set the city.
      *
-     * @param string $city The city.
+     * @param string|null $city The city.
      * @return Adresse Returns this adresse.
      */
-    public function setCity($city) {
+    public function setCity(?string $city): Adresse {
         $this->city = $city;
         return $this;
     }
@@ -300,10 +286,10 @@ class Adresse {
     /**
      * Set the city code.
      *
-     * @param string $cityCode The city code.
+     * @param string|null $cityCode The city code.
      * @return Adresse Returns this adresse.
      */
-    public function setCityCode($cityCode) {
+    public function setCityCode(?string $cityCode): Adresse {
         $this->cityCode = $cityCode;
         return $this;
     }
@@ -314,7 +300,7 @@ class Adresse {
      * @param array $columns The columns.
      * @return Adresse Returns this adresse.
      */
-    protected function setColumns(array $columns) {
+    protected function setColumns(array $columns): Adresse {
         $this->columns = $columns;
         return $this;
     }
@@ -322,10 +308,10 @@ class Adresse {
     /**
      * Set the context.
      *
-     * @param string $context The context.
+     * @param string|null $context The context.
      * @return Adresse Returns this adresse.
      */
-    public function setContext($context) {
+    public function setContext(?string $context): Adresse {
         $this->context = $context;
         return $this;
     }
@@ -333,10 +319,10 @@ class Adresse {
     /**
      * The distance.
      *
-     * @param string $distance The distance.
+     * @param string|null $distance The distance.
      * @return Adresse Returns this adresse.
      */
-    public function setDistance($distance) {
+    public function setDistance(?string $distance): Adresse {
         $this->distance = $distance;
         return $this;
     }
@@ -344,10 +330,10 @@ class Adresse {
     /**
      * Set the district.
      *
-     * @param string $district The district.
+     * @param string|null $district The district.
      * @return Adresse Returns this adresse.
      */
-    public function setDistrict($district) {
+    public function setDistrict(?string $district): Adresse {
         $this->district = $district;
         return $this;
     }
@@ -355,32 +341,21 @@ class Adresse {
     /**
      * Set the house number.
      *
-     * @param string $houseNumber The house number.
+     * @param string|null $houseNumber The house number.
      * @return Adresse Returns this adresse.
      */
-    public function setHouseNumber($houseNumber) {
+    public function setHouseNumber(?string $houseNumber): Adresse {
         $this->houseNumber = $houseNumber;
-        return $this;
-    }
-
-    /**
-     * Set the id.
-     *
-     * @param string $id The id.
-     * @return Adresse Returns this adresse.
-     */
-    public function setId($id) {
-        $this->id = $id;
         return $this;
     }
 
     /**
      * Set the latitude.
      *
-     * @param string $latitude The latitude.
+     * @param string|null $latitude The latitude.
      * @return Adresse Returns this adresse.
      */
-    public function setLatitude($latitude) {
+    public function setLatitude(?string $latitude): Adresse {
         $this->latitude = $latitude;
         return $this;
     }
@@ -388,10 +363,10 @@ class Adresse {
     /**
      * Set the longitude.
      *
-     * @param string $longitude The longitude.
+     * @param string|null $longitude The longitude.
      * @return Adresse Returns this adresse.
      */
-    public function setLongitude($longitude) {
+    public function setLongitude(?string $longitude): Adresse {
         $this->longitude = $longitude;
         return $this;
     }
@@ -399,10 +374,10 @@ class Adresse {
     /**
      * Set the old city.
      *
-     * @param string $oldCity The old city.
+     * @param string|null $oldCity The old city.
      * @return Adresse Returns this adresse.
      */
-    public function setOldCity($oldCity) {
+    public function setOldCity(?string $oldCity): Adresse {
         $this->oldCity = $oldCity;
         return $this;
     }
@@ -410,10 +385,10 @@ class Adresse {
     /**
      * Set the old city code.
      *
-     * @param string $oldCityCode The old city code.
+     * @param string|null $oldCityCode The old city code.
      * @return Adresse Returns this adresse.
      */
-    public function setOldCityCode($oldCityCode) {
+    public function setOldCityCode(?string $oldCityCode): Adresse {
         $this->oldCityCode = $oldCityCode;
         return $this;
     }
@@ -421,10 +396,10 @@ class Adresse {
     /**
      * Set the postcode.
      *
-     * @param string $postcode The postcode.
+     * @param string|null $postcode The postcode.
      * @return Adresse Returns this adresse.
      */
-    public function setPostcode($postcode) {
+    public function setPostcode(?string $postcode): Adresse {
         $this->postcode = $postcode;
         return $this;
     }
@@ -432,10 +407,10 @@ class Adresse {
     /**
      * Set the score.
      *
-     * @param string $score Teh score.
+     * @param string|null $score Teh score.
      * @return Adresse Returns this adresse.
      */
-    public function setScore($score) {
+    public function setScore(?string $score): Adresse {
         $this->score = $score;
         return $this;
     }
@@ -443,10 +418,10 @@ class Adresse {
     /**
      * Set the street.
      *
-     * @param string $street Teh street.
+     * @param string|null $street The street.
      * @return Adresse Returns this adresse.
      */
-    public function setStreet($street) {
+    public function setStreet(?string $street): Adresse {
         $this->street = $street;
         return $this;
     }

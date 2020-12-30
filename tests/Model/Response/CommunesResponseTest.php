@@ -28,7 +28,7 @@ class CommunesResponseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testAddCommune() {
+    public function testAddCommune(): void {
 
         // Set a Commune mock.
         $commune = new Commune();
@@ -44,7 +44,7 @@ class CommunesResponseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function test__construct() {
+    public function test__construct(): void {
 
         $obj = new CommunesResponse();
 

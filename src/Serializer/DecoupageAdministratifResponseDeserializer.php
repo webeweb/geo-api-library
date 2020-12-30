@@ -33,7 +33,7 @@ class DecoupageAdministratifResponseDeserializer {
      * @param array $response The response.
      * @return Commune Returns the commune.
      */
-    protected static function deserializeCommune(array $response) {
+    protected static function deserializeCommune(array $response): Commune {
 
         $model = new Commune();
         $model->setNom(ArrayHelper::get($response, "nom"));
@@ -53,7 +53,7 @@ class DecoupageAdministratifResponseDeserializer {
      * @param string $rawResponse The raw response.
      * @return CommunesResponse Returns the communes response.
      */
-    public static function deserializeCommunesResponse($rawResponse) {
+    public static function deserializeCommunesResponse(string $rawResponse): CommunesResponse {
 
         $model = new CommunesResponse();
         $model->setRawResponse($rawResponse);
@@ -76,7 +76,7 @@ class DecoupageAdministratifResponseDeserializer {
      * @param array $response The response.
      * @return Departement Returns the département.
      */
-    protected static function deserializeDepartement(array $response) {
+    protected static function deserializeDepartement(array $response): Departement {
 
         $model = new Departement();
         $model->setNom(ArrayHelper::get($response, "nom"));
@@ -93,7 +93,7 @@ class DecoupageAdministratifResponseDeserializer {
      * @param string $rawResponse The raw response.
      * @return DepartementsResponse Returns the départements response.
      */
-    public static function deserializeDepartementsResponse($rawResponse) {
+    public static function deserializeDepartementsResponse(string $rawResponse): DepartementsResponse {
 
         $model = new DepartementsResponse();
         $model->setRawResponse($rawResponse);
@@ -116,7 +116,7 @@ class DecoupageAdministratifResponseDeserializer {
      * @param array $response The response.
      * @return Region Returns the région.
      */
-    protected static function deserializeRegion(array $response) {
+    protected static function deserializeRegion(array $response): Region {
 
         $model = new Region();
         $model->setCode(ArrayHelper::get($response, "code"));
@@ -132,7 +132,7 @@ class DecoupageAdministratifResponseDeserializer {
      * @param string $rawResponse The raw response.
      * @return RegionsResponse Returns the régions response.
      */
-    public static function deserializeRegionsResponse($rawResponse) {
+    public static function deserializeRegionsResponse(string $rawResponse): RegionsResponse {
 
         $model = new RegionsResponse();
         $model->setRawResponse($rawResponse);

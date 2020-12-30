@@ -28,7 +28,7 @@ class DepartementsResponseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testAddDepartement() {
+    public function testAddDepartement(): void {
 
         // Set a Departement mock.
         $departement = new Departement();
@@ -44,7 +44,7 @@ class DepartementsResponseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function test__construct() {
+    public function test__construct(): void {
 
         $obj = new DepartementsResponse();
 

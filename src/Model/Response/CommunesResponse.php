@@ -42,7 +42,7 @@ class CommunesResponse extends AbstractResponse {
      * @param Commune $commune The commune.
      * @return CommunesResponse Returns this communes response.
      */
-    public function addCommune(Commune $commune) {
+    public function addCommune(Commune $commune): CommunesResponse {
         $this->communes[] = $commune;
         return $this;
     }
@@ -52,7 +52,7 @@ class CommunesResponse extends AbstractResponse {
      *
      * @return Commune[] Returns the communes.
      */
-    public function getCommunes() {
+    public function getCommunes(): array {
         return $this->communes;
     }
 
@@ -62,7 +62,7 @@ class CommunesResponse extends AbstractResponse {
      * @param Commune[] $communes The communes.
      * @return CommunesResponse Returns this communes response.
      */
-    protected function setCommunes(array $communes) {
+    protected function setCommunes(array $communes): CommunesResponse {
         $this->communes = $communes;
         return $this;
     }

@@ -31,7 +31,7 @@ class AdresseRequestSerializerTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSerializeReverseCsvRequest() {
+    public function testSerializeReverseCsvRequest(): void {
 
         $arg = new ReverseCsvRequest();
         $arg->setData("data");
@@ -45,7 +45,7 @@ class AdresseRequestSerializerTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSerializeReverseRequest() {
+    public function testSerializeReverseRequest(): void {
 
         $arg = new ReverseRequest();
         $arg->setLat(48.789);
@@ -61,7 +61,7 @@ class AdresseRequestSerializerTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSerializeSearchCsvRequest() {
+    public function testSerializeSearchCsvRequest(): void {
 
         $arg = new SearchCsvRequest();
         $arg->setData("data");
@@ -75,7 +75,7 @@ class AdresseRequestSerializerTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSerializeSearchRequest() {
+    public function testSerializeSearchRequest(): void {
 
         $arg = new SearchRequest();
         $arg->setQ("q");

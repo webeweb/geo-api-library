@@ -27,7 +27,7 @@ class ArrayFieldsTraitTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testAddField() {
+    public function testAddField(): void {
 
         $obj = new TestArrayFieldsTrait();
 
@@ -40,7 +40,7 @@ class ArrayFieldsTraitTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function test__construct() {
+    public function test__construct(): void {
 
         $obj = new TestArrayFieldsTrait();
 

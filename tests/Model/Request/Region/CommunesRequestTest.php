@@ -27,7 +27,7 @@ class CommunesRequestTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testGetResourcePath() {
+    public function testGetResourcePath(): void {
 
         $obj = new CommunesRequest();
         $this->assertEquals(CommunesRequest::RESOURCE_PATH, $obj->getResourcePath());
@@ -41,7 +41,7 @@ class CommunesRequestTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function test__construct() {
+    public function test__construct(): void {
 
         $this->assertEquals("/regions/%s/communes", CommunesRequest::RESOURCE_PATH);
 

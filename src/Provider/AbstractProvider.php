@@ -41,7 +41,7 @@ abstract class AbstractProvider extends BaseProvider {
      *
      * @return array Returns the configuration.
      */
-    private function buildConfiguration() {
+    private function buildConfiguration(): array {
         return [
             "base_uri"    => $this->getEndpointPath() . "/",
             "debug"       => $this->getDebug(),
@@ -61,7 +61,7 @@ abstract class AbstractProvider extends BaseProvider {
      * @return string Returns the raw response.
      * @throws ApiException Throws an API exception if an error occurs.
      */
-    protected function callApi(AbstractRequest $request, array $queryData, array $postData = []) {
+    protected function callApi(AbstractRequest $request, array $queryData, array $postData = []): string {
 
         try {
 
@@ -92,5 +92,5 @@ abstract class AbstractProvider extends BaseProvider {
      *
      * @return string Returns the endpoint path.
      */
-    abstract public function getEndpointPath();
+    abstract public function getEndpointPath(): string;
 }

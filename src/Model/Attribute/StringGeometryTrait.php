@@ -22,25 +22,25 @@ trait StringGeometryTrait {
     /**
      * Geometry.
      *
-     * @var string
+     * @var string|null
      */
     private $geometry;
 
     /**
      * Get the geometry.
      *
-     * @return string Returns the geometry.
+     * @return string|null Returns the geometry.
      */
-    public function getGeometry() {
+    public function getGeometry(): ?string {
         return $this->geometry;
     }
 
     /**
      * Set the geometry.
      *
-     * @param string $geometry The geometry.
+     * @param string|null $geometry The geometry.
      */
-    public function setGeometry($geometry) {
+    public function setGeometry(?string $geometry): self {
         $this->geometry = $geometry;
         return $this;
     }

@@ -42,7 +42,7 @@ class RegionsResponse extends AbstractResponse {
      * @param Region $region The région.
      * @return RegionsResponse Returns this liste région response.
      */
-    public function addRegion(Region $region) {
+    public function addRegion(Region $region): RegionsResponse {
         $this->regions[] = $region;
         return $this;
     }
@@ -52,7 +52,7 @@ class RegionsResponse extends AbstractResponse {
      *
      * @return Region[] Returns the régions.
      */
-    public function getRegions() {
+    public function getRegions(): array {
         return $this->regions;
     }
 
@@ -62,7 +62,7 @@ class RegionsResponse extends AbstractResponse {
      * @param Region[] $regions The régions.
      * @return RegionsResponse Returns this liste régions response.
      */
-    protected function setRegions(array $regions) {
+    protected function setRegions(array $regions): RegionsResponse {
         $this->regions = $regions;
         return $this;
     }

@@ -46,7 +46,7 @@ class AdresseProvider extends AbstractProvider {
      * @param array $data The data.
      * @return void
      */
-    protected function appendArray(array &$post, $name, array $data) {
+    protected function appendArray(array &$post, string $name, array $data): void {
 
         if (0 === count($data)) {
             return;
@@ -63,7 +63,7 @@ class AdresseProvider extends AbstractProvider {
     /**
      * {@inheritDoc}
      */
-    public function getEndpointPath() {
+    public function getEndpointPath(): string {
         return self::ENDPOINT_PATH;
     }
 
@@ -74,7 +74,7 @@ class AdresseProvider extends AbstractProvider {
      * @return FeatureCollection|null Returns the reverse response in case of success, null otherwise.
      * @throws ApiException Throws an API exception if an error occurs.
      */
-    public function reverse(ReverseRequest $request) {
+    public function reverse(ReverseRequest $request): ?FeatureCollection {
 
         $queryData = AdresseRequestSerializer::serializeReverseRequest($request);
 
@@ -90,7 +90,7 @@ class AdresseProvider extends AbstractProvider {
      * @return ReverseCsvResponse Returns the reverse CSV response.
      * @throws ApiException Throws an API exception if an error occurs.
      */
-    public function reverseCsv(ReverseCsvRequest $request) {
+    public function reverseCsv(ReverseCsvRequest $request): ReverseCsvResponse {
 
         $queryData = AdresseRequestSerializer::serializeReverseCsvRequest($request);
 
@@ -115,7 +115,7 @@ class AdresseProvider extends AbstractProvider {
      * @return FeatureCollection|null Returns the search response in case of success, null otherwise.
      * @throws ApiException Throws an API exception if an error occurs.
      */
-    public function search(SearchRequest $request) {
+    public function search(SearchRequest $request): FeatureCollection {
 
         $queryData = AdresseRequestSerializer::serializeSearchRequest($request);
 
@@ -131,7 +131,7 @@ class AdresseProvider extends AbstractProvider {
      * @return SearchCsvResponse Returns the search CSV response.
      * @throws ApiException Throws an API exception if an error occurs.
      */
-    public function searchCsv(SearchCsvRequest $request) {
+    public function searchCsv(SearchCsvRequest $request): SearchCsvResponse {
 
         $queryData = AdresseRequestSerializer::serializeSearchCsvRequest($request);
 

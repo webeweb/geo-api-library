@@ -22,25 +22,25 @@ trait StringCodeTrait {
     /**
      * Code.
      *
-     * @var string
+     * @var string|null
      */
     private $code;
 
     /**
      * Get the code.
      *
-     * @return string Returns the code.
+     * @return string|null Returns the code.
      */
-    public function getCode() {
+    public function getCode(): ?string {
         return $this->code;
     }
 
     /**
      * Set the code.
      *
-     * @param string $code The code.
+     * @param string|null $code The code.
      */
-    public function setCode($code) {
+    public function setCode(?string $code): self {
         $this->code = $code;
         return $this;
     }

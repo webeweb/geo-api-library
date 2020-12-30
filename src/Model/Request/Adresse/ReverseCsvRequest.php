@@ -29,7 +29,7 @@ class ReverseCsvRequest extends AbstractCsvRequest {
     /**
      * {@inheritDoc}
      */
-    public function getResourcePath() {
+    public function getResourcePath(): string {
         return self::RESOURCE_PATH;
     }
 }

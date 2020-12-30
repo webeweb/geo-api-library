@@ -28,9 +28,9 @@ abstract class AbstractCsvRequest extends AbstractRequest {
     /**
      * Constructor.
      *
-     * @param string $data The data.
+     * @param string|null $data The data.
      */
-    public function __construct($data = null) {
+    public function __construct(string $data = null) {
         $this->setData($data);
     }
 }

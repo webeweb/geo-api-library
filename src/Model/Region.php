@@ -31,6 +31,6 @@ class Region {
      * Constructor.
      */
     public function __construct() {
-        // NOTHING TO TO.
+        // NOTHING TO TO
     }
 }

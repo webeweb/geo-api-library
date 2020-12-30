@@ -38,5 +38,5 @@ abstract class AbstractRequest {
      *
      * @return string Returns the resource path.
      */
-    abstract public function getResourcePath();
+    abstract public function getResourcePath(): string;
 }

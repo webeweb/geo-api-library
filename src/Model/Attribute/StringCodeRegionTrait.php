@@ -22,25 +22,25 @@ trait StringCodeRegionTrait {
     /**
      * Code région.
      *
-     * @var string
+     * @var string|null
      */
     private $codeRegion;
 
     /**
      * Get the code région.
      *
-     * @return string Returns the code région.
+     * @return string|null Returns the code région.
      */
-    public function getCodeRegion() {
+    public function getCodeRegion(): ?string {
         return $this->codeRegion;
     }
 
     /**
      * Set the code région.
      *
-     * @param string $codeRegion The code région.
+     * @param string|null $codeRegion The code région.
      */
-    public function setCodeRegion($codeRegion) {
+    public function setCodeRegion(?string $codeRegion): self {
         $this->codeRegion = $codeRegion;
         return $this;
     }

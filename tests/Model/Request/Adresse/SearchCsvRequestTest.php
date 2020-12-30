@@ -27,7 +27,7 @@ class SearchCsvRequestTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testAddColumn() {
+    public function testAddColumn(): void {
 
         $obj = new SearchCsvRequest();
 
@@ -40,7 +40,7 @@ class SearchCsvRequestTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testAddResultColumn() {
+    public function testAddResultColumn(): void {
 
         $obj = new SearchCsvRequest();
 
@@ -53,7 +53,7 @@ class SearchCsvRequestTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function test__construct() {
+    public function test__construct(): void {
 
         $this->assertEquals("/search/csv/", SearchCsvRequest::RESOURCE_PATH);
 

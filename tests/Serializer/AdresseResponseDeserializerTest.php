@@ -29,7 +29,7 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testDeserializeReverseCsvResponse() {
+    public function testDeserializeReverseCsvResponse(): void {
 
         // Set a filename mock.
         $filename = getcwd() . "/tests/Fixtures/Model/Response/Adresse/ReverseCsvResponse.csv";
@@ -129,7 +129,7 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testDeserializeSearchCsvResponse() {
+    public function testDeserializeSearchCsvResponse(): void {
 
         // Set a filename mock.
         $filename = getcwd() . "/tests/Fixtures/Model/Response/Adresse/SearchCsvResponse.csv";

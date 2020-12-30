@@ -24,7 +24,7 @@ class TestCsvRequest extends AbstractCsvRequest {
     /**
      * {@inheritDoc}
      */
-    public function getResourcePath() {
-        return null;
+    public function getResourcePath(): string {
+        return "";
     }
 }

@@ -36,7 +36,7 @@ class CommunesRequest extends AbstractRequest {
     /**
      * {@inheritDoc}
      */
-    public function getResourcePath() {
+    public function getResourcePath(): string {
         if (null !== $this->getCode()) {
             return sprintf(self::RESOURCE_PATH, $this->getCode());
         }

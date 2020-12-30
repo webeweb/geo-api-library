@@ -22,13 +22,12 @@ use WBW\Library\GeoAPI\Tests\AbstractTestCase;
  */
 class CommuneTest extends AbstractTestCase {
 
-
     /**
      * Tests the setCodesPostaux() method.
      *
      * @return void
      */
-    public function testSetCodesPostaux() {
+    public function testSetCodesPostaux(): void {
 
         $obj = new Commune();
 
@@ -41,7 +40,7 @@ class CommuneTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetPopulation() {
+    public function testSetPopulation(): void {
 
         $obj = new Commune();
 
@@ -54,7 +53,7 @@ class CommuneTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function test__construct() {
+    public function test__construct(): void {
 
         $obj = new Commune();
 

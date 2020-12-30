@@ -22,25 +22,25 @@ trait StringFormatTrait {
     /**
      * Format.
      *
-     * @var string
+     * @var string|null
      */
     private $format;
 
     /**
      * Get the format.
      *
-     * @return string Returns the format.
+     * @return string|null Returns the format.
      */
-    public function getFormat() {
+    public function getFormat(): ?string {
         return $this->format;
     }
 
     /**
      * Set the format.
      *
-     * @param string $format The format.
+     * @param string|null $format The format.
      */
-    public function setFormat($format) {
+    public function setFormat(?string $format): self {
         $this->format = $format;
         return $this;
     }

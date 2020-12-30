@@ -22,25 +22,25 @@ trait StringCodeDepartementTrait {
     /**
      * Code département.
      *
-     * @var string
+     * @var string|null
      */
     private $codeDepartement;
 
     /**
      * Get the code département.
      *
-     * @return string Returns the code département.
+     * @return string|null Returns the code département.
      */
-    public function getCodeDepartement() {
+    public function getCodeDepartement(): ?string {
         return $this->codeDepartement;
     }
 
     /**
      * Set the code département.
      *
-     * @param string $codeDepartement The code département.
+     * @param string|null $codeDepartement The code département.
      */
-    public function setCodeDepartement($codeDepartement) {
+    public function setCodeDepartement(?string $codeDepartement): self {
         $this->codeDepartement = $codeDepartement;
         return $this;
     }

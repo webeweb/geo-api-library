@@ -30,7 +30,7 @@ class DecoupageAdministratifResponseDeserializerTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testDeserializeCommunesResponse() {
+    public function testDeserializeCommunesResponse(): void {
 
         // Set a JSON mock.
         $json = file_get_contents(__DIR__ . "/DecoupageAdministratifResponseDeserializerTest.testDeserializeCommunesResponse.json");
@@ -54,7 +54,7 @@ class DecoupageAdministratifResponseDeserializerTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testDeserializeDepartementsResponse() {
+    public function testDeserializeDepartementsResponse(): void {
 
         // Set a JSON mock.
         $json = file_get_contents(__DIR__ . "/DecoupageAdministratifResponseDeserializerTest.testDeserializeDepartementsResponse.json");
@@ -76,7 +76,7 @@ class DecoupageAdministratifResponseDeserializerTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testDeserializeRegionsResponse() {
+    public function testDeserializeRegionsResponse(): void {
 
         // Set a JSON mock.
         $json = file_get_contents(__DIR__ . "/DecoupageAdministratifResponseDeserializerTest.testDeserializeRegionsResponse.json");

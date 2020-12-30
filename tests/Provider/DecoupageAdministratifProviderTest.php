@@ -28,7 +28,7 @@ class DecoupageAdministratifProviderTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function test__construct() {
+    public function test__construct(): void {
 
         $this->assertEquals("https://geo.api.gouv.fr", DecoupageAdministratifProvider::ENDPOINT_PATH);
 

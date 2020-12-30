@@ -27,7 +27,7 @@ class StringGeometryTraitTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetGeometry() {
+    public function testSetGeometry(): void {
 
         $obj = new TestStringGeometryTrait();
 
@@ -40,7 +40,7 @@ class StringGeometryTraitTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function test__construct() {
+    public function test__construct(): void {
 
         $obj = new TestStringGeometryTrait();
 

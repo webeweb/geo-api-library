@@ -66,35 +66,35 @@ class SearchRequest extends AbstractRequest {
     /**
      * Autocomplete.
      *
-     * @var bool
+     * @var bool|null
      */
     private $autocomplete;
 
     /**
      * City code.
      *
-     * @var string
+     * @var string|null
      */
     private $cityCode;
 
     /**
      * Limit.
      *
-     * @var int
+     * @var int|null
      */
     private $limit;
 
     /**
      * Postcode.
      *
-     * @var string
+     * @var string|null
      */
     private $postcode;
 
     /**
      * Query.
      *
-     * @var string
+     * @var string|null
      */
     private $q;
 
@@ -103,7 +103,7 @@ class SearchRequest extends AbstractRequest {
      *
      * @param string|null $q The query.
      */
-    public function __construct($q = null) {
+    public function __construct(string $q = null) {
         $this->setQ($q);
     }
 
@@ -112,7 +112,7 @@ class SearchRequest extends AbstractRequest {
      *
      * @return string[] Returns the types.
      */
-    public static function enumTypes() {
+    public static function enumTypes(): array {
         return [
             self::TYPE_HOUSE_NUMBER,
             self::TYPE_LOCALITY,
@@ -124,27 +124,27 @@ class SearchRequest extends AbstractRequest {
     /**
      * Get the autocomplete.
      *
-     * @return bool Returns the autocomplete.
+     * @return bool|null Returns the autocomplete.
      */
-    public function getAutocomplete() {
+    public function getAutocomplete(): ?bool {
         return $this->autocomplete;
     }
 
     /**
      * Get the city code.
      *
-     * @return string Returns the city code.
+     * @return string|null Returns the city code.
      */
-    public function getCityCode() {
+    public function getCityCode(): ?string {
         return $this->cityCode;
     }
 
     /**
      * Get the limit.
      *
-     * @return int Returns the limit.
+     * @return int|null Returns the limit.
      */
-    public function getLimit() {
+    public function getLimit(): ?int {
         return $this->limit;
     }
 
@@ -160,26 +160,26 @@ class SearchRequest extends AbstractRequest {
     /**
      * Get the query.
      *
-     * @return string Returns the query.
+     * @return string|null Returns the query.
      */
-    public function getQ() {
+    public function getQ(): ?string {
         return $this->q;
     }
 
     /**
      * {@inheritDoc}
      */
-    public function getResourcePath() {
+    public function getResourcePath(): string {
         return self::RESOURCE_PATH;
     }
 
     /**
      * Get the autocomplete.
      *
-     * @param bool $autocomplete The autocomplete.
+     * @param bool|null $autocomplete The autocomplete.
      * @return SearchRequest Returns this search request.
      */
-    public function setAutocomplete($autocomplete) {
+    public function setAutocomplete(?bool $autocomplete): SearchRequest {
         $this->autocomplete = $autocomplete;
         return $this;
     }
@@ -187,10 +187,10 @@ class SearchRequest extends AbstractRequest {
     /**
      * Set the city code.
      *
-     * @param string $cityCode The city code.
+     * @param string|null $cityCode The city code.
      * @return SearchRequest Returns this search request.
      */
-    public function setCityCode($cityCode) {
+    public function setCityCode(?string $cityCode): SearchRequest {
         $this->cityCode = $cityCode;
         return $this;
     }
@@ -198,10 +198,10 @@ class SearchRequest extends AbstractRequest {
     /**
      * Set the limit.
      *
-     * @param int $limit The limit.
+     * @param int|null $limit The limit.
      * @return SearchRequest Returns this search request.
      */
-    public function setLimit($limit) {
+    public function setLimit(?int $limit): SearchRequest {
         $this->limit = $limit;
         return $this;
     }
@@ -209,10 +209,10 @@ class SearchRequest extends AbstractRequest {
     /**
      * Set the postcode.
      *
-     * @param string $postcode The postcode.
+     * @param string|null $postcode The postcode.
      * @return SearchRequest Returns this search request.
      */
-    public function setPostcode($postcode) {
+    public function setPostcode(?string $postcode): SearchRequest {
         $this->postcode = $postcode;
         return $this;
     }
@@ -220,10 +220,10 @@ class SearchRequest extends AbstractRequest {
     /**
      * Set the query.
      *
-     * @param string $q The query.
+     * @param string|null $q The query.
      * @return SearchRequest Returns this search request.
      */
-    public function setQ($q) {
+    public function setQ(?string $q): SearchRequest {
         $this->q = $q;
         return $this;
     }

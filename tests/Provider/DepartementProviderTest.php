@@ -33,7 +33,7 @@ class DepartementProviderTest extends AbstractTestCase {
      * @return void
      * @throws Exception Throws an exception if an error occurs.
      */
-    public function testCommunes() {
+    public function testCommunes(): void {
 
         // Set a Communes request mock.
         $request = new CommunesRequest();
@@ -51,7 +51,7 @@ class DepartementProviderTest extends AbstractTestCase {
      * @return void
      * @throws Exception Throws an exception if an error occurs.
      */
-    public function testDepartements() {
+    public function testDepartements(): void {
 
         // Set a Départements request mock.
         $request = new DepartementsRequest();

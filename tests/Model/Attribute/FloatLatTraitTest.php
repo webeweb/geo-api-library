@@ -27,7 +27,7 @@ class FloatLatTraitTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetLat() {
+    public function testSetLat(): void {
 
         $obj = new TestFloatLatTrait();
 
@@ -40,7 +40,7 @@ class FloatLatTraitTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function test__construct() {
+    public function test__construct(): void {
 
         $obj = new TestFloatLatTrait();
 

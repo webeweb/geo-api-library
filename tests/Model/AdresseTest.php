@@ -27,7 +27,7 @@ class AdresseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testAddColumn() {
+    public function testAddColumn(): void {
 
         $obj = new Adresse();
 
@@ -40,7 +40,7 @@ class AdresseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetCity() {
+    public function testSetCity(): void {
 
         $obj = new Adresse();
 
@@ -53,7 +53,7 @@ class AdresseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetCityCode() {
+    public function testSetCityCode(): void {
 
         $obj = new Adresse();
 
@@ -66,7 +66,7 @@ class AdresseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetContext() {
+    public function testSetContext(): void {
 
         $obj = new Adresse();
 
@@ -79,7 +79,7 @@ class AdresseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetDistance() {
+    public function testSetDistance(): void {
 
         $obj = new Adresse();
 
@@ -92,7 +92,7 @@ class AdresseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetDistrict() {
+    public function testSetDistrict(): void {
 
         $obj = new Adresse();
 
@@ -105,7 +105,7 @@ class AdresseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetHouseNumber() {
+    public function testSetHouseNumber(): void {
 
         $obj = new Adresse();
 
@@ -114,24 +114,11 @@ class AdresseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setId() method.
-     *
-     * @return void
-     */
-    public function testSetId() {
-
-        $obj = new Adresse();
-
-        $obj->setId("id");
-        $this->assertEquals("id", $obj->getId());
-    }
-
-    /**
      * Tests the setLatitude() method.
      *
      * @return void
      */
-    public function testSetLatitude() {
+    public function testSetLatitude(): void {
 
         $obj = new Adresse();
 
@@ -144,7 +131,7 @@ class AdresseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetLongitude() {
+    public function testSetLongitude(): void {
 
         $obj = new Adresse();
 
@@ -157,7 +144,7 @@ class AdresseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetOldCity() {
+    public function testSetOldCity(): void {
 
         $obj = new Adresse();
 
@@ -170,7 +157,7 @@ class AdresseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetOldCityCode() {
+    public function testSetOldCityCode(): void {
 
         $obj = new Adresse();
 
@@ -183,7 +170,7 @@ class AdresseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetPostcode() {
+    public function testSetPostcode(): void {
 
         $obj = new Adresse();
 
@@ -196,7 +183,7 @@ class AdresseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetScore() {
+    public function testSetScore(): void {
 
         $obj = new Adresse();
 
@@ -209,7 +196,7 @@ class AdresseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testSetStreet() {
+    public function testSetStreet(): void {
 
         $obj = new Adresse();
 
@@ -222,7 +209,7 @@ class AdresseTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function test__construct() {
+    public function test__construct(): void {
 
         $obj = new Adresse();
 
