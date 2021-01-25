@@ -39,6 +39,7 @@ trait StringCodeRegionTrait {
      * Set the code région.
      *
      * @param string|null $codeRegion The code région.
+     * @return self Returns tis instance.
      */
     public function setCodeRegion(?string $codeRegion): self {
         $this->codeRegion = $codeRegion;

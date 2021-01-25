@@ -39,6 +39,7 @@ trait StringGeometryTrait {
      * Set the geometry.
      *
      * @param string|null $geometry The geometry.
+     * @return self Returns tis instance.
      */
     public function setGeometry(?string $geometry): self {
         $this->geometry = $geometry;

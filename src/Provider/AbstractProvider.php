@@ -13,6 +13,7 @@ namespace WBW\Library\GeoAPI\Provider;
 
 use Exception;
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
 use Psr\Log\LoggerInterface;
 use WBW\Library\Core\Exception\ApiException;
 use WBW\Library\Core\Provider\AbstractProvider as BaseProvider;
@@ -59,6 +60,7 @@ abstract class AbstractProvider extends BaseProvider {
      * @param array $queryData The query data.
      * @param array $postData The post data.
      * @return string Returns the raw response.
+     * @throws GuzzleException Throws a Guzzle exception if an error occurs.
      * @throws ApiException Throws an API exception if an error occurs.
      */
     protected function callApi(AbstractRequest $request, array $queryData, array $postData = []): string {

@@ -39,6 +39,7 @@ trait StringCodeDepartementTrait {
      * Set the code département.
      *
      * @param string|null $codeDepartement The code département.
+     * @return self Returns tis instance.
      */
     public function setCodeDepartement(?string $codeDepartement): self {
         $this->codeDepartement = $codeDepartement;

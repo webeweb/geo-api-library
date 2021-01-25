@@ -30,6 +30,7 @@ trait ArrayFieldsTrait {
      * Add a field.
      *
      * @param string $field The field.
+     * @return self Returns tis instance.
      */
     public function addField(string $field): self {
         $this->fields[] = $field;
@@ -49,6 +50,7 @@ trait ArrayFieldsTrait {
      * Set the fields.
      *
      * @param string[] $fields The fields.
+     * @return self Returns tis instance.
      */
     protected function setFields(array $fields): self {
         $this->fields = $fields;

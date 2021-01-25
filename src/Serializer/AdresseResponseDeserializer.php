@@ -31,7 +31,7 @@ class AdresseResponseDeserializer {
      *
      * @param string $response The response.
      * @param string[] $headers The headers.
-     * @retun Adresse Returns the adresse.
+     * @return Adresse Returns the adresse.
      */
     protected static function deserializeAdresse(string $response, array $headers): Adresse {
 
@@ -117,7 +117,7 @@ class AdresseResponseDeserializer {
      * @param string $rawResponse The raw response.
      * @return SearchCsvResponse Returns the search CSV response.
      */
-    public static function deserializeSearchCsvResponse($rawResponse) {
+    public static function deserializeSearchCsvResponse(string $rawResponse) {
         return static::deserializeCsvResponse($rawResponse, new SearchCsvResponse());
     }
 

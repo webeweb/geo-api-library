@@ -39,6 +39,7 @@ trait StringDataTrait {
      * Set the data.
      *
      * @param string|null $data The data.
+     * @return self Returns tis instance.
      */
     public function setData(?string $data): self {
         $this->data = $data;

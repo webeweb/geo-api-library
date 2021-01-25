@@ -104,6 +104,7 @@ class SearchRequest extends AbstractRequest {
      * @param string|null $q The query.
      */
     public function __construct(string $q = null) {
+        parent::__construct();
         $this->setQ($q);
     }
 
@@ -151,9 +152,9 @@ class SearchRequest extends AbstractRequest {
     /**
      * Get the postcode.
      *
-     * @return string Returns the postcode.
+     * @return string|null Returns the postcode.
      */
-    public function getPostcode() {
+    public function getPostcode(): ?string {
         return $this->postcode;
     }
 

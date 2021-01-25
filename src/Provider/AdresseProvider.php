@@ -11,6 +11,7 @@
 
 namespace WBW\Library\GeoAPI\Provider;
 
+use GuzzleHttp\Exception\GuzzleException;
 use WBW\Library\Core\Argument\Helper\ArrayHelper;
 use WBW\Library\Core\Exception\ApiException;
 use WBW\Library\GeoAPI\Model\Request\Adresse\ReverseCsvRequest;
@@ -72,6 +73,7 @@ class AdresseProvider extends AbstractProvider {
      *
      * @param ReverseRequest $request The reverse request.
      * @return FeatureCollection|null Returns the reverse response in case of success, null otherwise.
+     * @throws GuzzleException Throws a Guzzle exception if an error occurs.
      * @throws ApiException Throws an API exception if an error occurs.
      */
     public function reverse(ReverseRequest $request): ?FeatureCollection {
@@ -88,6 +90,7 @@ class AdresseProvider extends AbstractProvider {
      *
      * @param ReverseCsvRequest $request The reverse CSV request.
      * @return ReverseCsvResponse Returns the reverse CSV response.
+     * @throws GuzzleException Throws a Guzzle exception if an error occurs.
      * @throws ApiException Throws an API exception if an error occurs.
      */
     public function reverseCsv(ReverseCsvRequest $request): ReverseCsvResponse {
@@ -113,6 +116,7 @@ class AdresseProvider extends AbstractProvider {
      *
      * @param SearchRequest $request The search request.
      * @return FeatureCollection|null Returns the search response in case of success, null otherwise.
+     * @throws GuzzleException Throws a Guzzle exception if an error occurs.
      * @throws ApiException Throws an API exception if an error occurs.
      */
     public function search(SearchRequest $request): FeatureCollection {
@@ -129,6 +133,7 @@ class AdresseProvider extends AbstractProvider {
      *
      * @param SearchCsvRequest $request The search CSV request.
      * @return SearchCsvResponse Returns the search CSV response.
+     * @throws GuzzleException Throws a Guzzle exception if an error occurs.
      * @throws ApiException Throws an API exception if an error occurs.
      */
     public function searchCsv(SearchCsvRequest $request): SearchCsvResponse {

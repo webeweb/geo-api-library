@@ -11,6 +11,7 @@
 
 namespace WBW\Library\GeoAPI\Provider;
 
+use GuzzleHttp\Exception\GuzzleException;
 use WBW\Library\Core\Exception\ApiException;
 use WBW\Library\GeoAPI\Model\Request\Region\CommunesRequest;
 use WBW\Library\GeoAPI\Model\Request\Region\DepartementsRequest;
@@ -33,6 +34,7 @@ class RegionProvider extends DecoupageAdministratifProvider {
      *
      * @param CommunesRequest $request The communes request.
      * @return CommunesResponse Returns the communes response.
+     * @throws GuzzleException Throws a Guzzle exception if an error occurs.
      * @throws ApiException Throws an API exception if an error occurs.
      */
     public function communes(CommunesRequest $request): CommunesResponse {
@@ -47,6 +49,7 @@ class RegionProvider extends DecoupageAdministratifProvider {
      *
      * @param DepartementsRequest $request The départements request.
      * @return DepartementsResponse Returns the départements response.
+     * @throws GuzzleException Throws a Guzzle exception if an error occurs.
      * @throws ApiException Throws an API exception if an error occurs.
      */
     public function departements(DepartementsRequest $request): DepartementsResponse {
@@ -61,6 +64,7 @@ class RegionProvider extends DecoupageAdministratifProvider {
      *
      * @param RegionsRequest $request The régions request.
      * @return RegionsResponse Returns the régions response.
+     * @throws GuzzleException Throws a Guzzle exception if an error occurs.
      * @throws ApiException Throws an API exception if an error occurs.
      */
     public function regions(RegionsRequest $request): RegionsResponse {
