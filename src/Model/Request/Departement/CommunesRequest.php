@@ -38,8 +38,8 @@ class CommunesRequest extends AbstractRequest {
      */
     public function getResourcePath(): string {
         if (null !== $this->getCode()) {
-            return sprintf(self::RESOURCE_PATH, $this->getCode());
+            return sprintf(static::RESOURCE_PATH, $this->getCode());
         }
-        return self::RESOURCE_PATH;
+        return static::RESOURCE_PATH;
     }
 }

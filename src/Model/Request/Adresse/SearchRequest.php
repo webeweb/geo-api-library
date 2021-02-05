@@ -115,10 +115,10 @@ class SearchRequest extends AbstractRequest {
      */
     public static function enumTypes(): array {
         return [
-            self::TYPE_HOUSE_NUMBER,
-            self::TYPE_LOCALITY,
-            self::TYPE_MUNICIPALITY,
-            self::TYPE_STREET,
+            static::TYPE_HOUSE_NUMBER,
+            static::TYPE_LOCALITY,
+            static::TYPE_MUNICIPALITY,
+            static::TYPE_STREET,
         ];
     }
 
@@ -171,7 +171,7 @@ class SearchRequest extends AbstractRequest {
      * {@inheritDoc}
      */
     public function getResourcePath(): string {
-        return self::RESOURCE_PATH;
+        return static::RESOURCE_PATH;
     }
 
     /**

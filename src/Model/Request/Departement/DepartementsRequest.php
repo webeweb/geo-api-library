@@ -32,6 +32,6 @@ class DepartementsRequest extends AbstractRequest {
      * {@inheritDoc}
      */
     public function getResourcePath(): string {
-        return self::RESOURCE_PATH;
+        return static::RESOURCE_PATH;
     }
 }
