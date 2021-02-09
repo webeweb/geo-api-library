@@ -34,16 +34,4 @@ class StringCodeDepartementTraitTest extends AbstractTestCase {
         $obj->setCodeDepartement("codeDepartement");
         $this->assertEquals("codeDepartement", $obj->getCodeDepartement());
     }
-
-    /**
-     * Tests the __construct() method.
-     *
-     * @return void
-     */
-    public function test__construct(): void {
-
-        $obj = new TestStringCodeDepartementTrait();
-
-        $this->assertNull($obj->getCodeDepartement());
-    }
 }

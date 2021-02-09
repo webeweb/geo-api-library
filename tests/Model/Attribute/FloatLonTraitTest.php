@@ -34,16 +34,4 @@ class FloatLonTraitTest extends AbstractTestCase {
         $obj->setLon(0.123456789);
         $this->assertEquals(0.123456789, $obj->getLon());
     }
-
-    /**
-     * Tests the __construct() method.
-     *
-     * @return void
-     */
-    public function test__construct(): void {
-
-        $obj = new TestFloatLonTrait();
-
-        $this->assertNull($obj->getLon());
-    }
 }

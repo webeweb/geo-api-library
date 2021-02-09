@@ -34,16 +34,4 @@ class StringCodeRegionTraitTest extends AbstractTestCase {
         $obj->setCodeRegion("codeRegion");
         $this->assertEquals("codeRegion", $obj->getCodeRegion());
     }
-
-    /**
-     * Tests the __construct() method.
-     *
-     * @return void
-     */
-    public function test__construct(): void {
-
-        $obj = new TestStringCodeRegionTrait();
-
-        $this->assertNull($obj->getCodeRegion());
-    }
 }

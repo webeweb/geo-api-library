@@ -34,16 +34,4 @@ class FloatScoreTraitTest extends AbstractTestCase {
         $obj->setScore(0.123456789);
         $this->assertEquals(0.123456789, $obj->getScore());
     }
-
-    /**
-     * Tests the __construct() method.
-     *
-     * @return void
-     */
-    public function test__construct(): void {
-
-        $obj = new TestFloatScoreTrait();
-
-        $this->assertNull($obj->getScore());
-    }
 }

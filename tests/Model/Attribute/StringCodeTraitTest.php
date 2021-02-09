@@ -34,16 +34,4 @@ class StringCodeTraitTest extends AbstractTestCase {
         $obj->setCode("code");
         $this->assertEquals("code", $obj->getCode());
     }
-
-    /**
-     * Tests the __construct() method.
-     *
-     * @return void
-     */
-    public function test__construct(): void {
-
-        $obj = new TestStringCodeTrait();
-
-        $this->assertNull($obj->getCode());
-    }
 }

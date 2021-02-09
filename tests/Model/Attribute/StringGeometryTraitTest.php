@@ -34,16 +34,4 @@ class StringGeometryTraitTest extends AbstractTestCase {
         $obj->setGeometry("geometry");
         $this->assertEquals("geometry", $obj->getGeometry());
     }
-
-    /**
-     * Tests the __construct() method.
-     *
-     * @return void
-     */
-    public function test__construct(): void {
-
-        $obj = new TestStringGeometryTrait();
-
-        $this->assertNull($obj->getGeometry());
-    }
 }

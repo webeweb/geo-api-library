@@ -34,16 +34,4 @@ class StringFormatTraitTest extends AbstractTestCase {
         $obj->setFormat("format");
         $this->assertEquals("format", $obj->getFormat());
     }
-
-    /**
-     * Tests the __construct() method.
-     *
-     * @return void
-     */
-    public function test__construct(): void {
-
-        $obj = new TestStringFormatTrait();
-
-        $this->assertNull($obj->getFormat());
-    }
 }
