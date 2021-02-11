@@ -2,7 +2,7 @@ geo-api-library
 ===============
 
 [![Build Status](https://img.shields.io/github/workflow/status/webeweb/geo-api-library/build?style=flat-square)](https://github.com/webeweb/geo-api-library/actions)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/webeweb/geo-api-library/master.svg?style=flat-square)](https://coveralls.io/github/webeweb/geo-api-library?branch=master)
+[![Coverage Status](https://img.shields.io/coveralls/github/webeweb/geo-api-library/master.svg?style=flat-square)](https://coveralls.io/github/webeweb/geo-api-library?branch=master)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/quality/g/webeweb/geo-api-library/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/webeweb/geo-api-library/?branch=master)
 [![Latest Stable Version](https://img.shields.io/packagist/v/webeweb/geo-api-library.svg?style=flat-square)](https://packagist.org/packages/webeweb/geo-api-library)
 [![Latest Unstable Version](https://img.shields.io/packagist/vpre/webeweb/geo-api-library.svg?style=flat-square)](https://packagist.org/packages/webeweb/geo-api-library)
