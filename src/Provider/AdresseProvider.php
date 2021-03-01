@@ -65,7 +65,7 @@ class AdresseProvider extends AbstractProvider {
      * {@inheritDoc}
      */
     public function getEndpointPath(): string {
-        return static::ENDPOINT_PATH;
+        return self::ENDPOINT_PATH;
     }
 
     /**

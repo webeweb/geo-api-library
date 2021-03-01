@@ -33,8 +33,8 @@ class DepartementsRequest extends AbstractRequest {
      */
     public function getResourcePath(): string {
         if (null !== $this->getCode()) {
-            return sprintf(static::RESOURCE_PATH, $this->getCode());
+            return sprintf(self::RESOURCE_PATH, $this->getCode());
         }
-        return static::RESOURCE_PATH;
+        return self::RESOURCE_PATH;
     }
 }
