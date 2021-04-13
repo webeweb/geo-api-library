@@ -11,10 +11,10 @@
 
 namespace WBW\Library\GeoAPI\Tests\Serializer;
 
-use WBW\Library\GeoAPI\Model\Request\Adresse\ReverseCsvRequest;
-use WBW\Library\GeoAPI\Model\Request\Adresse\ReverseRequest;
-use WBW\Library\GeoAPI\Model\Request\Adresse\SearchCsvRequest;
-use WBW\Library\GeoAPI\Model\Request\Adresse\SearchRequest;
+use WBW\Library\GeoAPI\Request\Adresse\ReverseCsvRequest;
+use WBW\Library\GeoAPI\Request\Adresse\ReverseRequest;
+use WBW\Library\GeoAPI\Request\Adresse\SearchCsvRequest;
+use WBW\Library\GeoAPI\Request\Adresse\SearchRequest;
 use WBW\Library\GeoAPI\Serializer\AdresseRequestSerializer;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 

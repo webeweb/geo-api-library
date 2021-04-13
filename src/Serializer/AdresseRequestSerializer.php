@@ -13,10 +13,10 @@ namespace WBW\Library\GeoAPI\Serializer;
 
 use WBW\Library\Core\Argument\Helper\ArrayHelper;
 use WBW\Library\Core\Argument\Helper\IntegerHelper;
-use WBW\Library\GeoAPI\Model\Request\Adresse\ReverseCsvRequest;
-use WBW\Library\GeoAPI\Model\Request\Adresse\ReverseRequest;
-use WBW\Library\GeoAPI\Model\Request\Adresse\SearchCsvRequest;
-use WBW\Library\GeoAPI\Model\Request\Adresse\SearchRequest;
+use WBW\Library\GeoAPI\Request\Adresse\ReverseCsvRequest;
+use WBW\Library\GeoAPI\Request\Adresse\ReverseRequest;
+use WBW\Library\GeoAPI\Request\Adresse\SearchCsvRequest;
+use WBW\Library\GeoAPI\Request\Adresse\SearchRequest;
 
 /**
  * Adresse request serializer.
