@@ -9,14 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Model\Response\Adresse;
+namespace WBW\Library\GeoAPI\Tests\Fixtures\Response;
+
+use WBW\Library\GeoAPI\Response\AbstractResponse;
 
 /**
- * Reverse CSV response.
+ * Test response.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Model\Response\Adresse
+ * @package WBW\Library\GeoAPI\Tests\Fixtures\Response
  */
-class ReverseCsvResponse extends AbstractCsvResponse {
+class TestResponse extends AbstractResponse {
 
 }

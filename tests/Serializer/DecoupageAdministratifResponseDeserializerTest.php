@@ -11,9 +11,9 @@
 
 namespace WBW\Library\GeoAPI\Tests\Serializer;
 
-use WBW\Library\GeoAPI\Model\Response\CommunesResponse;
-use WBW\Library\GeoAPI\Model\Response\DepartementsResponse;
-use WBW\Library\GeoAPI\Model\Response\RegionsResponse;
+use WBW\Library\GeoAPI\Response\CommunesResponse;
+use WBW\Library\GeoAPI\Response\DepartementsResponse;
+use WBW\Library\GeoAPI\Response\RegionsResponse;
 use WBW\Library\GeoAPI\Serializer\DecoupageAdministratifResponseDeserializer;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 

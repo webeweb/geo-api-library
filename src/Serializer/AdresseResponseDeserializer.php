@@ -12,9 +12,9 @@
 namespace WBW\Library\GeoAPI\Serializer;
 
 use WBW\Library\GeoAPI\Model\Adresse;
-use WBW\Library\GeoAPI\Model\Response\Adresse\AbstractCsvResponse;
-use WBW\Library\GeoAPI\Model\Response\Adresse\ReverseCsvResponse;
-use WBW\Library\GeoAPI\Model\Response\Adresse\SearchCsvResponse;
+use WBW\Library\GeoAPI\Response\Adresse\AbstractCsvResponse;
+use WBW\Library\GeoAPI\Response\Adresse\ReverseCsvResponse;
+use WBW\Library\GeoAPI\Response\Adresse\SearchCsvResponse;
 use WBW\Library\GeoJSON\Model\FeatureCollection;
 use WBW\Library\GeoJSON\Serializer\JsonDeserializer;
 

@@ -9,17 +9,17 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Model\Response;
+namespace WBW\Library\GeoAPI\Tests\Response;
 
 use WBW\Library\GeoAPI\Model\Commune;
-use WBW\Library\GeoAPI\Model\Response\CommunesResponse;
+use WBW\Library\GeoAPI\Response\CommunesResponse;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 
 /**
  * Communes response test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Model\Response
+ * @package WBW\Library\GeoAPI\Tests\Response
  */
 class CommunesResponseTest extends AbstractTestCase {
 

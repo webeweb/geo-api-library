@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Model\Response\Adresse;
+namespace WBW\Library\GeoAPI\Response\Adresse;
 
-use WBW\Library\GeoAPI\Model\Response\AdressesResponse;
+use WBW\Library\GeoAPI\Response\AdressesResponse;
 
 /**
  * Abstract CVS response.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Model\Response\Adresse
+ * @package WBW\Library\GeoAPI\Response\Adresse
  * @abstract
  */
 abstract class AbstractCsvResponse extends AdressesResponse {

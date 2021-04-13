@@ -9,16 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Model\Response;
+namespace WBW\Library\GeoAPI\Response;
 
-use WBW\Library\GeoAPI\Model\AbstractResponse;
 use WBW\Library\GeoAPI\Model\Region;
 
 /**
  * Régions response.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Model\Response
+ * @package WBW\Library\GeoAPI\Response
  */
 class RegionsResponse extends AbstractResponse {
 

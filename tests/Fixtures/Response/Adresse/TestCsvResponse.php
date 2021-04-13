@@ -9,18 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Model;
+namespace WBW\Library\GeoAPI\Tests\Fixtures\Response\Adresse;
 
-use WBW\Library\Core\Model\Attribute\StringRawResponseTrait;
+use WBW\Library\GeoAPI\Response\Adresse\AbstractCsvResponse;
 
 /**
- * Abstract response.
+ * Test CSV response.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Model
- * @abstract
+ * @package WBW\Library\GeoAPI\Tests\Fixtures\Response\Adresse
  */
-abstract class AbstractResponse {
+class TestCsvResponse extends AbstractCsvResponse {
 
-    use StringRawResponseTrait;
 }

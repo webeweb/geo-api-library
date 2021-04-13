@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Model\Response\Adresse;
+namespace WBW\Library\GeoAPI\Response\Adresse;
 
 /**
  * Search CSV response.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Model\Response\Adresse
+ * @package WBW\Library\GeoAPI\Response\Adresse
  */
 class SearchCsvResponse extends AbstractCsvResponse {
 

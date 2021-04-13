@@ -15,9 +15,9 @@ use WBW\Library\Core\Argument\Helper\ArrayHelper;
 use WBW\Library\GeoAPI\Model\Commune;
 use WBW\Library\GeoAPI\Model\Departement;
 use WBW\Library\GeoAPI\Model\Region;
-use WBW\Library\GeoAPI\Model\Response\CommunesResponse;
-use WBW\Library\GeoAPI\Model\Response\DepartementsResponse;
-use WBW\Library\GeoAPI\Model\Response\RegionsResponse;
+use WBW\Library\GeoAPI\Response\CommunesResponse;
+use WBW\Library\GeoAPI\Response\DepartementsResponse;
+use WBW\Library\GeoAPI\Response\RegionsResponse;
 
 /**
  * Découpage administratif response deserializer.
