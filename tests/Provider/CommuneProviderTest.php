@@ -12,9 +12,9 @@
 namespace WBW\Library\GeoAPI\Tests\Provider;
 
 use Exception;
-use WBW\Library\GeoAPI\Model\Request\Commune\CommunesRequest;
-use WBW\Library\GeoAPI\Model\Response\CommunesResponse;
 use WBW\Library\GeoAPI\Provider\CommuneProvider;
+use WBW\Library\GeoAPI\Request\Commune\CommunesRequest;
+use WBW\Library\GeoAPI\Response\CommunesResponse;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 
 /**

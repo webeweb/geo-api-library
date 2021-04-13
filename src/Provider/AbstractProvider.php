@@ -17,7 +17,7 @@ use GuzzleHttp\Exception\GuzzleException;
 use Psr\Log\LoggerInterface;
 use WBW\Library\Core\Exception\ApiException;
 use WBW\Library\Core\Provider\AbstractProvider as BaseProvider;
-use WBW\Library\GeoAPI\Model\AbstractRequest;
+use WBW\Library\GeoAPI\Request\AbstractRequest;
 
 /**
  * Abstract provider.

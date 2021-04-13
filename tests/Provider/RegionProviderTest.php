@@ -12,11 +12,11 @@
 namespace WBW\Library\GeoAPI\Tests\Provider;
 
 use Exception;
-use WBW\Library\GeoAPI\Model\Request\Region\DepartementsRequest;
-use WBW\Library\GeoAPI\Model\Request\Region\RegionsRequest;
-use WBW\Library\GeoAPI\Model\Response\DepartementsResponse;
-use WBW\Library\GeoAPI\Model\Response\RegionsResponse;
 use WBW\Library\GeoAPI\Provider\RegionProvider;
+use WBW\Library\GeoAPI\Request\Region\DepartementsRequest;
+use WBW\Library\GeoAPI\Request\Region\RegionsRequest;
+use WBW\Library\GeoAPI\Response\DepartementsResponse;
+use WBW\Library\GeoAPI\Response\RegionsResponse;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 
 /**

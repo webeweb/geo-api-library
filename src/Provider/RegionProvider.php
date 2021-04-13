@@ -13,12 +13,12 @@ namespace WBW\Library\GeoAPI\Provider;
 
 use GuzzleHttp\Exception\GuzzleException;
 use WBW\Library\Core\Exception\ApiException;
-use WBW\Library\GeoAPI\Model\Request\Region\CommunesRequest;
-use WBW\Library\GeoAPI\Model\Request\Region\DepartementsRequest;
-use WBW\Library\GeoAPI\Model\Request\Region\RegionsRequest;
-use WBW\Library\GeoAPI\Model\Response\CommunesResponse;
-use WBW\Library\GeoAPI\Model\Response\DepartementsResponse;
-use WBW\Library\GeoAPI\Model\Response\RegionsResponse;
+use WBW\Library\GeoAPI\Request\Region\CommunesRequest;
+use WBW\Library\GeoAPI\Request\Region\DepartementsRequest;
+use WBW\Library\GeoAPI\Request\Region\RegionsRequest;
+use WBW\Library\GeoAPI\Response\CommunesResponse;
+use WBW\Library\GeoAPI\Response\DepartementsResponse;
+use WBW\Library\GeoAPI\Response\RegionsResponse;
 use WBW\Library\GeoAPI\Serializer\DecoupageAdministratifResponseDeserializer;
 
 /**

@@ -12,13 +12,13 @@
 namespace WBW\Library\GeoAPI\Tests\Provider;
 
 use Exception;
-use WBW\Library\GeoAPI\Model\Request\Adresse\ReverseCsvRequest;
-use WBW\Library\GeoAPI\Model\Request\Adresse\ReverseRequest;
-use WBW\Library\GeoAPI\Model\Request\Adresse\SearchCsvRequest;
-use WBW\Library\GeoAPI\Model\Request\Adresse\SearchRequest;
-use WBW\Library\GeoAPI\Model\Response\Adresse\ReverseCsvResponse;
-use WBW\Library\GeoAPI\Model\Response\Adresse\SearchCsvResponse;
 use WBW\Library\GeoAPI\Provider\AdresseProvider;
+use WBW\Library\GeoAPI\Request\Adresse\ReverseCsvRequest;
+use WBW\Library\GeoAPI\Request\Adresse\ReverseRequest;
+use WBW\Library\GeoAPI\Request\Adresse\SearchCsvRequest;
+use WBW\Library\GeoAPI\Request\Adresse\SearchRequest;
+use WBW\Library\GeoAPI\Response\Adresse\ReverseCsvResponse;
+use WBW\Library\GeoAPI\Response\Adresse\SearchCsvResponse;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 use WBW\Library\GeoJSON\Model\FeatureCollection;
 
@@ -63,7 +63,7 @@ class AdresseProviderTest extends AbstractTestCase {
     public function testReverseCsv(): void {
 
         // Set a data mock.
-        $data = getcwd() . "/tests/Fixtures/Model/Request/Adresse/ReverseCsvRequest.csv";
+        $data = getcwd() . "/tests/Fixtures/Request/Adresse/ReverseCsvRequest.csv";
 
         // Set a Reverse request mock.
         $arg = new ReverseCsvRequest($data);
@@ -111,7 +111,7 @@ class AdresseProviderTest extends AbstractTestCase {
     public function testSearchCsv(): void {
 
         // Set a data mock.
-        $data = getcwd() . "/tests/Fixtures/Model/Request/Adresse/SearchCsvRequest.csv";
+        $data = getcwd() . "/tests/Fixtures/Request/Adresse/SearchCsvRequest.csv";
 
         // Set a Search request mock.
         $arg = new SearchCsvRequest($data);
@@ -134,7 +134,7 @@ class AdresseProviderTest extends AbstractTestCase {
     public function testSearchCsvWithColumns(): void {
 
         // Set a data mock.
-        $data = getcwd() . "/tests/Fixtures/Model/Request/Adresse/SearchCsvRequest.csv";
+        $data = getcwd() . "/tests/Fixtures/Request/Adresse/SearchCsvRequest.csv";
 
         // Set a Search request mock.
         $arg = new SearchCsvRequest($data);
