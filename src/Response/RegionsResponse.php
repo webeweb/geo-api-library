@@ -59,7 +59,7 @@ class RegionsResponse extends AbstractResponse {
      * Set the régions.
      *
      * @param Region[] $regions The régions.
-     * @return RegionsResponse Returns this liste régions response.
+     * @return RegionsResponse Returns this régions response.
      */
     protected function setRegions(array $regions): RegionsResponse {
         $this->regions = $regions;
