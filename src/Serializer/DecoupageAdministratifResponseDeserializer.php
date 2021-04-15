@@ -18,6 +18,7 @@ use WBW\Library\GeoAPI\Model\Region;
 use WBW\Library\GeoAPI\Response\CommunesResponse;
 use WBW\Library\GeoAPI\Response\DepartementsResponse;
 use WBW\Library\GeoAPI\Response\RegionsResponse;
+use WBW\Library\GeoJSON\Serializer\JsonDeserializer;
 
 /**
  * Découpage administratif response deserializer.
@@ -25,7 +26,7 @@ use WBW\Library\GeoAPI\Response\RegionsResponse;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GeoAPI\Serializer
  */
-class DecoupageAdministratifResponseDeserializer {
+class DecoupageAdministratifResponseDeserializer extends JsonDeserializer {
 
     /**
      * Deserializes a commune.
@@ -40,9 +41,14 @@ class DecoupageAdministratifResponseDeserializer {
         $model->setCode(ArrayHelper::get($response, "code"));
         $model->setCodeDepartement(ArrayHelper::get($response, "codeDepartement"));
         $model->setCodeRegion(ArrayHelper::get($response, "codeRegion"));
-        $model->setCodesPostaux(ArrayHelper::get($response, "codesPostaux", []));
+        $model->setCentre(static::deserializeGeometry(ArrayHelper::get($response, "centre", [])));
+        $model->setContour(static::deserializeGeometry(ArrayHelper::get($response, "contour", [])));
+        $model->setSurface(ArrayHelper::get($response, "surface"));
         $model->setPopulation(ArrayHelper::get($response, "population"));
+        $model->setCodesPostaux(ArrayHelper::get($response, "codesPostaux", []));
         $model->setScore(ArrayHelper::get($response, "_score"));
+        $model->setDepartement(static::deserializeDepartement(ArrayHelper::get($response, "departement", [])));
+        $model->setRegion(static::deserializeRegion(ArrayHelper::get($response, "region", [])));
 
         return $model;
     }
@@ -63,6 +69,7 @@ class DecoupageAdministratifResponseDeserializer {
             return $model;
         }
 
+        $response = static::toArray($response);
         foreach ($response as $current) {
             $model->addCommune(static::deserializeCommune($current));
         }
@@ -74,9 +81,13 @@ class DecoupageAdministratifResponseDeserializer {
      * Deserializes a département.
      *
      * @param array $response The response.
-     * @return Departement Returns the département.
+     * @return Departement|null Returns the département.
      */
-    protected static function deserializeDepartement(array $response): Departement {
+    protected static function deserializeDepartement(array $response): ?Departement {
+
+        if (0 === count($response)) {
+            return null;
+        }
 
         $model = new Departement();
         $model->setNom(ArrayHelper::get($response, "nom"));
@@ -103,6 +114,7 @@ class DecoupageAdministratifResponseDeserializer {
             return $model;
         }
 
+        $response = static::toArray($response);
         foreach ($response as $current) {
             $model->addDepartement(static::deserializeDepartement($current));
         }
@@ -114,9 +126,13 @@ class DecoupageAdministratifResponseDeserializer {
      * Deserializes a région.
      *
      * @param array $response The response.
-     * @return Region Returns the région.
+     * @return Region|null Returns the région.
      */
-    protected static function deserializeRegion(array $response): Region {
+    protected static function deserializeRegion(array $response): ?Region {
+
+        if (0 === count($response)) {
+            return null;
+        }
 
         $model = new Region();
         $model->setCode(ArrayHelper::get($response, "code"));
@@ -142,10 +158,24 @@ class DecoupageAdministratifResponseDeserializer {
             return $model;
         }
 
+        $response = static::toArray($response);
         foreach ($response as $current) {
             $model->addRegion(static::deserializeRegion($current));
         }
 
         return $model;
+    }
+
+    /**
+     * Convert an object into an array of object.
+     *
+     * @param array $response The response.
+     * @return array Returns the converted array.
+     */
+    protected static function toArray(array $response): array {
+        if (true === ArrayHelper::isObject($response)) {
+            return [$response];
+        }
+        return $response;
     }
 }
