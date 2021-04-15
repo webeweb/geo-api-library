@@ -12,9 +12,12 @@
 namespace WBW\Library\GeoAPI\Tests\Provider;
 
 use Exception;
+use WBW\Library\Core\Exception\ApiException;
 use WBW\Library\GeoAPI\Provider\RegionProvider;
+use WBW\Library\GeoAPI\Request\Region\CommunesRequest;
 use WBW\Library\GeoAPI\Request\Region\DepartementsRequest;
 use WBW\Library\GeoAPI\Request\Region\RegionsRequest;
+use WBW\Library\GeoAPI\Response\CommunesResponse;
 use WBW\Library\GeoAPI\Response\DepartementsResponse;
 use WBW\Library\GeoAPI\Response\RegionsResponse;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
@@ -26,6 +29,32 @@ use WBW\Library\GeoAPI\Tests\AbstractTestCase;
  * @package WBW\Library\GeoAPI\Tests\Provider
  */
 class RegionProviderTest extends AbstractTestCase {
+
+    /**
+     * Tests the communes() method.
+     *
+     * @return void
+     * @throws Exception Throws an exception if an error occurs.
+     */
+    public function testCommunes(): void {
+
+        // Set a Communes request mock.
+        $request = new CommunesRequest();
+        $request->setCode("11");
+
+        $obj = new RegionProvider($this->logger);
+
+        try {
+
+            $res = $obj->communes($request);
+            $this->assertInstanceOf(CommunesResponse::class, $res);
+        } catch (Exception $ex) {
+
+            $this->assertInstanceOf(ApiException::class, $ex);
+            $this->assertEquals(500, $ex->getCode());
+            $this->assertEquals("Call API provider failed", $ex->getMessage());
+        }
+    }
 
     /**
      * Tests the departements() method.

@@ -41,4 +41,22 @@ class CommuneProviderTest extends AbstractTestCase {
         $res = $obj->communes($request);
         $this->assertInstanceOf(CommunesResponse::class, $res);
     }
+
+    /**
+     * Tests the communes() method.
+     *
+     * @return void
+     * @throws Exception Throws an exception if an error occurs.
+     */
+    public function testCommunesWithCode(): void {
+
+        // Set a Communes request mock.
+        $request = new CommunesRequest();
+        $request->setCode("75056");
+
+        $obj = new CommuneProvider($this->logger);
+
+        $res = $obj->communes($request);
+        $this->assertInstanceOf(CommunesResponse::class, $res);
+    }
 }

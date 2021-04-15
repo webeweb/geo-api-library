@@ -235,4 +235,28 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
         $this->assertNull($res->getAdresses()[3]->getLatitude());
         $this->assertNull($res->getAdresses()[3]->getLongitude());
     }
+
+    /**
+     * Tests the deserializeSearchCsvResponse() method.
+     *
+     * @return void
+     */
+    public function testDeserializeSearchCsvResponseWithBadResponse(): void {
+
+        $res = AdresseResponseDeserializer::deserializeSearchCsvResponse("");
+        $this->assertInstanceOf(SearchCsvResponse::class, $res);
+
+        $this->assertCount(0, $res->getAdresses());
+    }
+
+    /**
+     * Tests the deserializeSearchCsvResponse() method.
+     *
+     * @return void
+     */
+    public function testDeserializeSearchResponseWithBadResponse(): void {
+
+        $res = AdresseResponseDeserializer::deserializeSearchResponse("");
+        $this->assertNull($res);
+    }
 }
