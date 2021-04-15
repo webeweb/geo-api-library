@@ -35,6 +35,6 @@ class RegionsRequest extends AbstractRequest {
      * {@inheritDoc}
      */
     public function getResourcePath(): string {
-        return self::RESOURCE_PATH;
+        return $this->implodeResourcePath(self::RESOURCE_PATH);
     }
 }
