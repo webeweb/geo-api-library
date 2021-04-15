@@ -12,10 +12,10 @@ Search
 $provider = new AdresseProvider();
 
 // Create a Search request.
-$model = new SearchRequest("address");
+$request = new SearchRequest("address");
 
 // Call the API and get the response.
-$response = $provider->search($model);
+$response = $provider->search($request);
 
 // Handle the response.
 // ...
@@ -30,10 +30,10 @@ Reverse
 $provider = new AdresseProvider();
 
 // Create a Reverse request.
-$model = new ReverseRequest(49.897443, 2.290084);
+$request = new ReverseRequest(49.897443, 2.290084);
 
 // Call the API and get the response.
-$response = $provider->reverse($model);
+$response = $provider->reverse($request);
 
 // Handle the response.
 // ...
@@ -48,10 +48,10 @@ Search CSV
 $provider = new AdresseProvider();
 
 // Create a Search CSV request.
-$model = new SearchCsvRequest("/path/to/file.csv");
+$request = new SearchCsvRequest("/path/to/file.csv");
 
 // Call the API and get the response.
-$response = $provider->searchCsv($model);
+$response = $provider->searchCsv($request);
 
 // Handle the response.
 foreach($response->getAdresses() as $current) {
@@ -87,10 +87,10 @@ Reverse CSV
 $provider = new AdresseProvider();
 
 // Create a Reverse CSV request.
-$model = new ReverseCsvRequest("/path/to/file.csv");
+$request = new ReverseCsvRequest("/path/to/file.csv");
 
 // Call the API and get the response.
-$response = $provider->reverseCsv($model);
+$response = $provider->reverseCsv($request);
 
 // Handle the response.
 foreach($response->getAdresses() as $current) {
