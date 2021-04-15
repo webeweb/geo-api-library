@@ -12,7 +12,11 @@
 namespace WBW\Library\GeoAPI\Tests\Model;
 
 use WBW\Library\GeoAPI\Model\Commune;
+use WBW\Library\GeoAPI\Model\Departement;
+use WBW\Library\GeoAPI\Model\Region;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
+use WBW\Library\GeoJSON\Model\Geometry\Point;
+use WBW\Library\GeoJSON\Model\Geometry\Polygon;
 
 /**
  * Commune test.
@@ -21,6 +25,22 @@ use WBW\Library\GeoAPI\Tests\AbstractTestCase;
  * @package WBW\Library\GeoAPI\Tests\Model
  */
 class CommuneTest extends AbstractTestCase {
+
+    /**
+     * Tests the setCentre() method.
+     *
+     * @return void
+     */
+    public function testSetCentre(): void {
+
+        // Set a Point mock.
+        $centre = new Point();
+
+        $obj = new Commune();
+
+        $obj->setCentre($centre);
+        $this->assertSame($centre, $obj->getCentre());
+    }
 
     /**
      * Tests the setCodesPostaux() method.
@@ -33,6 +53,38 @@ class CommuneTest extends AbstractTestCase {
 
         $obj->setCodesPostaux(["codePostal"]);
         $this->assertEquals(["codePostal"], $obj->getCodesPostaux());
+    }
+
+    /**
+     * Tests the setContour() method.
+     *
+     * @return void
+     */
+    public function testSetContour(): void {
+
+        // Set a Polygon mock.
+        $contour = new Polygon();
+
+        $obj = new Commune();
+
+        $obj->setContour($contour);
+        $this->assertSame($contour, $obj->getContour());
+    }
+
+    /**
+     * Tests the setDepartement() method.
+     *
+     * @return void
+     */
+    public function testSetDepartement(): void {
+
+        // Set a Département mock.
+        $departement = new Departement();
+
+        $obj = new Commune();
+
+        $obj->setDepartement($departement);
+        $this->assertSame($departement, $obj->getDepartement());
     }
 
     /**
@@ -49,6 +101,35 @@ class CommuneTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the setRegion() method.
+     *
+     * @return void
+     */
+    public function testSetRegion(): void {
+
+        // Set a Région mock.
+        $region = new Region();
+
+        $obj = new Commune();
+
+        $obj->setRegion($region);
+        $this->assertSame($region, $obj->getRegion());
+    }
+
+    /**
+     * Tests the setSurface() method.
+     *
+     * @return void
+     */
+    public function testSetSurface(): void {
+
+        $obj = new Commune();
+
+        $obj->setSurface(0.1);
+        $this->assertEquals(0.1, $obj->getSurface());
+    }
+
+    /**
      * Tests the __construct() method.
      *
      * @return void
@@ -58,11 +139,16 @@ class CommuneTest extends AbstractTestCase {
         $obj = new Commune();
 
         $this->assertNull($obj->getCode());
+        $this->assertNull($obj->getCentre());
         $this->assertNull($obj->getCodeDepartement());
         $this->assertNull($obj->getCodeRegion());
         $this->assertNull($obj->getCodesPostaux());
+        $this->assertNull($obj->getContour());
+        $this->assertNull($obj->getDepartement());
         $this->assertNull($obj->getNom());
         $this->assertNull($obj->getPopulation());
+        $this->assertNull($obj->getRegion());
         $this->assertNull($obj->getScore());
+        $this->assertNull($obj->getSurface());
     }
 }
