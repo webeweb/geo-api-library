@@ -33,10 +33,13 @@ class AdresseRequestSerializerTest extends AbstractTestCase {
      */
     public function testSerializeReverseCsvRequest(): void {
 
+        // Set a Reverse CSV request mock.
         $arg = new ReverseCsvRequest();
         $arg->setData("data");
 
         $res = AdresseRequestSerializer::serializeReverseCsvRequest($arg);
+        $this->assertCount(1, $res);
+
         $this->assertEquals("data", $res["data"]);
     }
 
@@ -47,11 +50,14 @@ class AdresseRequestSerializerTest extends AbstractTestCase {
      */
     public function testSerializeReverseRequest(): void {
 
+        // Set a Reverse request mock.
         $arg = new ReverseRequest();
         $arg->setLat(48.789);
         $arg->setLon(2.789);
 
         $res = AdresseRequestSerializer::serializeReverseRequest($arg);
+        $this->assertCount(2, $res);
+
         $this->assertEquals(48.789, $res["lat"]);
         $this->assertEquals(2.789, $res["lon"]);
     }
@@ -63,10 +69,13 @@ class AdresseRequestSerializerTest extends AbstractTestCase {
      */
     public function testSerializeSearchCsvRequest(): void {
 
+        // Set a Search CSV request mock.
         $arg = new SearchCsvRequest();
         $arg->setData("data");
 
         $res = AdresseRequestSerializer::serializeSearchCsvRequest($arg);
+        $this->assertCount(1, $res);
+
         $this->assertEquals("data", $res["data"]);
     }
 
@@ -77,6 +86,7 @@ class AdresseRequestSerializerTest extends AbstractTestCase {
      */
     public function testSerializeSearchRequest(): void {
 
+        // Set a Search request mock.
         $arg = new SearchRequest();
         $arg->setQ("q");
         $arg->setLimit(15);
@@ -88,6 +98,8 @@ class AdresseRequestSerializerTest extends AbstractTestCase {
         $arg->setType(SearchRequest::TYPE_STREET);
 
         $res = AdresseRequestSerializer::serializeSearchRequest($arg);
+        $this->assertCount(7, $res);
+
         $this->assertEquals("q", $res["q"]);
         $this->assertEquals(15, $res["limit"]);
         $this->assertEquals(0, $res["autocomplete"]);
