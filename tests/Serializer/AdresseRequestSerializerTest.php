@@ -98,7 +98,7 @@ class AdresseRequestSerializerTest extends AbstractTestCase {
         $arg->setType(SearchRequest::TYPE_STREET);
 
         $res = AdresseRequestSerializer::serializeSearchRequest($arg);
-        $this->assertCount(7, $res);
+        $this->assertCount(8, $res);
 
         $this->assertEquals("q", $res["q"]);
         $this->assertEquals(15, $res["limit"]);
@@ -107,5 +107,6 @@ class AdresseRequestSerializerTest extends AbstractTestCase {
         $this->assertEquals(2.789, $res["lon"]);
         $this->assertEquals("postcode", $res["postcode"]);
         $this->assertEquals("cityCode", $res["citycode"]);
+        $this->assertEquals(SearchRequest::TYPE_STREET, $res["type"]);
     }
 }
