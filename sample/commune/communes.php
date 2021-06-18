@@ -20,7 +20,7 @@ $provider = new CommuneProvider();
 // Create a Communes request.
 $request = new CommunesRequest();
 
-// Call the API and get teh response.
+// Call the API and get the response.
 $response = $provider->communes($request);
 
 // Handle the response.

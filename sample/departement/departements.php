@@ -20,7 +20,7 @@ $provider = new DepartementProvider();
 // Create a Départements request.
 $request = new DepartementsRequest();
 
-// Call the API and get teh response.
+// Call the API and get the response.
 $response = $provider->departements($request);
 
 // Handle the response.

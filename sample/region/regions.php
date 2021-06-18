@@ -20,7 +20,7 @@ $provider = new RegionProvider();
 // Create a Regions request.
 $request = new RegionsRequest();
 
-// Call the API and get teh response.
+// Call the API and get the response.
 $response = $provider->regions($request);
 
 // Handle the response.

@@ -21,7 +21,7 @@ $provider = new CommuneProvider();
 $request = new CommunesRequest();
 $request->setCode("75056");
 
-// Call the API and get teh response.
+// Call the API and get the response.
 $response = $provider->communes($request);
 
 // Handle the response.

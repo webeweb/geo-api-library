@@ -21,7 +21,7 @@ $provider = new RegionProvider();
 $request = new DepartementsRequest();
 $request->setCode("11");
 
-// Call the API and get teh response.
+// Call the API and get the response.
 $response = $provider->departements($request);
 
 // Handle the response.
