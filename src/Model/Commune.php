@@ -11,13 +11,13 @@
 
 namespace WBW\Library\GeoAPI\Model;
 
-use WBW\Library\GeoAPI\Model\Attribute\FloatScoreTrait;
 use WBW\Library\GeoAPI\Model\Attribute\StringCodeDepartementTrait;
 use WBW\Library\GeoAPI\Model\Attribute\StringCodeRegionTrait;
-use WBW\Library\GeoAPI\Model\Attribute\StringCodeTrait;
 use WBW\Library\GeoAPI\Model\Attribute\StringNomTrait;
 use WBW\Library\GeoJSON\Model\Geometry\Point;
 use WBW\Library\GeoJSON\Model\Geometry\Polygon;
+use WBW\Library\Traits\Floats\FloatScoreTrait;
+use WBW\Library\Traits\Strings\StringCodeTrait;
 
 /**
  * Commune.

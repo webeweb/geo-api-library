@@ -11,7 +11,7 @@
 
 namespace WBW\Library\GeoAPI\Request\Adresse;
 
-use WBW\Library\GeoAPI\Model\Attribute\StringDataTrait;
+use WBW\Library\Traits\Strings\StringDataTrait;
 use WBW\Library\GeoAPI\Request\AbstractRequest;
 
 /**

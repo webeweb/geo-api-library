@@ -11,9 +11,9 @@
 
 namespace WBW\Library\GeoAPI\Request\Region;
 
-use WBW\Library\GeoAPI\Model\Attribute\StringFormatTrait;
 use WBW\Library\GeoAPI\Model\Attribute\StringGeometryTrait;
 use WBW\Library\GeoAPI\Request\AbstractRequest;
+use WBW\Library\Traits\Strings\StringFormatTrait;
 
 /**
  * Communes request.

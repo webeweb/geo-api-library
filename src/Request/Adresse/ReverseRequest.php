@@ -11,9 +11,9 @@
 
 namespace WBW\Library\GeoAPI\Request\Adresse;
 
-use WBW\Library\GeoAPI\Model\Attribute\FloatLatTrait;
-use WBW\Library\GeoAPI\Model\Attribute\FloatLonTrait;
 use WBW\Library\GeoAPI\Request\AbstractRequest;
+use WBW\Library\Traits\Floats\FloatLatTrait;
+use WBW\Library\Traits\Floats\FloatLonTrait;
 
 /**
  * Reverse request.

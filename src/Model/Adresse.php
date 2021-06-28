@@ -11,10 +11,10 @@
 
 namespace WBW\Library\GeoAPI\Model;
 
-use WBW\Library\Core\Model\Attribute\StringIdTrait;
-use WBW\Library\Core\Model\Attribute\StringLabelTrait;
-use WBW\Library\Core\Model\Attribute\StringNameTrait;
-use WBW\Library\Core\Model\Attribute\StringTypeTrait;
+use WBW\Library\Traits\Strings\StringIdTrait;
+use WBW\Library\Traits\Strings\StringLabelTrait;
+use WBW\Library\Traits\Strings\StringNameTrait;
+use WBW\Library\Traits\Strings\StringTypeTrait;
 
 /**
  * Adresse.

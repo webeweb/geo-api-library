@@ -12,7 +12,7 @@
 namespace WBW\Library\GeoAPI\Request;
 
 use WBW\Library\GeoAPI\Model\Attribute\ArrayFieldsTrait;
-use WBW\Library\GeoAPI\Model\Attribute\StringCodeTrait;
+use WBW\Library\Traits\Strings\StringCodeTrait;
 
 /**
  * Abstract request.
