@@ -65,19 +65,6 @@ class SearchRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setQ() method.
-     *
-     * @return void
-     */
-    public function testSetQ(): void {
-
-        $obj = new SearchRequest();
-
-        $obj->setQ("q");
-        $this->assertEquals("q", $obj->getQ());
-    }
-
-    /**
      * Tests the __construct() method.
      *
      * @return void

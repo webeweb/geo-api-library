@@ -14,6 +14,7 @@ namespace WBW\Library\GeoAPI\Request\Adresse;
 use WBW\Library\GeoAPI\Request\AbstractRequest;
 use WBW\Library\Traits\Floats\FloatLatTrait;
 use WBW\Library\Traits\Floats\FloatLonTrait;
+use WBW\Library\Traits\Strings\StringQTrait;
 use WBW\Library\Traits\Strings\StringTypeTrait;
 
 /**
@@ -26,6 +27,7 @@ class SearchRequest extends AbstractRequest {
 
     use FloatLatTrait;
     use FloatLonTrait;
+    use StringQTrait;
     use StringTypeTrait;
 
     /**
@@ -92,13 +94,6 @@ class SearchRequest extends AbstractRequest {
     private $postcode;
 
     /**
-     * Query.
-     *
-     * @var string|null
-     */
-    private $q;
-
-    /**
      * Constructor.
      *
      * @param string|null $q The query.
@@ -159,15 +154,6 @@ class SearchRequest extends AbstractRequest {
     }
 
     /**
-     * Get the query.
-     *
-     * @return string|null Returns the query.
-     */
-    public function getQ(): ?string {
-        return $this->q;
-    }
-
-    /**
      * {@inheritDoc}
      */
     public function getResourcePath(): string {
@@ -215,17 +201,6 @@ class SearchRequest extends AbstractRequest {
      */
     public function setPostcode(?string $postcode): SearchRequest {
         $this->postcode = $postcode;
-        return $this;
-    }
-
-    /**
-     * Set the query.
-     *
-     * @param string|null $q The query.
-     * @return SearchRequest Returns this search request.
-     */
-    public function setQ(?string $q): SearchRequest {
-        $this->q = $q;
         return $this;
     }
 }
