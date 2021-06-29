@@ -11,8 +11,8 @@
 
 namespace WBW\Library\GeoAPI\Request\Adresse;
 
-use WBW\Library\Traits\Strings\StringDataTrait;
 use WBW\Library\GeoAPI\Request\AbstractRequest;
+use WBW\Library\Traits\Strings\StringDataTrait;
 
 /**
  * Abstract CSV request.
