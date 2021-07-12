@@ -63,7 +63,7 @@ class AdresseProviderTest extends AbstractTestCase {
     public function testReverseCsv(): void {
 
         // Set a data mock.
-        $data = getcwd() . "/tests/Fixtures/Request/Adresse/ReverseCsvRequest.csv";
+        $data = realpath(__DIR__ . "/../../tests/Fixtures/Request/Adresse/ReverseCsvRequest.csv");
 
         // Set a Reverse request mock.
         $arg = new ReverseCsvRequest($data);
@@ -111,7 +111,7 @@ class AdresseProviderTest extends AbstractTestCase {
     public function testSearchCsv(): void {
 
         // Set a data mock.
-        $data = getcwd() . "/tests/Fixtures/Request/Adresse/SearchCsvRequest.csv";
+        $data = realpath(__DIR__ . "/../../tests/Fixtures/Request/Adresse/SearchCsvRequest.csv");
 
         // Set a Search request mock.
         $arg = new SearchCsvRequest($data);
@@ -134,7 +134,7 @@ class AdresseProviderTest extends AbstractTestCase {
     public function testSearchCsvWithColumns(): void {
 
         // Set a data mock.
-        $data = getcwd() . "/tests/Fixtures/Request/Adresse/SearchCsvRequest.csv";
+        $data = realpath(__DIR__ . "/../Fixtures/Request/Adresse/SearchCsvRequest.csv");
 
         // Set a Search request mock.
         $arg = new SearchCsvRequest($data);

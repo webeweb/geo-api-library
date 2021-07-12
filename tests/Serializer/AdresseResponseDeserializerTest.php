@@ -32,7 +32,7 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
     public function testDeserializeReverseCsvResponse(): void {
 
         // Set a filename mock.
-        $filename = getcwd() . "/tests/Fixtures/Response/Adresse/ReverseCsvResponse.csv";
+        $filename = realpath(__DIR__ . "/../Fixtures/Response/Adresse/ReverseCsvResponse.csv");
 
         $res = AdresseResponseDeserializer::deserializeReverseCsvResponse(file_get_contents($filename));
         $this->assertInstanceOf(ReverseCsvResponse::class, $res);
@@ -132,7 +132,7 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
     public function testDeserializeSearchCsvResponse(): void {
 
         // Set a filename mock.
-        $filename = getcwd() . "/tests/Fixtures/Response/Adresse/SearchCsvResponse.csv";
+        $filename = realpath(__DIR__ . "/../Fixtures/Response/Adresse/SearchCsvResponse.csv");
 
         $res = AdresseResponseDeserializer::deserializeSearchCsvResponse(file_get_contents($filename));
         $this->assertInstanceOf(SearchCsvResponse::class, $res);
