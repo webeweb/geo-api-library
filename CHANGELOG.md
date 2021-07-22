@@ -3,7 +3,7 @@ CHANGELOG
 
 ### master
 
-- Add sample scripts
+- Add dev scripts
 - Improve documentation
 - Improve unit tests
 
