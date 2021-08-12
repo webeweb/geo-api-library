@@ -12,7 +12,6 @@
 namespace WBW\Library\GeoAPI\Tests\Provider;
 
 use Exception;
-use WBW\Library\Core\Exception\ApiException;
 use WBW\Library\GeoAPI\Provider\RegionProvider;
 use WBW\Library\GeoAPI\Request\Region\CommunesRequest;
 use WBW\Library\GeoAPI\Request\Region\DepartementsRequest;
@@ -21,6 +20,7 @@ use WBW\Library\GeoAPI\Response\CommunesResponse;
 use WBW\Library\GeoAPI\Response\DepartementsResponse;
 use WBW\Library\GeoAPI\Response\RegionsResponse;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
+use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * Région provider test.

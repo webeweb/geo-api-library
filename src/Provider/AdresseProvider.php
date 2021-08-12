@@ -12,8 +12,6 @@
 namespace WBW\Library\GeoAPI\Provider;
 
 use GuzzleHttp\Exception\GuzzleException;
-use WBW\Library\Core\Argument\Helper\ArrayHelper;
-use WBW\Library\Core\Exception\ApiException;
 use WBW\Library\GeoAPI\Request\Adresse\ReverseCsvRequest;
 use WBW\Library\GeoAPI\Request\Adresse\ReverseRequest;
 use WBW\Library\GeoAPI\Request\Adresse\SearchCsvRequest;
@@ -23,6 +21,8 @@ use WBW\Library\GeoAPI\Response\Adresse\SearchCsvResponse;
 use WBW\Library\GeoAPI\Serializer\AdresseRequestSerializer;
 use WBW\Library\GeoAPI\Serializer\AdresseResponseDeserializer;
 use WBW\Library\GeoJSON\Model\FeatureCollection;
+use WBW\Library\Provider\Exception\ApiException;
+use WBW\Library\Types\Helper\ArrayHelper;
 
 /**
  * Adresse provider.

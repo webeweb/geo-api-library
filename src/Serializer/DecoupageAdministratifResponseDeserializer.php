@@ -11,7 +11,6 @@
 
 namespace WBW\Library\GeoAPI\Serializer;
 
-use WBW\Library\Core\Argument\Helper\ArrayHelper;
 use WBW\Library\GeoAPI\Model\Commune;
 use WBW\Library\GeoAPI\Model\Departement;
 use WBW\Library\GeoAPI\Model\Region;
@@ -19,6 +18,7 @@ use WBW\Library\GeoAPI\Response\CommunesResponse;
 use WBW\Library\GeoAPI\Response\DepartementsResponse;
 use WBW\Library\GeoAPI\Response\RegionsResponse;
 use WBW\Library\GeoJSON\Serializer\JsonDeserializer;
+use WBW\Library\Types\Helper\ArrayHelper;
 
 /**
  * Découpage administratif response deserializer.

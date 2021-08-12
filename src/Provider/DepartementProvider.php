@@ -12,12 +12,12 @@
 namespace WBW\Library\GeoAPI\Provider;
 
 use GuzzleHttp\Exception\GuzzleException;
-use WBW\Library\Core\Exception\ApiException;
 use WBW\Library\GeoAPI\Request\Departement\CommunesRequest;
 use WBW\Library\GeoAPI\Request\Departement\DepartementsRequest;
 use WBW\Library\GeoAPI\Response\CommunesResponse;
 use WBW\Library\GeoAPI\Response\DepartementsResponse;
 use WBW\Library\GeoAPI\Serializer\DecoupageAdministratifResponseDeserializer;
+use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * Département provider.

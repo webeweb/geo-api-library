@@ -59,6 +59,23 @@ class DecoupageAdministratifResponseDeserializerTest extends AbstractTestCase {
      *
      * @return void
      */
+    public function testDeserializeCommunesResponseWithBadResponse(): void {
+
+        // Set a JSON mock.
+        $json = "";
+
+        $res = DecoupageAdministratifResponseDeserializer::deserializeCommunesResponse($json);
+        $this->assertInstanceOf(CommunesResponse::class, $res);
+
+        $this->assertEquals($json, $res->getRawResponse());
+        $this->assertCount(0, $res->getCommunes());
+    }
+
+    /**
+     * Tests the deserializeCommunesResponse() method.
+     *
+     * @return void
+     */
     public function testDeserializeCommunesResponseWithGeoJSON(): void {
 
         // Set a JSON mock.
@@ -82,23 +99,6 @@ class DecoupageAdministratifResponseDeserializerTest extends AbstractTestCase {
         $this->assertEquals(1, $res->getCommunes()[0]->getScore());
         $this->assertNotNull($res->getCommunes()[0]->getDepartement());
         $this->assertNotNull($res->getCommunes()[0]->getRegion());
-    }
-
-    /**
-     * Tests the deserializeCommunesResponse() method.
-     *
-     * @return void
-     */
-    public function testDeserializeCommunesResponseWithBadResponse(): void {
-
-        // Set a JSON mock.
-        $json = "";
-
-        $res = DecoupageAdministratifResponseDeserializer::deserializeCommunesResponse($json);
-        $this->assertInstanceOf(CommunesResponse::class, $res);
-
-        $this->assertEquals($json, $res->getRawResponse());
-        $this->assertCount(0, $res->getCommunes());
     }
 
     /**

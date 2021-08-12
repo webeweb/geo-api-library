@@ -12,10 +12,10 @@
 namespace WBW\Library\GeoAPI\Provider;
 
 use GuzzleHttp\Exception\GuzzleException;
-use WBW\Library\Core\Exception\ApiException;
 use WBW\Library\GeoAPI\Request\Commune\CommunesRequest;
 use WBW\Library\GeoAPI\Response\CommunesResponse;
 use WBW\Library\GeoAPI\Serializer\DecoupageAdministratifResponseDeserializer;
+use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * Commune provider.
