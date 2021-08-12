@@ -6,6 +6,7 @@ CHANGELOG
 - Add dev scripts
 - Improve documentation
 - Improve unit tests
+- Update dependencies
 
 ### [1.0.0](https://github.com/webeweb/geo-api-library/tree/v1.0.0) (2021-04-13)
 
