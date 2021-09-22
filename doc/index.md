@@ -8,6 +8,9 @@ The API Adresse is available [here](https://geo.api.gouv.fr/adresse)
 Search
 
 ```php
+use WBW\Library\GeoAPI\Provider\AdresseProvider;
+use WBW\Library\GeoAPI\Request\Adresse\SearchRequest;
+
 // Create an Adresse provider.
 $provider = new AdresseProvider();
 
@@ -26,6 +29,9 @@ $response = $provider->search($request);
 Reverse
 
 ```php
+use WBW\Library\GeoAPI\Provider\AdresseProvider;
+use WBW\Library\GeoAPI\Request\Adresse\ReverseRequest;
+
 // Create an Adresse provider.
 $provider = new AdresseProvider();
 
@@ -44,6 +50,9 @@ $response = $provider->reverse($request);
 Search CSV
 
 ```php
+use WBW\Library\GeoAPI\Provider\AdresseProvider;
+use WBW\Library\GeoAPI\Request\Adresse\SearchCsvRequest;
+
 // Create an Adresse provider.
 $provider = new AdresseProvider();
 
@@ -83,6 +92,9 @@ foreach($response->getAdresses() as $current) {
 Reverse CSV
 
 ```php
+use WBW\Library\GeoAPI\Provider\AdresseProvider;
+use WBW\Library\GeoAPI\Request\Adresse\ReverseCsvRequest;
+
 // Create an Adresse provider.
 $provider = new AdresseProvider();
 
