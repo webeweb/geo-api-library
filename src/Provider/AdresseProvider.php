@@ -20,7 +20,7 @@ use WBW\Library\GeoAPI\Response\Adresse\ReverseCsvResponse;
 use WBW\Library\GeoAPI\Response\Adresse\SearchCsvResponse;
 use WBW\Library\GeoAPI\Serializer\AdresseRequestSerializer;
 use WBW\Library\GeoAPI\Serializer\AdresseResponseDeserializer;
-use WBW\Library\GeoJSON\Model\FeatureCollection;
+use WBW\Library\GeoJson\Model\FeatureCollection;
 use WBW\Library\Provider\Exception\ApiException;
 use WBW\Library\Types\Helper\ArrayHelper;
 

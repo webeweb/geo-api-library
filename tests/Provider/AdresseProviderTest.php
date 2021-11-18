@@ -20,7 +20,7 @@ use WBW\Library\GeoAPI\Request\Adresse\SearchRequest;
 use WBW\Library\GeoAPI\Response\Adresse\ReverseCsvResponse;
 use WBW\Library\GeoAPI\Response\Adresse\SearchCsvResponse;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
-use WBW\Library\GeoJSON\Model\FeatureCollection;
+use WBW\Library\GeoJson\Model\FeatureCollection;
 
 /**
  * Adresse provider test.

@@ -15,8 +15,8 @@ use WBW\Library\GeoAPI\Model\Commune;
 use WBW\Library\GeoAPI\Model\Departement;
 use WBW\Library\GeoAPI\Model\Region;
 use WBW\Library\GeoAPI\Tests\AbstractTestCase;
-use WBW\Library\GeoJSON\Model\Geometry\Point;
-use WBW\Library\GeoJSON\Model\Geometry\Polygon;
+use WBW\Library\GeoJson\Model\Geometry\Point;
+use WBW\Library\GeoJson\Model\Geometry\Polygon;
 
 /**
  * Commune test.

@@ -15,8 +15,8 @@ use WBW\Library\GeoAPI\Model\Adresse;
 use WBW\Library\GeoAPI\Response\Adresse\AbstractCsvResponse;
 use WBW\Library\GeoAPI\Response\Adresse\ReverseCsvResponse;
 use WBW\Library\GeoAPI\Response\Adresse\SearchCsvResponse;
-use WBW\Library\GeoJSON\Model\FeatureCollection;
-use WBW\Library\GeoJSON\Serializer\JsonDeserializer;
+use WBW\Library\GeoJson\Model\FeatureCollection;
+use WBW\Library\GeoJson\Serializer\JsonDeserializer;
 
 /**
  * Adresse response deserializer.

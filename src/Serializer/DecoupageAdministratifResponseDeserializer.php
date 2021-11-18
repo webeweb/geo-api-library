@@ -17,7 +17,7 @@ use WBW\Library\GeoAPI\Model\Region;
 use WBW\Library\GeoAPI\Response\CommunesResponse;
 use WBW\Library\GeoAPI\Response\DepartementsResponse;
 use WBW\Library\GeoAPI\Response\RegionsResponse;
-use WBW\Library\GeoJSON\Serializer\JsonDeserializer;
+use WBW\Library\GeoJson\Serializer\JsonDeserializer;
 use WBW\Library\Types\Helper\ArrayHelper;
 
 /**
