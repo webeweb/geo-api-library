@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-### master
+### [1.1.0](https://github.com/webeweb/geo-api-library/tree/v1.1.0) (2021-11-18)
 
 - Add dev scripts
 - Improve documentation
