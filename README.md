@@ -11,6 +11,10 @@ geo-api-library
 
 Integrate Geo API with your projects.
 
+> IMPORTANT NOTICE: This package is no longer maintained and its classes have
+> been migrated into package "gouv-api-library" (available into version up to 1.0.0
+> and more) [Gouv API library](https://github.com/webeweb/gouv-api-library/)
+
 Includes:
 
 - [webeweb/geo-json-library](https://github.com/webeweb/geo-json-library)
