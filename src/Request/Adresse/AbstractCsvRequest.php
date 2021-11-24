@@ -32,6 +32,7 @@ abstract class AbstractCsvRequest extends AbstractRequest {
      */
     public function __construct(string $data = null) {
         parent::__construct();
+
         $this->setData($data);
     }
 }

@@ -100,6 +100,7 @@ class SearchRequest extends AbstractRequest {
      */
     public function __construct(string $q = null) {
         parent::__construct();
+
         $this->setQ($q);
     }
 

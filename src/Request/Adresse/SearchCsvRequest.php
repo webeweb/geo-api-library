@@ -47,6 +47,7 @@ class SearchCsvRequest extends AbstractCsvRequest {
      */
     public function __construct(string $data = null) {
         parent::__construct($data);
+
         $this->setColumns([]);
         $this->setResultColumns([]);
     }
